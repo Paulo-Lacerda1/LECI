@@ -1,0 +1,20 @@
+.spaced-item {
+  margin-bottom: 10px; 
+}
+
+/* Estilo para o vídeo */
+#video-container {
+  border: none;
+  text-align: center;
+  margin: 20px; 
+}
+
+#gif-video {
+  width: 50%;
+  height: auto;
+}
+
+.content-with-image {
+  text-align: center;
+  position: relative;
+}
