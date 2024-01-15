@@ -1,0 +1,29 @@
+.text-year {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 50px;
+}
+
+.story-card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.story-card li {
+    margin: 10px;
+}
+
+#presente li {
+    margin: 10px;
+}
+
+.story-card-right {
+    text-align: right;
+}

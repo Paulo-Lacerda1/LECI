@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Aspetos Éticos</title>
+    
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.jpeg">
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Personal Styles -->
+        <link rel="stylesheet" href="css/aspetos_eticos.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- jQuery, Popper, Bootstrap JS e scroll -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>  
+        <!-- Barra de navegação -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Percurso IA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                <div style="display: flex; align-items: center;">
+                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                                <lord-icon src="https://cdn.lordicon.com/laqlvddb.json" trigger="hover" colors="primary:#121331,secondary:#000000" state="hover-partial-roll" stroke="bold" style="width:30px;height:40px;"></lord-icon>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="historia.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">História</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="historia.html">História</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="historia.html#primordios">Primórdios</a></li>
+                                <li><a class="dropdown-item" href="historia.html#nascimento">Nascimento</a></li>
+                                <li><a class="dropdown-item" href="historia.html#amadurecimemento">Amadurecimento</a></li>
+                                <li><a class="dropdown-item" href="historia.html#inverno">Inverno</a></li>
+                                <li><a class="dropdown-item" href="historia.html#presente">Presente</a></li>
+                                <li class="dropdown-item dropdown">
+                                    <a class="dropdown-item dropdown-toggle" href="historia.html#futuro">Futuro</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li><a class="dropdown-item" href="historia.html#qml">QML</a></li>
+                                        <li><a class="dropdown-item" href="historia.html#xai">XAI</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Aspetos Éticos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aspetos_eticos.html">Aspetos Éticos</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="aspetos_eticos.html#privacidade">Privacidade</a></li>
+                                <li><a class="dropdown-item" href="aspetos_eticos.html#responsabilidade">Responsabilidade</a></li>
+                                <li><a class="dropdown-item" href="aspetos_eticos.html#transparencia">Transparência</a></li>
+                                <li><a class="dropdown-item" href="aspetos_eticos.html#uso-militar">Uso Militar</a></li>
+                                <li><a class="dropdown-item" href="aspetos_eticos.html#sistemas-justica">Sistemas de Justiça</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="impacto_setores.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Impacto nos Setores</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="impacto_setores.html">Impacto nos Setores</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="impacto_setores.html#talento">Procura por Talento</a></li>
+                                <li class="dropdown-item dropdown">
+                                    <a class="dropdown-item dropdown-toggle" href="impacto_setores.html#setores_impactados">Setores Impactados</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li><a class="dropdown-item" href="impacto_setores.html#saude">Saúde</a></li>
+                                        <li><a class="dropdown-item" href="impacto_setores.html#financas">Finanças</a></li>
+                                        <li class="dropdown-item dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="impacto_setores.html#educacao">Educação</a>
+                                            <ul class="dropdown-menu dropdown-submenu">
+                                                <li><a class="dropdown-item" href="impacto_setores.html#vantagens">Vantagens</a></li>
+                                                <li><a class="dropdown-item" href="impacto_setores.html#desvantagens">Desvantagens</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="impacto_setores.html#servicos_empresariais">Serviços Empresariais</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" target="_blank">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    <div class="style_geral">
+        <div class="container title-section">
+            <h1>Aspetos Éticos da IA</h1>
+            <p> Uma análise dos aspetos éticos da IA </p>
+        </div>
+
+        <hr>
+        <!-- Privacidade -->
+        <h2 id="privacidade" class="title-dark align-items-center">Privacidade</h2>
+        <div class="container">
+            <p>A <abbr title="Inteligência Artificial">IA</abbr> lida frequentemente com a análise e processamento de dados pessoais sensíveis. O uso indiscriminado ou inadequado desses dados pode comdprometer a privacidade individual do utilizador, expondo assim informações
+                pessoais em contextos inseguros ou a usos não autorizados. Combater essa privacidade torna-se uma das prioridades principais dos desenvolvedores enquanto ocorre o avanço da <abbr title="Inteligência Artificial">IA</abbr>.
+            </p>
+        </div>
+            
+        <div class="container">
+            <div id="video-container" style="border: none; text-align: center;">
+                <video id="gif-video" width="1000" height="1000" style="border-radius: 10px;" autoplay muted loop>
+                    <source src="images/privacidade.mp4" type="video/mp4" alt="gif privacidade">
+                    O seu navegador não suporta o elemento de vídeo.
+                </video>
+                <figcaption>Privacidade do utilizador</figcaption>
+            </div>
+            <br>
+            <div class="container">
+            <p>
+                Para isso é crucial estabelecer protocolos robustos de colheita, armazenamento e compartilhamento de dados, garantindo
+                que os usuários sejam plenamente informados sobre como as suas informações serão utilizadas, designado também por cookies.
+            </p>
+            </div>
+        </div>
+
+        <br><br>
+        <hr>
+        <!-- Responsabilidade -->
+        <h2 id="responsabilidade" class="title-dark">Responsabilidade</h2>
+            <div class="container">
+                <p>A responsabilidade ética na <abbr title="Inteligência Artificial">IA</abbr> refere-se à obrigação moral e legal dos
+                    criadores, desenvolvedores e implementadores de sistemas de <abbr title="Inteligência Artificial">IA</abbr> em garantir
+                    que essas tecnologias sejam utilizadas de maneira ética e benéfica para oresto da nossa sociedade.</p>
+                <p>
+                    Alguns aspetos essenciais relacionados com a responsabilidade ética na
+                    <abbr title="Inteligência Artificial">IA</abbr> são:
+                </p>
+                <ol>
+                    <li>
+                        <strong>Tomada de decisões transparentes:</strong> A responsabilidade começa com a transparência na tomada de decisões. Desenvolvedores de <abbr title="Inteligência Artificial">IA</abbr> devem assegurar que os processos que decidem os algoritmos sejam compreensíveis, permitindo que usuários e partes interessadas entendam como as decisões são alcançadas.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Consciência do contexto social:</strong> Desenvolvedores têm a responsabilidade de compreender o contexto social em que a <abbr title="Inteligência Artificial">IA</abbr> é aplicada. Isso inclui considerar os impactos sociais, culturais e econômicos de suas tecnologias, bem como abordar questões éticas específicas a esses contextos.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Ética na pesquisa e desenvolvimento:</strong> A ética deve ser incorporada desde as fases iniciais da pesquisa e desenvolvimento. Isso inclui a escolha ética de conjuntos de dados, métodos de treinamento e a definição de objetivos para garantir que a <abbr title="Inteligência Artificial">IA</abbr> seja desenvolvida e aplicada de maneira ética desde o início até o fim.
+                    </li>
+                </ol>
+
+            </div>
+
+        <br>
+        <hr>
+        <!-- Transparência -->
+        <h2 id="transparencia" class="title-dark">Transparência</h2>
+            <div class="container">
+                <p>
+                    A transparência e <abbr title="Capacidade e qualidade de explicar um certo assunto de forma clara">explicabilidade</abbr>
+                    na <abbr title="Inteligência Artificial">IA</abbr> referem-se à capacidade de compreender e explicar as decisões tomadas por algoritmos e devem ser o mais
+                    simples possível, garantindo que esses processos sejam claros e compreensíveis para os usuários e demais partes interessadas. Um exemplo dos pontos
+                    essenciais sobre esse aspeto crítico da ética em IA é a explicação da resposta
+                    dada. Ou seja, a transparência começa com a capacidade de compreender
+                    como um sistema de <abbr title="Inteligência Artificial">IA</abbr> chega a suas decisões. Os usuários devem ter uma visão clara do processo decisório,
+                    desde a entrada de dados até à saída resultante. Como, por exemplo, no auxílio na resolução de problemas, evitando assim que o <i>output</i> seja unicamente a resposta,
+                    mas sim a mesma e a explicação de como chegou à resposta correta.
+                  </p>
+            </div> 
+
+        <br>
+        <hr>
+        <!-- Uso Militar -->
+        <h2 id="uso-militar" class="title-dark">Uso Militar</h2>
+            <div class="container">
+                <p>
+                    Devido ao aumento da utilização da <abbr title="Inteligência Artificial">IA</abbr> em vários setores, o contexto militar não foi exceção, o que levanta diversas questões éticas,
+                    nomeadamente à letalidade destas ferramentas. Alguns aspetos éticos são:
+                </p>
+                <ol>
+                    <li>
+                        <b>Decisões autónomas:</b> A capacidade de sistemas de <abbr title="Inteligência Artificial">IA</abbr> tomar decisões autónomas no campo de batalha levanta 
+                        preocupações sobre a responsabilidade e a falta de controle humano nas operações militares.
+                    </li>
+                    <br>
+                    <li>
+                        <b>Ética na escolha de alvos:</b> A precisão na seleção de alvos é crucial. O uso de <abbr title="Inteligência Artificial">IA</abbr> em sistemas de armas 
+                        deve garantir a conformidade com o direito internacional humanitário, evitando ataques indiscriminados e minimizando danos colaterais.
+                    </li>
+                </ol>
+                <p>
+                    A criação de novas armas que incorporem a <abbr title="Inteligência Artificial">IA</abbr> é um tópico que gera um debate ético onde existe pessoas que defendem essa ideia, 
+                    porém existe também uma grande parte da nossa sociedade que abomina esse assunto. Alguns exemplos de armas que possuem <abbr title="Inteligência Artificial">IA</abbr>:
+                </p>
+                <br>
+                <!-- Drone RQ-04 -->
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 order-md-1 text-center">
+                            <h4 class="title-dark">Drone</h4>
+                            <p>Estes podem ser conduzidos a vários quilómetros de distância, sendo os mesmos letais nos seus ataques.</p>
+                        </div>
+                        <div class="col-md-5 order-md-2">
+                            <div class="image-container">
+                                <img src="images/RQ_04.jpg" alt="RQ-04">
+                                <div class="overlay">
+                                    <p class="image-text">Modelo RQ4 Global Hawk</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <br>
+                <!-- Sistemas de Defesa aérea -->
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 order-md-2 text-center" style="padding: 50px;">
+                            <h4 class="title-dark">Sistemas de Defesa Aérea</h4>
+                            <p>Cada vez mais usados pelos países para se defenderem dos ataques aéreos de outros países. Estas defesas são bastantes eficazes e capazes de defenderem o seu país de vários mísseis em simultâneo</p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <div class="image-container">
+                                <img src="images/sistema_patriot.jpg" alt="Sistemas Patriot">
+                                <div class="overlay">
+                                    <p class="image-text">Defesa antiaérea Patriot</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <br><br>
+        <hr>
+        <!-- Sistemas de Justiça -->
+        <h2 id="sistemas-justica" class="title-dark ">Sistemas de Justiça</h2>
+        <div class="container">
+            <p>
+                O uso da <abbr title="Inteligência Artificial">IA</abbr> é um tópico que gera um debate ético onde existem pessoas que defendem essa ideia, porém existe também uma grande parte da nossa sociedade que abomina esse assunto. 
+                A quantidade de armas que possuem <abbr title="Inteligência Artificial">IA</abbr> está a aumentar nos sistemas de justiça, o que remete para um aumento na confiança do homem na mesma. Isaac Asimov criou 3 leis robóticas, 
+                afirmando que a utilização da <abbr title="Inteligência Artificial">IA</abbr> é um tópico que gera um debate ético onde existem pessoas que defendem essa ideia, porém existe também uma grande parte da nossa sociedade que abomina esse assunto.
+            </p>
+            <br>
+            <!-- Leis Robóticas por Isaac Asimov -->
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7 order-md-1 text-center">
+                        <h4 class="title-dark">Leis robóticas, por Isaac Asimov</h4>
+                        
+                        <ol class="spaced-list">
+                            <li class="spaced-item">
+                                <strong>Não prejudica:</strong> Um robô não pode magoar um ser humano ou permitir que um ser humano sofra algum mal por inação.
+                            </li>
+                            <li class="spaced-item">
+                                <strong>Obediência:</strong> Um robô deve obedecer às ordens dos seres humanos, a menos que essas ordens entrem em conflito com a primeira lei.
+                            </li>
+                            <li class="spaced-item">
+                                <strong>Auto proteção:</strong> Um robô deve proteger a sua própria existência, desde que isso não entre em conflito com a primeira ou segunda regra.
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-md-5 order-md-2">
+                        <div class="image-container">
+                            <img id="isaac" src="images/Isaac_Asimov.png" alt="Isaac Asimov">
+                            <div class="overlay">
+                                <p class="image-text">Isaac Asimov</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão para voltar para cima -->
+    <button id="backToTop" onclick="window.scrollTo(0,0)">
+        <img src="images/seta.png"  alt="seta" style="height: 100%; width: 100%;">
+    </button>
+    <script src="js/backToTop.js"></script>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div id="rodape" class="container">
+            <div style="float: left">
+                <p class="footer-text normal-text">Percurso IA &emsp;&bullet;&emsp; Projeto por <a href="https://github.com/tfdmendes">Tiago Mendes</a> e <a href="https://github.com/Paulo-Lacerda1">Paulo Lacerda</a> com &#9749; e &#128151;</p>
+                <p class="footer-text easteregg">Percurso IA &emsp;&bullet;&emsp; Projeto por <a href="https://github.com/tfdmendes">Tiago Mendes</a> e <a href="https://github.com/Paulo-Lacerda1">Paulo Lacerda</a> com &#127866; e &#128151;</p>
+            </div>
+            <div style="float: right">
+                UAveiro&emsp;&bullet;&emsp;DETI
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
