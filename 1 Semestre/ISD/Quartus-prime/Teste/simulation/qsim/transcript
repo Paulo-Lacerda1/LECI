@@ -1,0 +1,37 @@
+# do Teste1.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 23:34:46 on Dec 07,2023
+# vcom -work work Teste1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity Teste1
+# -- Compiling architecture structure of Teste1
+# End time: 23:34:47 on Dec 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 23:34:47 on Dec 07,2023
+# vcom -work work Waveform.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Teste1_vhd_vec_tst
+# -- Compiling architecture Teste1_arch of Teste1_vhd_vec_tst
+# End time: 23:34:47 on Dec 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Teste1_vhd_vec_tst 
+# Start time: 23:34:47 on Dec 07,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** License Issue: License request for intelqsimstarter feature failed
+# ** License Issue: Invalid host. (C:\intelFPGA_lite\LR-147868_License.dat)
+# ** License Issue: Cannot find license file. (C:\flexlm\license.dat)
+# ** Error: Failure to obtain a VHDL simulation license. Unable to checkout 'intelqsimstarter' license.
+# Error loading design
+# End time: 23:34:48 on Dec 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

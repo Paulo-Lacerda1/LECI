@@ -1,0 +1,58 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity BinDecoderDecimal is
+    port(
+        enable   : in  std_logic;
+        binInput : in  std_logic_vector(3 downto 0);
+        decOut_n : out std_logic_vector(6 downto 0));
+		  
+end BinDecoderDecimal;
+
+architecture Behavioural of BinDecoderDecimal is
+
+    signal decimal_value : integer;
+	 
+begin
+    process(binInput)
+    begin
+        case binInput is
+            when "0000" =>
+                decimal_value := 0;
+            when "0001" =>
+                decimal_value := 1;
+            when "0010" =>
+                decimal_value := 2;
+            when "0011" =>
+                decimal_value := 3;
+            when "0100" =>
+                decimal_value := 4;
+            when "0101" =>
+                decimal_value := 5;
+            when "0110" =>
+                decimal_value := 6;
+            when "0111" =>
+                decimal_value := 7;
+            when "1000" =>
+                decimal_value := 8;
+            when "1001" =>
+                decimal_value := 9;
+            when others =>
+                decimal_value := 0;
+        end case;
+
+        decOut_n <= "0000000" when enable = '0' else
+                    
+						  "1111111" when decimal_value = 0 else
+                    "0110000" when decimal_value = 1 else
+                    "1101101" when decimal_value = 2 else
+                    "1111001" when decimal_value = 3 else
+                    "0110011" when decimal_value = 4 else
+                    "1011011" when decimal_value = 5 else
+                    "1011111" when decimal_value = 6 else
+                    "1110000" when decimal_value = 7 else
+                    "1111111" when decimal_value = 8 else
+                    "1111011" when decimal_value = 9;
+    end process;
+	 
+end Behavioural;

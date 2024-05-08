@@ -1,0 +1,163 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/simulation/qsim
+T_opt
+!s110 1701258570
+VVh`=78b27jGoS@9k@Ro?z3
+04 22 15 work testedanet_vhd_vec_tst testedanet_arch 1
+=1-8c19bd643f75-65672549-3ba-1aa4
+!s124 OEM10U3 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+R1
+Ehard_block
+Z2 w1701277981
+Z3 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z4 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z5 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z8 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+!i122 21
+R1
+Z9 8testedanet.vho
+Z10 Ftestedanet.vho
+l0
+L35 1
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+Z11 OL;C;2021.2;73
+32
+Z12 !s110 1701277982
+!i10b 1
+Z13 !s108 1701277982.000000
+Z14 !s90 -work|work|testedanet.vho|
+Z15 !s107 testedanet.vho|
+!i113 0
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+!i122 21
+l65
+L51 20
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Etestedanet
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+!i122 21
+R1
+R9
+R10
+l0
+L78 1
+VG^omE=XQVY>5]DIX=GUHZ0
+!s100 oYdY7R@_MF=VCklX0XS>Z3
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Astructure
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 10 testedanet 0 22 G^omE=XQVY>5]DIX=GUHZ0
+!i122 21
+l134
+L100 165
+V4E1`fa7REP<`ma1K0@[h22
+!s100 maObUYY97T:8L`VWJ>16G1
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Etestedanet_vhd_vec_tst
+R2
+R6
+R7
+!i122 22
+R1
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L32 1
+VR18X0aM04Q<cCaP__ChGa0
+!s100 ZF2NEZX5oIPWZMFk[EJIL2
+R11
+32
+R12
+!i10b 1
+R13
+Z20 !s90 -work|work|Waveform.vwf.vht|
+!s107 Waveform.vwf.vht|
+!i113 0
+R16
+R17
+Atestedanet_arch
+R6
+R7
+Z21 DEx4 work 22 testedanet_vhd_vec_tst 0 22 R18X0aM04Q<cCaP__ChGa0
+!i122 22
+l55
+Z22 L34 648
+Z23 V2K_9FKz8i8o1QeGMHXFl@3
+Z24 !s100 >?ICBG2T0CIPV4BQbCJ841
+R11
+32
+R12
+!i10b 1
+R13
+R20
+Z25 !s107 Waveform.vwf.vht|
+!i113 0
+R16
+R17

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+            background-color: #DAA520; /* Cor para a parte superior (cabeçalho) */
+            padding: 15px;
+            text-align: center;
+            color: #000; /*Cor do texto no cabeçalho*/
+        }
+
+        body {
+            background-color: #ecf0f1; /* Cor para o restante da página */
+            margin:1pc; /*Tamanhho da margem*/
+            padding: 0;
+        }
+        #titulos {
+            color: #D2691E;
+        }
+
+    </style>
+    
+    <header>
+        <h1>
+        <img src="javasciptp.png" style="vertical-align: middle; margin-right: 1px; height: 100px;"> 
+        JavaScript!
+        </h1>
+        
+    </header>
+
+</head>
+    
+<body>
+    <h1 id="titulos">Exemplos de operações em JavaScript:</h1>
+    <script>
+        //Defenir variaveis
+        var numero1 = 12
+        var numero2 = 5
+        //Função da soma
+        
+        function soma(x,y) {
+            return x + y;
+        }
+        
+        //Função para a subtração
+
+        function subtração(x,y) {
+            return x - y;
+        }
+        //Função para a multiplicação
+
+        function multiplicação(x,y) {
+            return x * y;
+        }
+        //Função para a divisão
+
+        function divisão(x,y) { 
+            if (y != 0){
+                return x / y;
+            }
+            else{
+                return "Não é possivel dividir algum numero por 0 !"
+            }
+        }
+        
+        document.write("<p>Resultado da adição: " + soma(numero1, numero2) + "</p>");
+        document.write("<p>Resultado da subtração: " + subtração(numero1, numero2) + "</p>");
+        document.write("<p>Resultado da multiplicação: " + multiplicação(numero1, numero2) + "</p>");
+        document.write("<p>Resultado da divisão: " + divisão(numero1, numero2) + "</p>");
+    </script>
+
+<script> /*Para entrar no HTML*/
+    var palavra_correta = "Paulo"
+    var palavra_introduzida = prompt("Quem é a pessoa mais bonita que conheces?")
+    if (palavra_introduzida === palavra_correta) {
+        alert("Acertas-te! Bem vindo!")
+    }
+    else {
+        alert("Falhaste!")
+        window.close(); /*Se falhar a janela atual fecha*/
+    } 
+</script>
+
+    <script>
+        
+    </script>
+
+    <h1 id="titulos">Máquina de calcular:</h1>
+
+    <input id="op1" type="text" placeholder="Insira o valor de op1">
+    <span>+</span>
+    <input id="op2" type="text" placeholder="Insira o valor de op2">
+    <span>=</span>
+    <input id="res" value="" readonly>
+    <button onclick="calcularResultado()">Calcular</button>
+    <script src="dom.js"></script>
+</body>
+</html>
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html> 

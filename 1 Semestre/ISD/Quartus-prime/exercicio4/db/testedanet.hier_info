@@ -1,0 +1,10 @@
+|testedanet
+pin_name1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+E => inst2.IN0
+F => inst2.IN1
+C => inst.IN0
+D => inst.IN1
+A => inst5.IN0
+B => inst5.IN1
+
+
