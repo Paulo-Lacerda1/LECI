@@ -1,0 +1,164 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity ProjetoFinal is
+	port (KEY : in std_logic_vector(2 downto 0);
+			LEDG : out std_logic_vector(7 downto 0);
+			LEDR : out std_logic_vector(7 downto 0);
+			HEX0  : out std_logic_vector(6 downto 0);
+			HEX1  : out std_logic_vector(6 downto 0);
+			HEX2  : out std_logic_vector(6 downto 0);
+			HEX3  : out std_logic_vector(6 downto 0);
+			HEX4  : out std_logic_vector(6 downto 0);
+			HEX5  : out std_logic_vector(6 downto 0);
+			HEX6  : out std_logic_vector(6 downto 0);
+			HEX7  : out std_logic_vector(6 downto 0);
+			SW	  : in std_logic_vector(0 downto 0);
+			CLOCK_50 : in std_logic);
+end ProjetoFinal;
+
+architecture Behav of ProjetoFinal is
+	signal s_sw	  : std_logic;
+	signal s_key0 : std_logic;
+	signal s_key1 : std_logic;
+	signal s_key2 : std_logic;
+	signal s_clk  : std_logic;
+	signal s_d	  : std_logic_vector(15 downto 0);
+	signal d_on	  : integer;
+	signal stim	  : std_logic;
+	signal s_pulse: std_logic;
+	signal t_reac : std_logic_vector(15 downto 0);
+	signal s_cnten: std_logic;
+	signal s_cntre: std_logic;
+	signal s_regen: std_logic;
+	signal s_res  : std_logic_vector(15 downto 0);
+	signal s_min  : std_logic_vector(15 downto 0);
+	signal s_hex3 : std_logic_vector(6 downto 0);
+	signal s_hex2 : std_logic_vector(6 downto 0);
+	signal s_hex1 : std_logic_vector(6 downto 0);
+	signal s_hex0 : std_logic_vector(6 downto 0);
+	
+begin	
+		s_sw <= SW(0);
+		d_on <= to_integer(unsigned(s_d));
+		
+		--clkdiv
+		
+		clkdivider : entity work.ClkDividerN(Behavioral)
+				generic map(divFactor => 50000)
+				port map(clkIn	=> CLOCK_50,
+							clkOut => s_clk);
+							
+							
+		--debouncers
+		
+		key0debouncer : entity work.DebounceUnit(Behavioral)
+				generic map(kHzClkFreq		=> 1000,
+								mSecMinInWidth	=> 100,
+								inPolarity		=> '1',
+								outPolarity		=> '1')
+				port map(refClk		=> CLOCK_50,
+							dirtyIn		=>	not KEY(0),
+							pulsedOut	=> s_key0);
+		key1debouncer : entity work.DebounceUnit(Behavioral)
+				generic map(kHzClkFreq		=> 1000,
+								mSecMinInWidth	=> 100,
+								inPolarity		=> '1',
+								outPolarity		=> '1')
+				port map(refClk		=> CLOCK_50,
+							dirtyIn		=>	not KEY(1),
+							pulsedOut	=> s_key1);
+		key2debouncer : entity work.DebounceUnit(Behavioral)
+				generic map(kHzClkFreq		=> 1000,
+								mSecMinInWidth	=> 100,
+								inPolarity		=> '1',
+								outPolarity		=> '1')
+				port map(refClk		=> CLOCK_50,
+							dirtyIn		=>	not KEY(2),
+							pulsedOut	=> s_key2);
+		
+		
+		-------------------------------------------------
+
+
+		
+		freeruncnt : entity work.CounterUp4(Behavioral)
+				port map(clk		=> s_clk,
+							reset		=>	s_sw,
+							enable	=> '1',
+							count		=> s_d);
+		
+		timer : entity work.TimerOp(Behav)
+			port map(clk		=> s_clk,
+						N 			=> d_on,
+						reset 	=> s_sw,
+						enable	=> '1',
+						start 	=> s_key0,
+						timerOut => stim);
+						
+		pulsegen : entity work.PulseGeneratorN(Behavioral)
+				generic map(numberSteps	=> 1000000,
+								out0CompVal	=> 10000)
+				port map(clkIn		 => s_clk,
+							pulseOut0 => s_pulse);
+		
+		chronocounter : entity work.CntBCDUp4(Behavioral)
+				port map(reset		=> s_cntre,
+							clk		=> s_clk,
+							enable1	=> s_pulse,
+							enable2	=> s_cnten,
+							count		=> t_reac);
+		
+		chronocontrol : entity work.ControlUnit(Behavioral)
+				port map(reset		=> s_sw,
+							clk		=> s_clk,
+							start		=> stim,
+							stop		=> s_key0,
+							cntRst	=> s_cntre,
+							cntEnb	=> s_cnten,
+							regEnb	=> s_regen);
+		
+		chronoreg : entity work.RegN(Behavioral)
+				generic map(size	 => 16)
+				port map(asyncReset 	 => '0',
+							clk			 => s_clk,
+							enable		 => s_regen,
+							syncReset	 => s_sw,
+							dataIn		 => t_reac,
+							dataOut	 	 => s_res);
+							
+		dechex3 : entity work.Bin7SegDecoder(Behavioral)
+			port map(binInput => s_res(15 downto 12),
+						decOut_n	=> s_hex3);
+		dechex2 : entity work.Bin7SegDecoder(Behavioral)
+			port map(binInput => s_res(11 downto 8),
+						decOut_n	=> s_hex2);
+		dechex1 : entity work.Bin7SegDecoder(Behavioral)
+			port map(binInput => s_res(7 downto 4),
+						decOut_n	=> s_hex1);
+		dechex0 : entity work.Bin7SegDecoder(Behavioral)
+			port map(binInput => s_res(3 downto 0),
+						decOut_n	=> s_hex0);
+						
+		-- processes
+		
+		activation : process(s_clk)--trocar por processo de clock
+		begin
+			if(stim='1') then
+				LEDG <= (others => '1');
+			elsif(s_hex3/="1111111") and (s_hex2/="1111111") and (s_hex1/="1111111") and (s_hex0/="1111111") then
+				HEX3 <= s_hex3;
+				HEX2 <= s_hex2;
+				HEX1 <= s_hex1;
+				HEX0 <= s_hex0;
+				LEDG <= (others => '0');
+				stim <= '0';
+			else
+				HEX3 <= "1111111";
+				HEX2 <= "1111111";
+				HEX1 <= "1111111";
+				HEX0 <= "1111111";
+		end process;
+end Behav;
+		
