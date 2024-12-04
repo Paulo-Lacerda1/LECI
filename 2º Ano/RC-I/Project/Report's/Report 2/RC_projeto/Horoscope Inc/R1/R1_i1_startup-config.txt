@@ -1,0 +1,204 @@
+!
+
+!
+! Last configuration change at 22:57:49 UTC Fri Nov 29 2024
+upgrade fpd auto
+version 15.1
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+ip source-route
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+!
+ip dhcp excluded-address 172.20.22.14 172.20.22.32
+ip dhcp excluded-address 172.20.22.62 172.20.22.65
+ip dhcp excluded-address 172.20.22.126 172.20.22.129
+ip dhcp excluded-address 172.20.22.199 172.20.22.254
+!
+ip dhcp pool 14
+ network 172.20.22.32 255.255.255.224
+ default-router 172.20.22.62 
+ dns-server 203.20.20.33 
+!
+ip dhcp pool 16
+ network 172.20.22.64 255.255.255.192
+ default-router 172.20.22.126 
+ dns-server 203.20.20.33 
+!
+ip dhcp pool 18
+ network 172.20.22.128 255.255.255.192
+ default-router 172.20.22.190 
+ dns-server 203.20.20.33 
+!
+ip dhcp pool 20
+ network 172.20.22.0 255.255.255.240
+ default-router 172.20.22.14 
+ dns-server 203.20.20.33 
+!
+ip dhcp pool 22
+ network 172.20.23.0 255.255.255.0
+ default-router 172.20.23.254 
+ dns-server 203.20.20.33 
+!
+!
+no ip domain lookup
+ipv6 unicast-routing
+ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+crypto pki token default removal timeout 0
+!
+!
+!
+redundancy
+!
+!
+ip tcp synwait-time 5
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Ethernet0/0
+ no ip address
+ shutdown
+ duplex auto
+!
+interface GigabitEthernet0/0
+ ip address 192.168.101.172 255.255.255.0
+ ip nat outside
+ ip virtual-reassembly in
+ duplex full
+ speed 1000
+ media-type gbic
+ negotiation auto
+ ipv6 address 2002:5755::297/64
+!
+interface FastEthernet1/0
+ ip address 172.20.22.193 255.255.255.252
+ ip nat inside
+ ip virtual-reassembly in
+ duplex auto
+ speed auto
+ ipv6 address 2002:A202:BC02:EF01::1/126
+!
+interface FastEthernet1/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface FastEthernet2/0
+ no ip address
+ ip nat inside
+ ip virtual-reassembly in
+ duplex auto
+ speed auto
+!
+interface FastEthernet2/0.1
+ encapsulation dot1Q 24
+ ip address 203.20.20.34 255.255.255.252
+ ipv6 address 2002:A202:BC02:CD40::1/64
+ ipv6 enable
+!
+interface FastEthernet2/0.2
+ encapsulation dot1Q 14
+ ip address 172.20.22.62 255.255.255.224 secondary
+ ip address 203.20.20.126 255.255.255.224
+ ipv6 address 2002:A202:BC02:CD00::1/64
+!
+interface FastEthernet2/0.3
+ encapsulation dot1Q 16
+ ip address 172.20.22.126 255.255.255.192 secondary
+ ip address 203.20.20.94 255.255.255.224
+ ipv6 address 2002:A202:BC02:CD20::1/64
+!
+interface FastEthernet2/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+!
+!
+ip nat pool MYNATPOOL 203.20.20.41 203.20.20.46 netmask 255.255.255.248
+ip nat inside source list 2 pool MYNATPOOL overload
+ip route 0.0.0.0 0.0.0.0 172.20.22.194
+ip route 172.20.22.0 255.255.255.240 172.20.22.194
+ip route 172.20.22.128 255.255.255.192 172.20.22.194
+ip route 172.20.23.0 255.255.255.0 172.20.22.194
+ip route 192.168.101.0 255.255.255.0 192.168.101.11
+ip route 192.168.101.0 255.255.255.0 192.168.101.150
+ip route 203.20.20.0 255.255.255.240 172.20.22.194
+ip route 203.20.20.16 255.255.255.240 172.20.22.194
+ip route 203.20.20.48 255.255.255.240 172.20.22.194
+!
+access-list 2 deny   172.20.22.128 0.0.0.63
+access-list 2 permit 172.20.22.0 0.0.0.15
+access-list 2 permit 172.20.23.0 0.0.0.255
+access-list 2 permit 172.20.22.32 0.0.0.31
+access-list 2 permit 172.20.22.64 0.0.0.63
+no cdp log mismatch duplex
+ipv6 route 2002:A202:BC02:AB00::/64 2002:A202:BC02:EF01::2
+ipv6 route 2002:A202:BC02:AB30::/64 2002:A202:BC02:EF01::2
+ipv6 route 2002:A202:BC02:AB60::/64 2002:A202:BC02:EF01::2
+ipv6 route ::/0 2002:5755::1
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+mgcp profile default
+!
+!
+!
+gatekeeper
+ shutdown
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login
+ transport input all
+!
+end

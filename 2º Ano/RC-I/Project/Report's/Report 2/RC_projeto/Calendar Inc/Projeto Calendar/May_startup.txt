@@ -1,0 +1,2 @@
+set pcname May
+dhcp

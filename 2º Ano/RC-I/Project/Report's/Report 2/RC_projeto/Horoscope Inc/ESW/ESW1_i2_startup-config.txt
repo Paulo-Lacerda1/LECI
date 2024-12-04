@@ -1,0 +1,207 @@
+!
+
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname ESW1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+ip auth-proxy max-nodata-conns 3
+ip admission max-nodata-conns 3
+!
+ipv6 unicast-routing
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+vtp file nvram:vlan.dat
+
+!
+!
+ip tcp synwait-time 5
+! 
+!
+!
+!
+!
+interface FastEthernet0/0
+ description *** Unused for Layer2 EtherSwitch ***
+ ip address 172.20.22.194 255.255.255.252
+ duplex auto
+ speed auto
+ ipv6 address 2002:A202:BC02:EF01::2/126
+!
+interface FastEthernet0/1
+ description *** Unused for Layer2 EtherSwitch ***
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ duplex full
+ speed 100
+!
+interface FastEthernet1/1
+ duplex full
+ speed 100
+!
+interface FastEthernet1/2
+ duplex full
+ speed 100
+!
+interface FastEthernet1/3
+ duplex full
+ speed 100
+!
+interface FastEthernet1/4
+ duplex full
+ speed 100
+!
+interface FastEthernet1/5
+ duplex full
+ speed 100
+!
+interface FastEthernet1/6
+ duplex full
+ speed 100
+!
+interface FastEthernet1/7
+ duplex full
+ speed 100
+!
+interface FastEthernet1/8
+ duplex full
+ speed 100
+!
+interface FastEthernet1/9
+ duplex full
+ speed 100
+!
+interface FastEthernet1/10
+ duplex full
+ speed 100
+!
+interface FastEthernet1/11
+ duplex full
+ speed 100
+!
+interface FastEthernet1/12
+ duplex full
+ speed 100
+!
+interface FastEthernet1/13
+ switchport mode trunk
+ duplex full
+ speed 100
+!
+interface FastEthernet1/14
+ switchport access vlan 20
+ duplex full
+ speed 100
+!
+interface FastEthernet1/15
+ switchport access vlan 18
+ duplex full
+ speed 100
+!
+interface Vlan1
+ no ip address
+!
+interface Vlan18
+ ip address 203.20.20.30 255.255.255.240 secondary
+ ip address 172.20.22.190 255.255.255.192
+ ip helper-address 172.20.22.193
+ ipv6 address 2002:A202:BC02:AB00::1/64
+!
+interface Vlan20
+ ip address 203.20.20.14 255.255.255.240 secondary
+ ip address 172.20.22.14 255.255.255.240
+ ip helper-address 172.20.22.193
+ ipv6 address 2002:A202:BC02:AB30::1/64
+!
+interface Vlan22
+ ip address 203.20.20.62 255.255.255.240 secondary
+ ip address 172.20.23.1 255.255.255.0
+ ip helper-address 172.20.22.193
+ ipv6 address 2002:A202:BC02:AB60::1/64
+!
+ip forward-protocol nd
+ip route 0.0.0.0 0.0.0.0 172.20.22.193
+!
+!
+no ip http server
+no ip http secure-server
+!
+no cdp log mismatch duplex
+ipv6 route ::/0 2002:A202:BC02:EF01::1
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+banner exec 
+
+***************************************************************
+This is a normal Router with a SW module inside (NM-16ESW)
+It has been preconfigured with hard coded speed and duplex
+
+To create vlans use the command "vlan database" from exec mode
+After creating all desired vlans use "exit" to apply the config
+
+To view existing vlans use the command "show vlan-switch brief"
+
+Warning: You are using an old IOS image for this router.
+Please update the IOS to enable the "macro" command!
+***************************************************************
+
+
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ login
+!
+!
+end
