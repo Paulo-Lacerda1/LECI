@@ -1,2 +1,0 @@
-set pcname Scorpius
-ip 172.20.22.1 172.20.22.14 28

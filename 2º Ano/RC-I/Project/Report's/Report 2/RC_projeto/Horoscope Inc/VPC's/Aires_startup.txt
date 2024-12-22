@@ -1,2 +1,0 @@
-set pcname Aires
-dhcp

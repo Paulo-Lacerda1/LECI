@@ -1,2 +1,0 @@
-set pcname Aquarius
-ip 203.20.20.1 203.20.20.14 28

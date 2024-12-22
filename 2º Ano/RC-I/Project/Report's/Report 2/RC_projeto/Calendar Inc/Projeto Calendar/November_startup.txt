@@ -1,2 +1,0 @@
-set pcname November
-dhcp
