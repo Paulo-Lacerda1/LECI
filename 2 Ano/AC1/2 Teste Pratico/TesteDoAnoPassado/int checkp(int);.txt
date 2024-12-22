@@ -1,0 +1,28 @@
+int checkp(int);
+
+int treat(int array, int low, int high)
+{
+    int i, npr;
+    intp = array;
+
+    for (i = low + 1, npr = 0; i < high; i++) 
+    {
+        if (checkp(i) == 1) {
+            *array = i;
+            array++;
+            npr++;
+        }
+    }
+    *(p + npr) = npr;
+    return npr;
+}
+
+Copie para o topo da área de resposta e
+preencha com os registos usados
+Mapa de registos
+array:
+low  :
+high :
+i    :
+npr  :
+p    :

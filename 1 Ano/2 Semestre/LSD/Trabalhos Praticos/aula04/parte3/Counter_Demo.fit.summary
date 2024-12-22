@@ -1,0 +1,16 @@
+Fitter Status : Failed - Wed Mar 20 12:02:31 2024
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : Counter_Demo
+Top-level Entity Name : Counter_Demo
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 12 / 6,272 ( < 1 % )
+    Total combinational functions : 12 / 6,272 ( < 1 % )
+    Dedicated logic registers : 4 / 6,272 ( < 1 % )
+Total registers : 4
+Total pins : 10 / 92 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

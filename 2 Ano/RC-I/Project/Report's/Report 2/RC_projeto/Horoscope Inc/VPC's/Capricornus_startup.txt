@@ -1,0 +1,2 @@
+set pcname Capricornus
+ip 203.20.20.49 203.20.20.62 28

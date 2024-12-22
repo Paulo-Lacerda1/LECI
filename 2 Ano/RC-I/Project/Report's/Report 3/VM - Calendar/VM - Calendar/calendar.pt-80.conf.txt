@@ -1,0 +1,5 @@
+<VirtualHost *:80>
+	DocumentRoot /var/www/html/calendar.pt-80
+	ServerName calendar.pt
+	ServerAlias www.calendar.pt
+</VirtualHost>

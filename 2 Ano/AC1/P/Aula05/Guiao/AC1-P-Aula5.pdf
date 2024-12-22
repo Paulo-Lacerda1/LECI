@@ -1,0 +1,41 @@
+#Mapa de registos
+# p : $t0
+# *p : $t1
+# lista+SIZE : $t2
+
+	.data
+array:	.word 8,-4,3,5,124,-15,87,9,27,15
+str1:	.asciiz "\nConteudo do array: "
+str2:	.asciiz ";"
+	.eqv SIZE, 10
+	.eqv print_int10, 1
+	.eqv print_string, 8
+	.text
+	.globl main
+	
+main:	li $v0,print_string
+	la $a0,str1
+	syscall			#print_string(str1)
+
+	la $t0,array		#primeiro ponteiro 
+	li $t2,SIZE		#$t2 = 10
+	sll $t2,$t2,2		#$t2 = 10*4
+	addu $t2,$t2,$t0		#$t2 = lista + SIZE
+		
+while:  bgeu $t0,$t2,endw		#while(p<lista+SIZE) {
+	lw $t1,0($t0)		#$t1 = *p
+	
+	move $a0,$t1
+	li $v0,print_int10
+	syscall			#print_int10
+	
+	la $a0,str2
+	li $v0,print_string
+	syscall			#print_string(";")
+	
+	addiu $t0,$t0,4		#p++
+	j while			# }
+endw:
+	jr $ra
+	
+	

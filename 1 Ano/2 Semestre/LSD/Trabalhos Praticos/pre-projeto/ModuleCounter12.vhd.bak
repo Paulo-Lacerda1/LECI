@@ -1,0 +1,64 @@
+-- Module for a counter that counts modulo 12
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Modulo12Counter is
+    Port (
+        Clock : in STD_LOGIC;
+        Reset : in STD_LOGIC;
+        DisplayEnable : in STD_LOGIC;
+        LED : out STD_LOGIC_VECTOR(3 downto 0);
+        Segments : out STD_LOGIC_VECTOR(6 downto 0)
+    );
+end entity Modulo12Counter;
+
+architecture Behavioral of Modulo12Counter is
+    signal counter : integer range 0 to 11 := 0;
+    signal displayValue : integer range 0 to 11 := 0;
+    signal blinkCounter : integer range 0 to 1 := 0;
+begin
+    process(Clock, Reset)
+    begin
+        if Reset = '1' then
+            counter <= 0;
+        elsif rising_edge(Clock) then
+            if counter = 11 then
+                counter <= 0;
+            else
+                counter <= counter + 1;
+            end if;
+        end if;
+    end process;
+
+    process(counter, DisplayEnable)
+    begin
+        if DisplayEnable = '1' then
+            displayValue <= counter;
+        else
+            displayValue <= 0;
+        end if;
+    end process;
+
+    process(Clock)
+    begin
+        if rising_edge(Clock) then
+            blinkCounter <= (blinkCounter + 1) mod 2;
+        end if;
+    end process;
+
+    LED <= std_logic_vector(to_unsigned(counter, 4));
+    Segments <= "0000000"; -- Implement the logic for the 7-segment displays
+
+    -- Blink the LEDs 4 times per second
+    process
+    begin
+        wait for 125 ms; -- 125 ms = 4 times per second
+        if blinkCounter = 0 then
+            LED <= "0000";
+        else
+            LED <= std_logic_vector(to_unsigned(counter, 4));
+        end if;
+    end process;
+end architecture Behavioral;

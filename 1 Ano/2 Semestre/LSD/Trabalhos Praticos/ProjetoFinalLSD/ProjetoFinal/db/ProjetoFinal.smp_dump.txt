@@ -1,0 +1,9 @@
+
+State Machine - |ProjetoFinalTop|F4FSM:control|PS
+Name PS.Draw PS.Conc PS.PTest PS.PWait PS.Conf PS.Start 
+PS.Start 0 0 0 0 0 0 
+PS.Conf 0 0 0 0 1 1 
+PS.PWait 0 0 0 1 0 1 
+PS.PTest 0 0 1 0 0 1 
+PS.Conc 0 1 0 0 0 1 
+PS.Draw 1 0 0 0 0 1 

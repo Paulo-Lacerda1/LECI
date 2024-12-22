@@ -1,0 +1,2 @@
+set pcname Aires
+dhcp

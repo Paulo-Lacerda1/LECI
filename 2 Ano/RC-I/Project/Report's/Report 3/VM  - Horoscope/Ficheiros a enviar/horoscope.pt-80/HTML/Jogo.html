@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/router.png" type="image/png">
+    <title>Como Jogar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #057c7c;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        ul {
+            margin-top: 1rem;
+            padding-left: 2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #2c3e50;
+            color: white;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        .download-button {
+            background-color: #057c7c; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #58a3bf;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Como Jogar "Guess the number"</h1>
+    </header>
+    <main>
+        <!-- Explicacao do jogo -->
+        <div class="section">
+            <h1>O Jogo:</h1>
+            <p>"Guess the number" é um jogo que precisa de dois PC's. Um para o servidor onde vai gerar um número aleatório entre 0-1000 e outro para o cliente que vai tentar adivinhar esse número. O jogo acaba quando acertar em cheio no número!</p>
+        </div>
+
+        <!-- Explicacao do Cliente/Servidor -->
+        <div class="section">
+            <h1>Arquitetura Cliente/Servidor:</h1>
+            <ul>
+                <li>O <strong>Servidor</strong> gera um número aleatório dentro de um intervalo configurado (0-1000).</li>
+                <li>O <strong>Cliente</strong> é utilizado pelo jogador para enviar palpites ao servidor.</li>
+                <li>O Servidor responde com dicas, indicando se o jogador deve tentar um número maior ou menor.</li>
+                <li>O Servidor também regista o número de tentativas de cada jogador (identificado pelo seu IP).</li>
+                <li>Quando o jogador acerta, o servidor envia uma mensagem de vitória e pergunta se quer jogar de novo.</li>
+                <li>O registo das pontuações também é guardado num ficheiro <i>leaderboard.txt</i></li>
+            </ul>
+        </div>
+
+        <!-- Passo a passo para jogar -->
+        <div class="section">
+            <h1>Como Jogar?</h1>
+            <ol>
+                <li>Iniciar o servidor com o comando <code>sudo python3 server.py</code> (substituir a palavra <i>server</i> pelo nome do ficheiro do servidor)</li>
+                <li>Após o servidor inicar, para conectar ao servidor usa-se o comando <code>sudo python3 cliente.py</code></li>
+                <li>Depois da ligação estar estabelecida basta começar a jogar.</li>
+                <li>Para sair, no final do jogo basta não continuar ou fazer <code>CTRL + C</code></li>
+            </ol>
+        </div>
+        <!-- Servidor e cliente -->
+        <div class="section">
+            <h1>Servidor e cliente:</h1>
+                <p>Aqui podes ver um exemplo da comunicação entre o servidor e o cliente  ↷</p>
+            <img src="../imagens/clienteEservidor.png" alt="servidor_cliente" style="width: 1000px;">
+                <p>Se não tens o ficheiro necessário, clica no botão em baixo para transferir:</p>
+            <button class="download-button" onclick="location.href='../cliente.py'" download>Download do Ficheiro</button>
+        </div>
+
+        <!-- Botao de voltar-->
+        <div class="btn-container">
+            <a href="../index.html" class="btn">Voltar para a Página Inicial</a>
+        </div>
+    </main>
+</body>
+</html>

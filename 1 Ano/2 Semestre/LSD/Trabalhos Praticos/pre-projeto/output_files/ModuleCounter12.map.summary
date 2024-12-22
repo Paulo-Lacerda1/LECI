@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Apr 10 10:28:38 2024
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : ModuleCounter12
+Top-level Entity Name : ModuleCounter12
+Family : Cyclone IV E
+Total logic elements : 9
+    Total combinational functions : 9
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

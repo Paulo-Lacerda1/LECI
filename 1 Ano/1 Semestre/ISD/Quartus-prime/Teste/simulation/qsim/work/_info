@@ -1,0 +1,117 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/Teste/simulation/qsim
+T_opt
+!s110 1701710642
+V71Ocb08KfWU=2ic9_g34I1
+04 18 11 work teste1_vhd_vec_tst teste1_arch 1
+=1-8c19bd643f75-656e0b30-39d-475c
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+R1
+Eteste1
+Z2 w1701992083
+Z3 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z4 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z5 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z8 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+!i122 14
+R1
+Z9 8Teste1.vho
+Z10 FTeste1.vho
+l0
+L35 1
+VcK;V<e:cN>LhDgR1o8Uk03
+!s100 acKJ57Bo3SQ44QB31]3PV0
+Z11 OL;C;2021.2;73
+32
+Z12 !s110 1701992087
+!i10b 1
+Z13 !s108 1701992086.000000
+Z14 !s90 -work|work|Teste1.vho|
+Z15 !s107 Teste1.vho|
+!i113 0
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 6 teste1 0 22 cK;V<e:cN>LhDgR1o8Uk03
+!i122 14
+l88
+L50 256
+V6nQda9FBdanj9lGTEDP8C3
+!s100 ?oz6SoRJXViI0U8TmlD^z2
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Eteste1_vhd_vec_tst
+Z18 w1701992082
+R6
+R7
+!i122 15
+R1
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L32 1
+VMP@8_]LWP_2TMOF92oKiX0
+!s100 FIl9D2O8mHbih6Az<BPiJ3
+R11
+32
+R12
+!i10b 1
+Z21 !s108 1701992087.000000
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 0
+R16
+R17
+Ateste1_arch
+R6
+R7
+Z24 DEx4 work 18 teste1_vhd_vec_tst 0 22 MP@8_]LWP_2TMOF92oKiX0
+!i122 15
+l61
+Z25 L34 1211
+Z26 V1NjXjRcE4h5g6jFOHo]3H1
+Z27 !s100 3n8PFl0^kGIN;8oYHOgTc1
+R11
+32
+R12
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R16
+R17

@@ -1,0 +1,18 @@
+|EqCmpDemo
+x3 <= EqCmp4:inst.pin_name3
+x1 => EqCmp4:inst.pin_name1
+x2 => EqCmp4:inst.pin_name2
+
+
+|EqCmpDemo|EqCmp4:inst
+pin_name3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst3.IN0
+pin_name2 => inst2.IN0
+pin_name2 => inst1.IN0
+pin_name2 => inst.IN0
+pin_name1 => inst3.IN1
+pin_name1 => inst2.IN1
+pin_name1 => inst1.IN1
+pin_name1 => inst.IN1
+
+

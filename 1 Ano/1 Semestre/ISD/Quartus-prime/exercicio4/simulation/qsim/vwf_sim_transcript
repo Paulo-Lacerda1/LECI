@@ -1,0 +1,195 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/intelfpga_lite/22.1std/questa_fse/win64/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both Questa Intel FPGA Edition and ModelSim executables are available, Questa Intel FPGA Edition will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off testedanet -c testedanet --vector_source="C:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/testedanet.vwf" --testbench_file="C:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/simulation/qsim/Waveform.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Copyright (C) 2023  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Wed Nov 29 13:38:07 2023
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off testedanet -c testedanet --vector_source="C:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/testedanet.vwf" --testbench_file="C:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/simulation/qsim/Waveform.vwf.vht"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/simulation/qsim/" testedanet -c testedanet
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Copyright (C) 2023  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Wed Nov 29 13:38:09 2023
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/simulation/qsim/" testedanet -c testedanet
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file testedanet.vho in folder "C:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4642 megabytes
+    Info: Processing ended: Wed Nov 29 13:38:10 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/simulation/qsim/testedanet.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/intelfpga_lite/22.1std/questa_fse/win64//vsim -c -do testedanet.do
+
+Reading pref.tcl
+
+
+# 2021.2
+
+
+# do testedanet.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Errors: 0, Warnings: 1
+
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+
+# Start time: 13:38:12 on Nov 29,2023
+# vcom -work work testedanet.vho 
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+
+# -- Loading package std_logic_1164
+
+# -- Loading package VITAL_Timing
+
+# -- Loading package VITAL_Primitives
+
+# -- Loading package cycloneive_atom_pack
+
+# -- Loading package cycloneive_components
+
+# -- Compiling entity hard_block
+
+# -- Compiling architecture structure of hard_block
+
+# -- Compiling entity testedanet
+
+# -- Compiling architecture structure of testedanet
+
+# End time: 13:38:12 on Nov 29,2023, Elapsed time: 0:00:00
+
+# Errors: 0, Warnings: 0
+
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+
+# Start time: 13:38:12 on Nov 29,2023
+# vcom -work work Waveform.vwf.vht 
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+
+# -- Loading package std_logic_1164
+
+# -- Compiling entity testedanet_vhd_vec_tst
+
+# -- Compiling architecture testedanet_arch of testedanet_vhd_vec_tst
+
+# End time: 13:38:12 on Nov 29,2023, Elapsed time: 0:00:00
+
+# Errors: 0, Warnings: 0
+
+# vsim -voptargs=""+acc"" -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.testedanet_vhd_vec_tst 
+# Start time: 13:38:12 on Nov 29,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testedanet_vhd_vec_tst(testedanet_arch)#1
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.testedanet(structure)#1
+# Loading work.hard_block(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)#1
+# Loading cycloneive.cycloneive_io_ibuf(arch)#1
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#1
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)#2
+
+# after#34
+
+# End time: 13:38:13 on Nov 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/Waveform.vwf...
+
+Reading C:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/simulation/qsim/testedanet.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to C:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/testedanet/simulation/qsim/testedanet_20231129133814.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

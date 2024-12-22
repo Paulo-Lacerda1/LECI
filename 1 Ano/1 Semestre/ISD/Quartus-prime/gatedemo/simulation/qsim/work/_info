@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/paulo/OneDrive - Universidade de Aveiro/UA/ISD/Quartus-prime/gatedemo/simulation/qsim
+T_opt
+!s110 1701191312
+V33i_89XQXlE]nao5<Nc2U2
+04 20 13 work gatedemo_vhd_vec_tst gatedemo_arch 1
+=1-141333f89245-65661e90-ed-2924
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+R0
+Egatedemo
+Z1 w1701279075
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+!i122 8
+R0
+Z8 8GateDemo.vho
+Z9 FGateDemo.vho
+l0
+L35 1
+V6:U?ZROGz6g1ROnYQP7B_2
+!s100 QLX0Y20^9F^15`QETTWWK0
+Z10 OL;C;2021.2;73
+32
+Z11 !s110 1701279075
+!i10b 1
+Z12 !s108 1701279075.000000
+Z13 !s90 -work|work|GateDemo.vho|
+Z14 !s107 GateDemo.vho|
+!i113 0
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 gatedemo 0 22 6:U?ZROGz6g1ROnYQP7B_2
+!i122 8
+l61
+L43 74
+VX5bo<`]AF01Q59PaU@ZU02
+!s100 1Zj=BcJEmGBQHLaAHaVL22
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Egatedemo_vhd_vec_tst
+Z17 w1701191309
+R5
+R6
+!i122 9
+R0
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L32 1
+V6cP6Ym2gH5GlGLc>USo020
+!s100 XYFQ4nK6noeeQ6Oi7R@NC2
+R10
+32
+Z20 !s110 1701279076
+!i10b 1
+R12
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 0
+R15
+R16
+Agatedemo_arch
+R5
+R6
+Z23 DEx4 work 20 gatedemo_vhd_vec_tst 0 22 6cP6Ym2gH5GlGLc>USo020
+!i122 9
+l47
+Z24 L34 252
+Z25 Vz=fM;FJo_2XC^5GW_<::z3
+Z26 !s100 SAWgc^BYlQD_cBmD]QaPf0
+R10
+32
+R20
+!i10b 1
+R12
+R21
+R22
+!i113 0
+R15
+R16

@@ -1,0 +1,2 @@
+set pcname January
+ip 172.21.12.12 24

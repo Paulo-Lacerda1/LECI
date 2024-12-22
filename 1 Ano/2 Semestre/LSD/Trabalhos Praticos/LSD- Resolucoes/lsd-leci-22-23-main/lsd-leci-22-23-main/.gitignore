@@ -1,0 +1,17 @@
+# slides folder
+slides/
+
+# IDE files
+.vscode/
+.idea/
+
+# Compilation output folders
+**/db
+**/incremental_db
+**/output_files
+**/simulation
+
+# Compiled files
+*.qsf
+*.qws
+*.bak

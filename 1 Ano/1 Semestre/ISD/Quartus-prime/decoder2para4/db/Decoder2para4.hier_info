@@ -1,0 +1,17 @@
+|Decoder2para4
+x3 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+x1 => inst9.IN0
+x1 => inst3.IN0
+x1 => inst.IN0
+E => inst9.IN1
+E => inst3.IN1
+E => inst4.IN1
+E => inst5.IN1
+x2 => inst9.IN2
+x2 => inst1.IN0
+x2 => inst4.IN2
+x4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+x6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+

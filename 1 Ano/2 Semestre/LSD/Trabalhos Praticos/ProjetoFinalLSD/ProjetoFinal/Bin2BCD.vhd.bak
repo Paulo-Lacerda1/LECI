@@ -1,0 +1,18 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity Bin2BCD is
+	port(Databin 		 : in  std_logic_vector (3 downto 0);
+		  BCD_L,BCD_H   : out std_logic_vector(3 downto 0));
+end Bin2BCD;
+
+architecture Behavioral of Bin2BCD is
+	signal s_in : unsigned(3 downto 0);
+	
+begin
+	s_in <= unsigned(Databin);
+	BCD_L <= std_logic_vector (s_in rem to_unsigned(10,4));
+	BCD_H <= std_logic_vector (s_in / to_unsigned(10,4));
+	
+end Behavioral;

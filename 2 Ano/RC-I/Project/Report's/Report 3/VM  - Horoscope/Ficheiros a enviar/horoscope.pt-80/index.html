@@ -1,0 +1,44 @@
+  <!DOCTYPE html>
+  <html lang="pt">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="imagens/router.png" type="image/png">
+      <title>Horoscope</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet"
+      />
+      <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+      <button class="burger" onclick="toggleMenu()"></button>
+      <div class="menu">
+        <nav>
+          <a href="HTML/ComoTestar.html" style="animation-delay: 0.2s">Como testar?</a>
+          <a href="HTML/Jogo.html" style="animation-delay: 0.3s">Jogo "Guess the number"</a>
+          <a href="HTML/agradecimentos.html" style="animation-delay: 0.4s">Agradecimentos</a>
+        </nav>  
+      </div>
+      <!-- Titulo -->
+      <div class="center">
+        <h1 style="font-size: 6vw; margin-left: 10px;margin-top: -20px;">Horoscope Inc.</h1>
+      </div>
+      
+      <!-- Rodapé -->
+      <footer class="transparent-footer">
+        <p>Site desenvolvido por <a href="https://github.com/Paulo-Lacerda1" target="_blank" class="link-no-color">Paulo Lacerda</a></p>
+      </footer>
+
+      <script type="text/javascript">
+        const toggleMenu = () => document.body.classList.toggle("open");
+      </script>
+    </body>
+  </html>

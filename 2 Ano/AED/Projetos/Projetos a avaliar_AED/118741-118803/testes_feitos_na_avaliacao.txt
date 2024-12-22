@@ -1,0 +1,243 @@
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)#
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)#
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)#
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)# ll
+total 0
+drwxrwxrwx 1 root root 4096 Dec  8 18:42 ./
+drwxrwxrwx 1 root root 4096 Dec  8 18:42 ../
+drwxrwxrwx 1 root root 4096 Dec  8 18:42 trabalho-1-118741-118803-master/
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)# cd trabalho-1-118741-118803-master/
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ll
+total 156
+drwxrwxrwx 1 root root  4096 Dec  8 18:42 ./
+drwxrwxrwx 1 root root  4096 Dec  8 18:42 ../
+-rwxrwxrwx 1 root root   733 Dec  8 18:41 .gitattributes*
+drwxrwxrwx 1 root root  4096 Dec  8 18:42 .github/
+-rwxrwxrwx 1 root root   568 Dec  8 18:41 .gitignore*
+-rwxrwxrwx 1 root root  1066 Dec  8 18:41 LICENSE*
+-rwxrwxrwx 1 root root  3103 Dec  8 18:41 Makefile*
+-rwxrwxrwx 1 root root  2387 Dec  8 18:41 README.md*
+-rwxrwxrwx 1 root root 33773 Dec  8 18:41 imageBW.c*
+-rwxrwxrwx 1 root root  5321 Dec  8 18:41 imageBW.h*
+-rwxrwxrwx 1 root root  2562 Dec  8 18:41 imageBWTest.c*
+-rwxrwxrwx 1 root root  8833 Dec  8 18:41 imageBWTool.c*
+-rwxrwxrwx 1 root root  1174 Dec  8 18:41 imageDiff.py*
+-rwxrwxrwx 1 root root  3803 Dec  8 18:41 instrumentation.c*
+-rwxrwxrwx 1 root root  1557 Dec  8 18:41 instrumentation.h*
+drwxrwxrwx 1 root root  4096 Dec  8 18:42 pbmt/
+-rwxrwxrwx 1 root root 55072 Dec  8 18:41 testes*
+-rwxrwxrwx 1 root root  4176 Dec  8 18:41 testes.c*
+drwxrwxrwx 1 root root  4096 Dec  8 09:44 testpares/
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool chess 8,8,2,0 raw rle save chess8820.pbm
+-bash: ./imageBWTool: No such file or directory
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# imageBWTool chess 8,8,2,0 raw rle save chess8820.pbm
+imageBWTool: command not found
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool chess 8,8,2,0 raw rle save chess8820.pbm
+-bash: ./imageBWTool: No such file or directory
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# make
+cc -Wall -Wextra -O2 -g   -c -o imageBWTest.o imageBWTest.c
+cc -Wall -Wextra -O2 -g   -c -o imageBW.o imageBW.c
+cc -Wall -Wextra -O2 -g   -c -o instrumentation.o instrumentation.c
+cc   imageBWTest.o imageBW.o instrumentation.o   -o imageBWTest
+cc -Wall -Wextra -O2 -g   -c -o imageBWTool.o imageBWTool.c
+cc   imageBWTool.o imageBW.o instrumentation.o   -o imageBWTool
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool chess 8,8,2,0 raw rle save chess8820.pbm
+# export INSTRCTU=0.732  # (To bypass calibration)
+ImageCreateChessBoard(8, 8, 2, 0) -> I0
+Img(8, 8, 2) Número Runs [4] | Tamanho Linha RLE [6] | Total pixels: [64] | Total quadrados [16] | Memória Ocupada (Bytes): 272 | Memória Ocupada (bits): 2176 |
+ImageRAWPrint(I0)
+width = 8 height = 8
+RAW image:
+00110011
+00110011
+11001100
+11001100
+00110011
+00110011
+11001100
+11001100
+
+ImageRLEPrint(I0)
+width = 8 height = 8
+RLE encoding:
+0 2 2 2 2 -1
+0 2 2 2 2 -1
+1 2 2 2 2 -1
+1 2 2 2 2 -1
+0 2 2 2 2 -1
+0 2 2 2 2 -1
+1 2 2 2 2 -1
+1 2 2 2 2 -1
+
+ImageSave(I0, "chess8820.pbm")
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# python3 imageDiff.py chess8820.pbm testpares/chess8820.pbm
+      64 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# python3 imageDiff.py chess8820.pbm testpares/chess8820.pbm
+      64 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# /imageBWTool testpares/washington.pbm testpares/washington1.pbm equal
+-bash: /imageBWTool: No such file or directory
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# /imageBWTool testpares/washington.pbm testpares/washington1.pbm equal
+-bash: /imageBWTool: No such file or directory
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool testpares/washington.pbm testpares/washington1.pbm equal
+# export INSTRCTU=0.643  # (To bypass calibration)
+ImageLoad("testpares/washington.pbm") -> I0
+ImageLoad("testpares/washington1.pbm") -> I1
+ImageIsEqual(I0, I1) -> 1
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool testpares/washington.pbm testpares/seahorse.pbm equal
+# export INSTRCTU=0.643  # (To bypass calibration)
+ImageLoad("testpares/washington.pbm") -> I0
+ImageLoad("testpares/seahorse.pbm") -> I1
+ImageIsEqual(I0, I1) -> 0
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool testpares/chess30540050.pbm testpares/washington.pbm and save andtestwashington.pbm
+# export INSTRCTU=0.638  # (To bypass calibration)
+ImageLoad("testpares/chess30540050.pbm") -> I0
+ImageLoad("testpares/washington.pbm") -> I1
+ImageAND(I0, I1) -> I2
+Dimension: 305x400, Time to Execute: 0.10900 | PIXMEM: 113644
+ImageSave(I2, "andtestwashington.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool testpares/chess30540050.pbm testpares/washington.pbm and save andtestwashington.pbm
+
+# export INSTRCTU=0.643  # (To bypass calibration)
+ImageLoad("testpares/chess30540050.pbm") -> I0
+ImageLoad("testpares/washington.pbm") -> I1
+ImageAND(I0, I1) -> I2
+Dimension: 305x400, Time to Execute: 0.11800 | PIXMEM: 113644
+ImageSave(I2, "andtestwashington.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master#
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool testpares/chess30540050.pbm testpares/washington.pbm and save andtestwashington.pbm
+# export INSTRCTU=0.746  # (To bypass calibration)
+ImageLoad("testpares/chess30540050.pbm") -> I0
+ImageLoad("testpares/washington.pbm") -> I1
+ImageAND(I0, I1) -> I2
+Dimension: 305x400, Time to Execute: 0.10100 | PIXMEM: 113644
+ImageSave(I2, "andtestwashington.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# python3 imageDiff.py ./testpares/andtestwashington.pbm andtestwashington.pbm
+  122000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool testpares/chess30540050.pbm testpares/washington.pbm or save ortestwashington.pbm
+# export INSTRCTU=0.630  # (To bypass calibration)
+ImageLoad("testpares/chess30540050.pbm") -> I0
+ImageLoad("testpares/washington.pbm") -> I1
+ImageOR(I0, I1) -> I2
+ImageSave(I2, "ortestwashington.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# python3 imageDiff.py ./testpares/ortestwashington.pbm ortestwashington.pbm
+  122000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool testpares/chess30540050.pbm testpares/washington.pbm xor save xortestwashington.pbm
+# export INSTRCTU=0.650  # (To bypass calibration)
+ImageLoad("testpares/chess30540050.pbm") -> I0
+ImageLoad("testpares/washington.pbm") -> I1
+ImageXOR(I0, I1) -> I2
+ImageSave(I2, "xortestwashington.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# python3 imageDiff.py ./testpares/xortestwashington.pbm xortestwashington.pbm
+  122000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool ./testpares/washington.pbm hmirror save hmirrorwashington.pbm
+# export INSTRCTU=0.650  # (To bypass calibration)
+ImageLoad("./testpares/washington.pbm") -> I0
+ImageHorizontalMirror(I0) -> I1
+ImageSave(I1, "hmirrorwashington.pbm")
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# python3 imageDiff.py ./testpares/hmirrortest.pbm ./hmirrorwashington.pbm
+  122000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool ./testpares/washington.pbm vmirror save vmirrorwashington.pbm
+# export INSTRCTU=0.636  # (To bypass calibration)
+ImageLoad("./testpares/washington.pbm") -> I0
+ImageVerticalMirror(I0) -> I1
+ImageSave(I1, "vmirrorwashington.pbm")
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# python3 imageDiff.py ./testpares/vmirrortest.pbm ./vmirrorwashington.pbm
+  122000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool ./testpares/washington.pbm ./testpares/washington.pbm repb save doublewashington.pbm
+# export INSTRCTU=0.632  # (To bypass calibration)
+ImageLoad("./testpares/washington.pbm") -> I0
+ImageLoad("./testpares/washington.pbm") -> I1
+ImageReplicateAtBottom(I0, I1) -> I2
+ImageSave(I2, "doublewashington.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# python3 imageDiff.py ./testpares/repbtest.pbm ./doublewashington.pbm
+  244000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# ./imageBWTool ./testpares/washington.pbm ./testpares/washington.pbm repr save replicateright.pbm
+# export INSTRCTU=0.642  # (To bypass calibration)
+ImageLoad("./testpares/washington.pbm") -> I0
+ImageLoad("./testpares/washington.pbm") -> I1
+ImageReplicateAtRight(I0, I1) -> I2
+ImageSave(I2, "replicateright.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# python3 imageDiff.py ./testpares/reprtest.pbm ./replicateright.pbm
+  244000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master# valgrind ./imageBWTool chess 8,8,2,1 chess 8,8,1,0 repr  chess 10,10,2,1 chess 10,10,5,0 and or xor neg vmirror hmirror repb
+==3584== Memcheck, a memory error detector
+==3584== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==3584== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==3584== Command: ./imageBWTool chess 8,8,2,1 chess 8,8,1,0 repr chess 10,10,2,1 chess 10,10,5,0 and or xor neg vmirror hmirror repb
+==3584==
+# export INSTRCTU=14.745  # (To bypass calibration)
+ImageCreateChessBoard(8, 8, 2, 1) -> I0
+Img(8, 8, 2) Número Runs [4] | Tamanho Linha RLE [6] | Total pixels: [64] | Total quadrados [16] | Memória Ocupada (Bytes): 272 | Memória Ocupada (bits): 2176 |
+ImageCreateChessBoard(8, 8, 1, 0) -> I1
+Img(8, 8, 1) Número Runs [8] | Tamanho Linha RLE [10] | Total pixels: [64] | Total quadrados [64] | Memória Ocupada (Bytes): 400 | Memória Ocupada (bits): 3200 |
+ImageReplicateAtRight(I0, I1) -> I2
+ImageCreateChessBoard(10, 10, 2, 1) -> I3
+Img(10, 10, 2) Número Runs [5] | Tamanho Linha RLE [7] | Total pixels: [100] | Total quadrados [25] | Memória Ocupada (Bytes): 376 | Memória Ocupada (bits): 3008 |
+ImageCreateChessBoard(10, 10, 5, 0) -> I4
+Img(10, 10, 5) Número Runs [2] | Tamanho Linha RLE [4] | Total pixels: [100] | Total quadrados [4] | Memória Ocupada (Bytes): 256 | Memória Ocupada (bits):2048 |
+ImageAND(I3, I4) -> I5
+Dimension: 10x10, Time to Execute: 2.68300 | PIXMEM: 362
+ImageOR(I4, I5) -> I6
+ImageXOR(I5, I6) -> I7
+ImageNEG(I7) -> I8
+ImageVerticalMirror(I8) -> I9
+ImageDestroy(I9)
+ImageDestroy(I8)
+ImageDestroy(I7)
+ImageDestroy(I6)
+ImageDestroy(I5)
+ImageDestroy(I4)
+ImageDestroy(I3)
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+Insufficient space in buffer
+==3584==
+==3584== HEAP SUMMARY:
+==3584==     in use at exit: 0 bytes in 0 blocks
+==3584==   total heap usage: 229 allocs, 229 frees, 5,748 bytes allocated
+==3584==
+==3584== All heap blocks were freed -- no leaks are possible
+==3584==
+==3584== For lists of detected and suppressed errors, rerun with: -s
+==3584== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/118741-118803/trabalho-1-118741-118803-master (1)/trabalho-1-118741-118803-master#

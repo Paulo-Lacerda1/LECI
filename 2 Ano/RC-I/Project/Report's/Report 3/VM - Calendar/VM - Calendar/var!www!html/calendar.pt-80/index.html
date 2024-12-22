@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Calendar Inc - Servidores e Jogo</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        color: #333;
+        margin: 20px;
+    }
+    header {
+        background: #333;
+        color: #fff;
+        padding: 10px 20px;
+    }
+    header h1 {
+        margin: 0;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background: #fff;
+    }
+    th, td {
+        text-align: left;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    th {
+        background: #eee;
+    }
+    section {
+        margin: 20px 0;
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    .btn {
+        display: inline-block;
+        background: #333;
+        color: #fff;
+        padding: 10px 15px;
+        text-decoration: none;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background: #555;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Calendar Inc - Servidores e Jogo</h1>
+    </header>
+
+    <section>
+        <h2>Servidores da Calendar Inc</h2>
+        <p>Esta é a lista de hosts do domínio <strong>calendar.pt</strong>, com seus IPs:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Host</th>
+                    <th>Endereço IP</th>
+                    <th>Domínio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>172.21.12.9</td>
+                    <td>January.calendar.pt</td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>203.157.191.226</td>
+                    <td>March.calendar.pt</td>
+                </tr>
+                <tr>
+                    <td>April</td>
+                    <td>172.21.13.9</td>
+                    <td>April.calendar.pt</td>
+                </tr>
+                <tr>
+                    <td>June</td>
+                    <td>203.157.191.194</td>
+                    <td>June.calendar.pt</td>
+                </tr>
+                <tr>
+                    <td>Jully</td>
+                    <td>172.21.13.130</td>
+                    <td>Jully.calendar.pt</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>203.157.191.130</td>
+                    <td>September.calendar.pt</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>172.21.13.194</td>
+                    <td>October.calendar.pt</td>
+                </tr>
+                <tr>
+                    <td>December</td>
+                    <td>203.157.191.242</td>
+                    <td>December.calendar.pt</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Como Jogar o Jogo "Guess the Number" (Cliente)</h2>
+        <p>O jogo "Guess the Number" é um jogo em que o cliente tenta adivinhar um número gerado pelo servidor.</p>
+        <ol>
+            <li>Assegure-se de que o servidor do jogo está em execução.</li>
+            <li>Tenha o IP e a porta do servidor de jogo. Ex: <code>203.157.191.250:5005</code></li>
+            <li>Utilize o cliente para ligar ao servidor:
+                <ul>
+                    <li><strong>Python:</strong> <code>python3 client.py</code></li>
+                </ul>
+            </li>
+            <li>Introduza o seu palpite e siga as instruções do servidor.</li>
+        </ol>
+        <p>Caso não tenha o cliente, pode descarregá-lo aqui:</p>
+        <button class="btn" onclick="downloadClient()">Descarregar Cliente</button>
+        <a id="downloadLink" href="client.py" download="client.py" style="display:none;">Download</a>
+    </section>
+
+
+    <script>
+
+        function downloadClient() {
+            const confirmDownload = confirm("Deseja descarregar o cliente (client.py)?");
+            if (confirmDownload) {
+                document.getElementById('downloadLink').click();
+            }
+        }
+    </script>
+
+</body>
+</html>

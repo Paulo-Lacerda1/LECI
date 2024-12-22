@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/router.png" type="image/png">
+    <title>Como Testar os Pings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Como testar os Pings entre PCs ?</h1>
+    </header>
+    <main>                      
+        <div class="section">       <!-- O QUE É UM PING-->
+            <h2>O que é um ping?</h2>
+            <p>O comando <strong>ping</strong> é usado para testar a ligação entre dois dispositivos numa rede. Existem diferentes tipos de pacotes que circulam na rede (ARP,ICMP,TCP,UDP...).</p>
+        </div>
+        
+        <div class="section">
+            <h2>Como usar o comando Ping ?</h2>
+            <ol>
+                <li>Abre a <strong>Consola</strong> de um VPC</li>
+                <li>Escreve o comando: <code>ping [endereço IP ou nome do host]</code>.</li>
+                <li>Clica <strong>Enter</strong> para executar o comando.</li>
+                <li>Verifica o sucesso do ping, caso contrário envia mensagem privada para o <i>Discord</i> de um professor da cadeira ;) </li>
+            </ol>
+            <h3>Ping através do nome:</h3>
+            <p>São os mesmos passos de um ping normal, só muda o comando:</p>
+            <code>ping NOMEdoPC.horoscope.pt</code>
+        </div>
+
+        <div class="section">       <!--LISTA DOS IPS PUBLICOS-->
+            <h2>Lista de IPs:</h2>
+            <p>Em baixo tens uma lista de todos os nomes dos PC's públicos da empresa <strong>Horoscope Inc.</strong> Tenta comunicar com qualquer um! ↷</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Endereço IPv4 Público</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Taurus</td>
+                        <td>203.20.20.97</td>
+                    </tr>
+                    <tr>
+                        <td>Leo</td>
+                        <td>203.20.20.65</td>
+                    </tr>
+                    <tr>
+                        <td>Capricornus</td>
+                        <td>203.20.20.49</td>
+                    </tr>
+                    <tr>
+                        <td>Aquarius</td>
+                        <td>203.20.20.1</td>
+                    </tr>
+                    <tr>
+                        <td>Pisces</td>
+                        <td>203.20.20.17</td>
+                    </tr>
+                    <tr>
+                        <td>Horoscope <strong>(VM)</strong></td>
+                        <td>203.20.20.33</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section">       <!--LISTA DOS IPS PRIVADOS-->
+            <p>Dentro da empresa também existem PC's com enderecos privados (IPv4 Private) ↷</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Endereço IPv4 Privado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gemini</td>
+                        <td>172.20.22.65</td>
+                    </tr>
+                    <tr>
+                        <td>Virgo</td>
+                        <td>172.20.22.129</td>
+                    </tr>
+                    <tr>
+                        <td>Scorpius</td>
+                        <td>172.20.22.1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Os restantes recebem o seu endereco através de <strong>DHCP</strong> (Dynamic Host Configuration Protocol)</p>
+        </div>
+        <div class="section">       <!--ESQUEMA DA REDE-->
+            <h2>Esquema da rede:</h2>
+            <p>Aqui podes ver o esquema da empresa e perceber as rotas que os pacotes percorrem.</p>
+            <p>Tudo isto é possível devido ao <strong>Router</strong> e ao <strong>ESW</strong> (Ethernet Switch):</p>
+            <br>
+            <div style="display: flex; align-items: flex-start;">
+                <!-- Imagens do Router e ESW -->
+                <div class="images-left" style="display: flex; flex-direction: column; margin-right: 20px; text-align: center;">
+                    <div style="margin-bottom: 20px;">
+                        <img src="../imagens/router.png" alt="Router" style="width: 50px;">
+                        <p style="margin-top: 6px; font-size: 0.9em;">Router (R1)</p>
+                    </div>
+                    <div>
+                        <img src="../imagens/esw.png" alt="ESW" style="width: 100px;">
+                        <p style="margin-top: 1px; font-size: 0.9em;">Ethernet Switch (ESW1)</p>
+                    </div>
+                </div>
+                <!-- Esquema Principal -->
+                <img src="../imagens/esquema_projeto.png" alt="Esquema do projeto" style="width:100%; max-width:600px; display:block; margin-top: 0; margin-left: 40px;">
+            </div>
+        </div>
+        
+        <!-- Botao de voltar-->
+        <div class="btn-container">
+            <a href="../index.html" class="btn">Voltar para a Página Inicial</a>
+        </div>
+    </main>
+</body>
+</html>
