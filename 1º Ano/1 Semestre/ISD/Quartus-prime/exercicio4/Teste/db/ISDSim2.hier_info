@@ -1,7 +1,0 @@
-|ISDSim2
-Q <= <GND>
-X => ~NO_FANOUT~
-RESET_L => ~NO_FANOUT~
-CLOCK => ~NO_FANOUT~
-
-
