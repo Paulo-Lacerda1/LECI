@@ -1,0 +1,261 @@
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# ll
+total 5580
+drwxrwxrwx 1 root root    4096 Dec  8 18:56 ./
+drwxrwxrwx 1 root root    4096 Dec  8 18:56 ../
+-rwxrwxrwx 1 root root     763 Nov 27 23:26 .gitattributes*
+-rwxrwxrwx 1 root root    1107 Nov 27 23:28 .gitignore*
+-rwxrwxrwx 1 root root    1087 Nov 27 23:28 LICENSE*
+-rwxrwxrwx 1 root root    3221 Dec  1 21:16 Makefile*
+-rwxrwxrwx 1 root root    2387 Nov 28 00:12 README.md*
+-rwxrwxrwx 1 root root 4680141 Dec  2 02:28 chess_memory_count.txt*
+-rwxrwxrwx 1 root root  182966 Dec  2 03:03 chess_memory_count_simple.txt*
+-rwxrwxrwx 1 root root  300477 Dec  4 23:38 chess_memory_count_simple.xlsx*
+-rwxrwxrwx 1 root root      15 Dec  2 23:58 image7.pbm*
+-rwxrwxrwx 1 root root      24 Dec  2 23:58 image8.pbm*
+-rwxrwxrwx 1 root root   40346 Dec  4 23:23 imageBW.c*
+-rwxrwxrwx 1 root root   10659 Dec  4 23:38 imageBW.h*
+-rwxrwxrwx 1 root root   93704 Dec  4 23:23 imageBW.o*
+-rwxrwxrwx 1 root root   77968 Dec  4 23:23 imageBWTest*
+-rwxrwxrwx 1 root root    3568 Dec  3 00:00 imageBWTest.c*
+-rwxrwxrwx 1 root root   21112 Dec  3 00:44 imageBWTest.o*
+-rwxrwxrwx 1 root root   85824 Dec  4 23:23 imageBWTool*
+-rwxrwxrwx 1 root root    8831 Dec  1 15:09 imageBWTool.c*
+-rwxrwxrwx 1 root root   34680 Dec  2 23:37 imageBWTool.o*
+-rwxrwxrwx 1 root root    1172 Dec  1 02:39 imageDiff.py*
+-rwxrwxrwx 1 root root    3941 Dec  4 23:38 instrumentation.c*
+-rwxrwxrwx 1 root root    1653 Dec  4 23:38 instrumentation.h*
+-rwxrwxrwx 1 root root   16200 Nov 29 00:04 instrumentation.o*
+-rwxrwxrwx 1 root root   16174 Dec  4 23:38 mem_count_new.txt*
+-rwxrwxrwx 1 root root   73696 Dec  4 23:31 memory_count*
+-rwxrwxrwx 1 root root    1582 Dec  4 23:38 memory_count.c*
+-rwxrwxrwx 1 root root    7088 Dec  4 23:31 memory_count.o*
+drwxrwxrwx 1 root root    4096 Dec  8 18:56 pbm/
+drwxrwxrwx 1 root root    4096 Dec  8 18:56 pbm_res/
+drwxrwxrwx 1 root root    4096 Dec  8 18:56 pbmt/
+drwxrwxrwx 1 root root    4096 Dec  8 09:29 testpares/
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# ./imageBWTool chess 8,8,2,0 raw rle save chess8820.pbm
+# export INSTRCTU=0.631  # (To bypass calibration)
+ImageCreateChessBoard(8, 8, 2, 0) -> I0
+ImageRAWPrint(I0)
+width = 8 height = 8
+ RAW image
+00110011
+00110011
+11001100
+11001100
+00110011
+00110011
+11001100
+11001100
+
+ImageRLEPrint(I0)
+width = 8 height = 8
+ RLE encoding
+0 2 2 2 2 -1
+0 2 2 2 2 -1
+1 2 2 2 2 -1
+1 2 2 2 2 -1
+0 2 2 2 2 -1
+0 2 2 2 2 -1
+1 2 2 2 2 -1
+1 2 2 2 2 -1
+
+ImageSave(I0, "chess8820.pbm")
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py chess8820.pbm testpares/chess8820.pbm
+Traceback (most recent call last):
+  File "/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/imageDiff.py", line 43, in <module>
+    exit(main(sys.argv))
+  File "/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/imageDiff.py", line 23, in main
+    with Image.open(args[1]) as img1, Image.open(args[2]) as img2:
+  File "/usr/local/lib/python3.10/dist-packages/PIL/Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/testpares/chess8820.pbm'
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py cpython3 imageDiff.py chess8820.pbm testpares/chess8820.pbmhess8820.pbm testpares/chess8820.pbm
+python3 imageDiff.py img1.pgm img2.pgm
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py chess8820.pbm testpares/chess8820.pbm
+Traceback (most recent call last):
+  File "/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/imageDiff.py", line 43, in <module>
+    exit(main(sys.argv))
+  File "/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/imageDiff.py", line 23, in main
+    with Image.open(args[1]) as img1, Image.open(args[2]) as img2:
+  File "/usr/local/lib/python3.10/dist-packages/PIL/Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/testpares/chess8820.pbm'
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py /testpares chess88
+20.pbm testpares/chess8820.pbm
+python3 imageDiff.py img1.pgm img2.pgm
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py /testpares chess8820.pbm testpares/chess8820.pbm
+python3 imageDiff.py img1.pgm img2.pgm
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py chess8820.pbm testpares/chess8820.pbm
+Traceback (most recent call last):
+  File "/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/imageDiff.py", line 43, in <module>
+    exit(main(sys.argv))
+  File "/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/imageDiff.py", line 23, in main
+    with Image.open(args[1]) as img1, Image.open(args[2]) as img2:
+  File "/usr/local/lib/python3.10/dist-packages/PIL/Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/testpares/chess8820.pbm'
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py /testpares chess8820.pbm testpares/chess8820.pbm
+python3 imageDiff.py img1.pgm img2.pgm
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py chess8820.pbm testpares/chess8820.pbm
+Traceback (most recent call last):
+  File "/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/imageDiff.py", line 43, in <module>
+    exit(main(sys.argv))
+  File "/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/imageDiff.py", line 23, in main
+    with Image.open(args[1]) as img1, Image.open(args[2]) as img2:
+  File "/usr/local/lib/python3.10/dist-packages/PIL/Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/testpares/chess8820.pbm'
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py chess8820.pbm testpares/chess8820.pbm
+Traceback (most recent call last):
+  File "/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/imageDiff.py", line 43, in <module>
+    exit(main(sys.argv))
+  File "/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/imageDiff.py", line 23, in main
+    with Image.open(args[1]) as img1, Image.open(args[2]) as img2:
+  File "/usr/local/lib/python3.10/dist-packages/PIL/Image.py", line 3469, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)/testpares/chess8820.pbm'
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py chess8820.pbm testpares/chess8820.pbm
+      64 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# ./imageBWTool testpares/washington.pbmtestpares/washington1.pbm equal
+# export INSTRCTU=0.639  # (To bypass calibration)
+ImageLoad("testpares/washington.pbm") -> I0
+ImageLoad("testpares/washington1.pbm") -> I1
+ImageIsEqual(I0, I1) -> 1
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# ./imageBWTool testpares/washington.pbmtestpares/seahorse.pbm equal
+# export INSTRCTU=0.628  # (To bypass calibration)
+ImageLoad("testpares/washington.pbm") -> I0
+ImageLoad("testpares/seahorse.pbm") -> I1
+ImageIsEqual(I0, I1) -> 0
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# ./imageBWTool testpares/chess30540050.pbm testpares/washington.pbm and save andtestwashington.pbm
+# export INSTRCTU=0.638  # (To bypass calibration)
+ImageLoad("testpares/chess30540050.pbm") -> I0
+ImageLoad("testpares/washington.pbm") -> I1
+ImageAND(I0, I1) -> I2
+#          time         caltime pixel_array_acc Num_steps_Uncom   Num_steps_AND Num_steps_Compr     Total_steps          Height           Width
+       0.000790        0.001239         1096400          244000          122000          243200         1603066             400             305
+ImageSave(I2, "andtestwashington.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py ./testpares/andtestwashington.pbm andtestwashington.pbm
+  122000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# ./imageBWTool testpares/chess30540050.pbm testpares/washington.pbm or save ortestwashington.pbm
+# export INSTRCTU=0.645  # (To bypass calibration)
+ImageLoad("testpares/chess30540050.pbm") -> I0
+ImageLoad("testpares/washington.pbm") -> I1
+ImageOR(I0, I1) -> I2
+ImageSave(I2, "ortestwashington.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py ./testpares/ortestwashington.pbm ortestwashington.pbm
+
+  122000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)#
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# ./imageBWTool testpares/chess30540050.pbm testpares/washington.pbm xor save xortestwashington.pbm
+# export INSTRCTU=0.638  # (To bypass calibration)
+ImageLoad("testpares/chess30540050.pbm") -> I0
+ImageLoad("testpares/washington.pbm") -> I1
+ImageXOR(I0, I1) -> I2
+ImageSave(I2, "xortestwashington.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py ./testpares/xortestwashington.pbm xortestwashington.pbm
+  122000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# ./imageBWTool ./testpares/washington.pbm hmirror save hmirrorwashington.pbm
+# export INSTRCTU=0.648  # (To bypass calibration)
+ImageLoad("./testpares/washington.pbm") -> I0
+ImageHorizontalMirror(I0) -> I1
+ImageSave(I1, "hmirrorwashington.pbm")
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py ./testpares/hmirrortest.pbm ./hmirrorwashington.pbm
+  122000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# ./imageBWTool ./testpares/washington.pbm vmirror save vmirrorwashington.pbm
+# export INSTRCTU=0.640  # (To bypass calibration)
+ImageLoad("./testpares/washington.pbm") -> I0
+ImageVerticalMirror(I0) -> I1
+ImageSave(I1, "vmirrorwashington.pbm")
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py ./testpares/vmirrortest.pbm ./vmirrorwashington.pbm
+  122000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# ./imageBWTool ./testpares/washington.pbm ./testpares/washington.pbm repb save doublewashington.pbm
+# export INSTRCTU=0.631  # (To bypass calibration)
+ImageLoad("./testpares/washington.pbm") -> I0
+ImageLoad("./testpares/washington.pbm") -> I1
+ImageReplicateAtBottom(I0, I1) -> I2
+ImageSave(I2, "doublewashington.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py ./testpares/repbtest.pbm ./doublewashington.pbm
+
+  244000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)#
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# ./imageBWTool ./testpares/washington.pbm ./testpares/washington.pbm repr save replicateright.pbm
+# export INSTRCTU=0.650  # (To bypass calibration)
+ImageLoad("./testpares/washington.pbm") -> I0
+ImageLoad("./testpares/washington.pbm") -> I1
+ImageReplicateAtRight(I0, I1) -> I2
+ImageSave(I2, "replicateright.pbm")
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# python3 imageDiff.py ./testpares/reprtest.pbm ./replicateright.pbm
+  244000 pixels 100%    IGUAIS
+       0 pixels   0%    DIFFERENTES
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)# valgrind ./imageBWTool chess 8,8,2,1 chess 8,8,1,0 repr  chess 10,10,2,1 chess 10,10,5,0 and or xor neg vmirror hmirror repb
+==3244== Memcheck, a memory error detector
+==3244== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==3244== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==3244== Command: ./imageBWTool chess 8,8,2,1 chess 8,8,1,0 repr chess 10,10,2,1 chess 10,10,5,0 and or xor neg vmirror hmirror repb
+==3244==
+# export INSTRCTU=14.776  # (To bypass calibration)
+ImageCreateChessBoard(8, 8, 2, 1) -> I0
+ImageCreateChessBoard(8, 8, 1, 0) -> I1
+ImageReplicateAtRight(I0, I1) -> I2
+ImageCreateChessBoard(10, 10, 2, 1) -> I3
+ImageCreateChessBoard(10, 10, 5, 0) -> I4
+ImageAND(I3, I4) -> I5
+#          time         caltime pixel_array_acc Num_steps_Uncom   Num_steps_AND Num_steps_Compr     Total_steps          Height           Width
+       0.002996        0.000203             860             200             100             180            1822              10              10
+ImageOR(I4, I5) -> I6
+ImageXOR(I5, I6) -> I7
+ImageNEG(I7) -> I8
+ImageVerticalMirror(I8) -> I9
+ImageDestroy(I9)
+ImageDestroy(I8)
+ImageDestroy(I7)
+ImageDestroy(I6)
+ImageDestroy(I5)
+ImageDestroy(I4)
+ImageDestroy(I3)
+ImageDestroy(I2)
+ImageDestroy(I1)
+ImageDestroy(I0)
+Insufficient space in buffer
+==3244==
+==3244== HEAP SUMMARY:
+==3244==     in use at exit: 0 bytes in 0 blocks
+==3244==   total heap usage: 178 allocs, 178 frees, 4,982 bytes allocated
+==3244==
+==3244== All heap blocks were freed -- no leaks are possible
+==3244==
+==3244== For lists of detected and suppressed errors, rerun with: -s
+==3244== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+root@VivobookPro:/mnt/c/Users/paulo/OneDrive/Ambiente de Trabalho/Projetos a avaliar_AED/42339/trabalho-1-42339 (1)#

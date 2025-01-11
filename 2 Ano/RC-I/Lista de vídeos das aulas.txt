@@ -1,0 +1,29 @@
+https://youtu.be/hQuT36OKI0g - Aula FR (6 de outubro) - Introdução às Redes de Computadores (parte 1)
+https://youtu.be/mv3AYeU5WCI - Aula FR (7 de outubro) - Introdução às Redes de Computadores (parte 2)
+https://youtu.be/LQSlY9mQo-M - Aula FR (13 de outubro) - LAN: Introduction to Switching and IPv4.
+https://youtu.be/-HFETzJTIQs - Aula FR (14 de outubro) - LAN: Introduction to IPv4 and IP Routing
+https://youtu.be/i2JhV69VcCY - Aula FR (20 de outubro) - Planeamento de endereçamento IPv4
+https://youtu.be/TtOQ46Qwg4Y - Aula FR (21 de outubro) - DHCP e NAT/PAT
+https://youtu.be/W2cDJt0YBJU - Aula FR (27 de outubro) - Endereçamento IPv6
+https://youtu.be/2UpeXr37-gY - Aula FR (28 de outubro) - Subnetting e agregação em IPv6 e Exemplo de planeamento IP
+https://youtu.be/M1iV1K4YpBM - Aula FR (28 de outubro) - Layer 2 - Ethernet - Introdução às VLAN
+https://youtu.be/CLbMz4N-GOI - Aula FR (3 de novembro) - VLAN, interligação de VLAN e redundância
+https://youtu.be/I78hoP2FM7E - Projeto FR - Apoio à fase 1
+https://youtu.be/dnXu6JucK4Q - Aula FR (4 de novembro) - Spanning Tree Protocol (parte 1)
+https://youtu.be/_FyNSVjIDM0 - Aula FR (10 de novembro) - Spanning Tree Protocol (parte 2). Exemplo STP.
+https://youtu.be/HITLksJqhTI - Aula FR (11 de novembro) - Redes Wi-Fi
+https://youtu.be/O_b7-SAgJMk - Aula FR (17 de novembro) - Conceitos gerais de encaminhamento IP
+https://youtu.be/GnW4RT2Xz7c - Aula FR (18 de novembro) - Encaminhamento IPv4 dinâmico (RIPv1, RIPv2 e RIPng)
+https://youtu.be/2onITb7fNqA - Aula FR (24 de novembro) - Mini-revisão do RIP. OSPFv2.
+https://youtu.be/pF4ZWul2M8k - Aula FR (25 de novembro) - OSPFv3. Interfaces Passivos. Redistribuição de Rotas
+https://youtu.be/bDs-_sDfqxE - Aula FR (25 de novembro) - Exercício de Encaminhamento
+https://youtu.be/xnLSQmhzTns - Aula FR (2 de dezembro) - Deteção e controlo de erros. UDP
+https://youtu.be/0XVnXJmtUeI - Aula FR (9 de dezembro) - Projeto FR - Apoio à fase 2
+https://youtu.be/hT6la7-QB_U - Aula FR (15/16 de dezembro) - TCP
+https://youtu.be/tqd8SL7t9N0 - Aula FR (16/22 de dezembro) - Programação de Rede. Sockets
+https://youtu.be/O1RaiGV2ZTg - Aula FR (22 de dezembro) - Conceito de aplicação cliente-servidor. DNS
+https://youtu.be/tYnABI0j5fg - Aula FR (5 de janeiro) - DNS (cont.). TFTP. FTP
+https://youtu.be/DWOA6QqjxhE - Aula FR (6 de janeiro) - HTTP. E-mail.
+https://youtu.be/S7vSqJYb_24 - Aula FR (12 de janeiro) - Voice and Video over IP (SIP)
+https://youtu.be/igd2z7Tbo6Y - Aula FR (13 de janeiro) - Acesso ao meio. Análise de Espetro
+https://youtu.be/aDS8ZifJFx4 - Aula FR (19 de janeiro) - Sistemas e Tecnologias de Transmissão (Camada Física)
