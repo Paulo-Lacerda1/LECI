@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Impacto nos Setores</title>
+    
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.jpeg">
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Personal Styles -->
+        <link rel="stylesheet" href="css/style.css">
+    
+        <!-- jQuery, Popper, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/grafico.js"></script>
+        <!-- Highcharts JavaScript -->
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+
+        
+    </head>
+    <body>
+        <!-- Barra de navegação -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Percurso IA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                <div style="display: flex; align-items: center;">
+                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                                <lord-icon src="https://cdn.lordicon.com/laqlvddb.json" trigger="hover" colors="primary:#121331,secondary:#000000" state="hover-partial-roll" stroke="bold" style="width:30px;height:40px;"></lord-icon>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="historia.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">História</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="historia.html">História</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="historia.html#primordios">Primórdios</a></li>
+                                <li><a class="dropdown-item" href="historia.html#nascimento">Nascimento</a></li>
+                                <li><a class="dropdown-item" href="historia.html#amadurecimemento">Amadurecimento</a></li>
+                                <li><a class="dropdown-item" href="historia.html#inverno">Inverno</a></li>
+                                <li><a class="dropdown-item" href="historia.html#presente">Presente</a></li>
+                                <li class="dropdown-item dropdown">
+                                    <a class="dropdown-item dropdown-toggle" href="historia.html#futuro">Futuro</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li><a class="dropdown-item" href="historia.html#qml">QML</a></li>
+                                        <li><a class="dropdown-item" href="historia.html#xai">XAI</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Aspetos Éticos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="aspetos_eticos.html">Aspetos Éticos</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="aspetos_eticos.html#privacidade">Privacidade</a></li>
+                                <li><a class="dropdown-item" href="aspetos_eticos.html#responsabilidade">Responsabilidade</a></li>
+                                <li><a class="dropdown-item" href="aspetos_eticos.html#transparencia">Transparência</a></li>
+                                <li><a class="dropdown-item" href="aspetos_eticos.html#uso-militar">Uso Militar</a></li>
+                                <li><a class="dropdown-item" href="aspetos_eticos.html#sistemas-justica">Sistemas de Justiça</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="impacto_setores.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Impacto nos Setores</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="impacto_setores.html">Impacto nos Setores</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="impacto_setores.html#talento">Procura por Talento</a></li>
+                                <li class="dropdown-item dropdown">
+                                    <a class="dropdown-item dropdown-toggle" href="impacto_setores.html#setores_impactados">Setores Impactados</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li><a class="dropdown-item" href="impacto_setores.html#saude">Saúde</a></li>
+                                        <li><a class="dropdown-item" href="impacto_setores.html#financas">Finanças</a></li>
+                                        <li class="dropdown-item dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="impacto_setores.html#educacao">Educação</a>
+                                            <ul class="dropdown-menu dropdown-submenu">
+                                                <li><a class="dropdown-item" href="impacto_setores.html#vantagens">Vantagens</a></li>
+                                                <li><a class="dropdown-item" href="impacto_setores.html#desvantagens">Desvantagens</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="impacto_setores.html#servicos_empresariais">Serviços Empresariais</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" target="_blank">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section id="impacto_setores">
+            <div class="style_geral">
+                <div class="container title-section">
+                    <h1 class="title-dark">Impacto nos Setores</h1>
+                    <p>Uma análise nas mudanças e impactos que a <abbr title="Inteligência Artificial">IA</abbr> introduz nos mais variados setores</p>
+                </div>
+
+                <hr><br>
+                <section id="talento">
+                    <!-- Procura por talento -->
+                    <h2 class="title-dark">A rápida procura por talento</h2>
+                    <div class="container">
+                        <p>
+                            Atualmente, mais que nunca, a procura por talento em IA ultrapassou a oferta. Nos Estados Unidos, houve quase três vezes mais anúncios de emprego relacionados com <abbr title="Inteligência Artificial">IA</abbr> no ano passado do que de empregos para funções não relacionadas com <abbr title="Inteligência Artificial">IA</abbr>. 
+                            Embora as escolas estejam a adicionar programas, a aumentar a inscrição e a incluir mais disciplinas para fundamentar os alunos dos conceitos básicos, a procura por competências em <abbr title="Inteligência Artificial">IA</abbr> é simplesmente demasiado elevada e ainda existe uma escassez significativa de trabalhadores qualificados. 
+                            O processo de contratação para ofertas de emprego em IA está a tornar-se mais demorado e dispendioso, prejudicando o futuro financeiro de algumas empresas.
+                            Uma das consequências do mesmo é a taxa de empregabilidade de Doutoramentos em Inteligência Artificial:
+                        </p>
+                    </div>
+                    <br>
+                    <!-- Gráfico  -->
+                    <div id="grafico_empregabilidade"></div>
+                    <script src="js/grafico.js"></script>
+                </section>
+
+                <br><br>
+                <hr>
+                <!-- Setores Impactados -->
+                <section id="setores_impactados">
+                    <h2 class="title-dark">Setores Impactados</h2>
+                    <br>
+                    <div class="container">
+                        <!-- Saúde -->
+                        <h3 id="saude" class="left-text title-dark">Saúde</h3>
+                        <p>A integração da Inteligência Artificial (IA) é crucial no futuro da indústria da saúde, permitindo a coleta eficiente de dados sobre pacientes e tratamentos. A capacidade da IA de processar grandes volumes de dados e automatizar tarefas rotineiras libera os profissionais de saúde para focarem em atividades estratégicas. A IA também desempenha um papel vital na descoberta rápida de novos medicamentos, incluindo vacinas para a <a href="https://covid19.min-saude.pt/" target="_blank">COVID-19</a>.</p>
+                        <p>A aplicação da IA na saúde é evidenciada por avanços como próteses robóticas, eficientes prontuários eletrônicos e diagnósticos precisos. Cirurgias assistidas por IA representam avanços tangíveis, promovendo benefícios substanciais na otimização do atendimento hospitalar e no desenvolvimento de medicamentos seguros.</p>
+                        <p>Essa revolução na saúde não se limita à redução de custos, mas busca aprimorar significativamente resultados e experiências dos pacientes. A IA promete trazer mudanças significativas, influenciando positivamente diversos setores e revolucionando a abordagem da saúde.</p>
+
+                        <br>
+                        <!-- Finanças -->
+                        <h3 id="financas" class="left-text title-dark">Finanças</h3>
+                        <p>A influência da inteligência artificial (IA) na indústria bancária é notável, proporcionando melhorias significativas na gestão de dados e na experiência do cliente. Além de simplificar e acelerar processos tradicionais, a IA redefine a eficiência operacional. Os bancos reconhecem a importância estratégica dos dados, considerando-os o ativo mais valioso. O sucesso atual das instituições financeiras não é apenas medido pelo tamanho do ativo, mas pela habilidade em utilizar a tecnologia para inovar, criando produtos e serviços diferenciados e eficientes.</p>
+                        <p>É possível enumerar um conjunto de aplicações viáveis de IA neste setor:</p>
+                        <ol>
+                            <li><b>Previsão de Mercado</b>: Previsão de tendências de mercado, situações económicas e movimentos em diferentes setores. Essas previsões auxiliam investidores e tomadores de decisão a se prepararem para cenários futuros.</li>
+                            <li><b>Deteção de Anomalias</b>: Detetar anomalias, como transações fraudulentas, crimes financeiros, <abbr title="Técnica usada por hackers para se fazer passar por outra pessoa, ou empresa legítima
+                                para roubar dados">spoffing</abbr> em negociações e ameaças cibernéticas.</li>
+                            <li><b>Empréstimos e Créditos</b>: A facilidade de avaliação de riscos de crédito, aprimorando significativamente o processo de concessão de empréstimos e a precisão na avaliação dos seus riscos.</li>
+                        </ol>
+                    
+                
+                        <br>
+
+                        <!-- Educação -->
+                        <h4 id="educacao" class="title-dark">Educação</h4>
+                        <p>IA promete enfrentar desafios significativos no atual panorama educacional, introduzindo abordagens inovadoras para o ensino e aprendizagem.</p>
+
+
+                        <!--Vantagens e Desvantagens -->
+                        <div class="container">
+                            <div class="row" style="padding: 20px;">
+                                <!-- Vantagens -->
+                                <div class="col-md-6">
+                                    <div class="text-center" style="padding: 20px;">
+                                        <h5 id="vantagens" class="title-dark">Vantagens</h5>
+                                        <p class="lead"><u>1. Aprendizagem Personalizada</u></p>
+                                        <p>
+                                            Alunos aprendem de formas diferentes. O sistema educacional tradicional falha na personalização. A inteligência artificial (IA) surge como solução, adaptando o software educativo. Com tecnologias como machine learning, o sistema monitora e ajusta para superar dificuldades.
+                                        </p>
+                                        <p class="lead"><u>2. Assistência Constante</u></p>
+                                        <p>
+                                            Os <abbr title="Software baseado numa inteligência artificial">chatbots</abbr> na educação usam IA para oferecer assistência personalizada, analisando padrões de consumo de conteúdo e adaptando-se às necessidades dos alunos. Em um contexto global de aprendizagem remota, esses chatbots destacam-se ao solucionar dúvidas, fornecer respostas imediatas e oferecer assistência 24/7.
+                                        </p>
+                                    </div>
+                                </div>
+                        
+                                <!-- Desvantagens -->
+                                <div class="col-md-6">
+                                    <div class="text-center" style="padding: 20px;">
+                                        <h5 id="desvantagens" class="title-dark">Desvantagens</h5>
+                                        <p class="lead"><u>1. Ameaça ao Estado Laboral dos Professores</u></p>
+                                        <p>
+                                            A adoção crescente da inteligência artificial na educação levanta preocupações sobre a redução da demanda por educadores humanos, podendo resultar em ganhos de produtividade e possíveis perdas de empregos.
+                                        </p>
+                                        <p class="lead"><u>2. Dependência de Tecnologia</u></p>
+                                        <p>
+                                            À medida que escolas adotam soluções baseadas em inteligência artificial, há o risco de professores e alunos dependerem excessivamente da tecnologia. A longo prazo, essa dependência pode levar à negligência de métodos de ensino tradicionais cruciais e ao comprometimento do desenvolvimento de habilidades críticas de pensamento e resolução de problemas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+                <!--Serviços empresariais-->
+                <section id="servicos_empresariais">
+                    <h2 class="title-dark">Serviços Empresariais</h2>
+                    <p>
+                        É crucial que as empresas encarem a IA não apenas como uma nova tecnologia, mas sim como uma ferramenta para fortalecer as capacidades empresariais. 
+                        IA pode satisfazer algumas necessidades essenciais eis alguns exemplos:
+                    </p>
+
+                    <br>
+                    <!-- Tabela  -->
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <table class="table">
+                                <caption><br>Tabela de Necessidades das Empresas e respetivas Tarefas/Aplicações</caption> <!--ver se fica melhor com ou sem <br>-->
+                                <tr>
+                                    <th>Necessidades das Empresas</th>
+                                    <th>Tarefas e Aplicações</th>
+                                </tr>
+                                <tr>
+                                    <td>Visão Cognitiva</td>
+                                    <td>- Prever o que um determinado cliente é suscetível de comprar;<br>
+                                        - Identificar a fraude de crédito em tempo real e detectar fraudes em reclamações de seguros;<br>
+                                        - Automatizar a segmentação personalizada de anúncios digitais.</td>
+                                </tr>
+                                <tr>
+                                    <td>Disponibilidade e Suporte</td>
+                                    <td>- Suporte instantâneo e personalizado;<br>
+                                        - Resolução rápida de consultas frequentes, melhorando a experiência do cliente e reduzindo tempos de espera;<br>
+                                        - Monitorização das redes sociais e outras plataformas para análise de sentimento.</td>
+                                </tr>
+                                <tr>
+                                    <td>Automatização de Processos</td>
+                                    <td>- Correção de falhas na cobrança de serviços através de sistemas de faturação, ao extrair informação de múltiplas fontes;<br>
+                                        - Leitura de documentos legais e contratuais para extrair provisões, utilizando processamento em linguagem natural.</td>
+                                </tr>
+                                <tr>
+                                    <td>Velocidade</td>
+                                    <td>- Processamento instantâneo de grandes volumes de dados para análise em tempo real;<br>
+                                        - Atuação eficiente em cenários de rápida mudança, como no acompanhamento dinâmico de notícias.</td>
+                                </tr>
+                                <tr>
+                                    <td>Inovação</td>
+                                    <td>- A capacidade de analisar rapidamente vastas quantidades de dados pode resultar em ofertas de produtos e serviços únicas e inovadoras que ultrapassam a concorrência.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+        </section>
+               
+        <!-- Botão para voltar para cima -->
+        <button id="backToTop" onclick="window.scrollTo(0,0)">
+            <img src="images/arrowup.png"  alt="seta-cima" style="height: 100%; width: 100%;">
+        </button>
+        <script src="js/backToTop.js"></script>
+
+        <!-- Rodapé -->
+        <footer>
+            <div id="rodape" class="container">
+                <div style="float: left">
+                    <p class="footer-text normal-text">Percurso IA &emsp;&bullet;&emsp; Projeto por <a href="https://github.com/tfdmendes">Tiago Mendes</a> e <a href="https://github.com/Paulo-Lacerda1">Paulo Lacerda</a> com &#9749; e &#128151;</p>
+                    <p class="footer-text easteregg">Percurso IA &emsp;&bullet;&emsp; Projeto por <a href="https://github.com/tfdmendes">Tiago Mendes</a> e <a href="https://github.com/Paulo-Lacerda1">Paulo Lacerda</a> com &#127866; e &#128151;</p>
+                </div>
+                <div style="float: right">
+                    UAveiro&emsp;&bullet;&emsp;DETI
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
