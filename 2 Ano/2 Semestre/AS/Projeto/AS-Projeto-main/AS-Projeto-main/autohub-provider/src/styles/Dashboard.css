@@ -1,0 +1,292 @@
+.dashboard-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  max-width: 890px;
+  margin-right: auto;
+  padding-bottom: 1rem;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.see-all-link {
+    font-size: 0.875rem;
+    color: #222222;
+    text-decoration: underline;
+}
+
+.appointments-section .appointment-card {
+    max-width: 750px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    background: white;
+}
+
+.appointment-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  background: white;
+}
+
+.appointment-card h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.appointment-card ul {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.appointment-card button {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  background-color: #E3E3E3;
+  cursor: pointer;
+}
+
+.stats-section {
+  margin: 3rem 0;
+}
+
+.stats-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stat-box-star {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+    border-radius: 13px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.stat-box-star:hover {
+    color: #ffffff;
+    background-color: #222;
+}
+.stat-box-star p:first-child {
+  font-size: 1.5rem;
+}
+
+.stat-box p:first-child {
+  font-size: 1.5rem;
+}
+
+.stat-value {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+}
+
+.services-section {
+  margin-top: 3rem;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.add-service-btn {
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    padding: 0.5rem 1rem;
+    background-color: #2C2C2C;
+    color: white;
+    border: 2px solid #2C2C2C;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.add-service-btn:hover {
+    background-color: #ffffff;
+    color: #2C2C2C;
+}
+
+.services-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.service-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    border-radius: 12px;
+    padding: 0.1rem;
+    background: white;
+}
+
+.service-icon {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 0.3rem;
+    cursor: pointer;
+    user-select: none;
+    background-color: #00000000;
+    border-color: #00000000;
+}
+
+.service-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  margin-top: 0.2rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.service-card ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+    color: #757575;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 1.5rem 3rem;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.logo-area .autohub-logo {
+    cursor: pointer;
+    height: 50px;
+}
+
+.company-info {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.company-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.company-logo {
+    cursor: pointer;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 2px;
+  text-transform: capitalize;
+}
+
+.stars {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: #111;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  font-family: 'Segoe UI', sans-serif;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  background-color: #E3E3E3;
+  cursor: pointer;
+}

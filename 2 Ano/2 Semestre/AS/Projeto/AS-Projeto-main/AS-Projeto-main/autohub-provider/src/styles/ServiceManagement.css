@@ -1,0 +1,321 @@
+html, body {
+  background-color: #f6f6f6 !important;
+  margin: 0;
+}
+
+/* Top bar */
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 1.5rem 3rem;
+    font-family: "Segoe UI", sans-serif;
+    width: 1100px;
+}
+
+.logo-area .autohub-logo {
+    cursor: pointer;
+    height: 50px;
+}
+
+.company-info {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.company-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.company-logo {
+    cursor: pointer;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 2px;
+  text-transform: capitalize;
+}
+
+.stars {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: #111;
+}
+
+/* Service section */
+
+.service-container {
+  max-width: 1200px;
+  margin: 2rem auto 4rem;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  max-width: 890px;
+  margin-right: auto;
+  padding-bottom: 1rem;
+}
+
+.service-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Appointments header section */
+
+.appointments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem; /* espaço abaixo do header */
+}
+
+.add-appointment-btn {
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    padding: 0.5rem 1rem;
+    background-color: #2C2C2C;
+    color: white;
+    border: 2px solid #2C2C2C;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-appointment-btn:hover {
+    background-color: #ffffff;
+    color: #2C2C2C;
+}
+
+
+/* calendar section */
+
+.calendar-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.calendar-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-left: 4px;
+}
+
+/* Navigation row with arrows and month-year label */
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.calendar-nav button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-nav button:hover {
+  background-color: #eee;
+}
+
+/* calendar grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 0.5px solid #dddddd7b;
+  gap: 0px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  padding: 0rem;
+  background-color: #ffffff;
+  user-select: none;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0.5px solid #dddddd7b;
+  padding: 8px 6px;
+  cursor: pointer;
+  min-height: 90px;
+  min-width: 90px;
+  position: relative;
+  font-weight: 600;
+  color: #444;
+}
+
+.day-number {
+  
+}
+
+.badges-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.calendar-blank {
+  border: 0.5px solid #dddddd7b;
+  padding: 8px 6px;
+  cursor: pointer;
+  min-height: 90px;
+  min-width: 90px;
+  position: relative;
+  font-weight: 600;
+  background-color: #f0f0f0;
+  color: #999999;
+}
+
+.calendar-day.selected {
+  background-color: #B3B3B3;
+  color: #222;
+}
+
+.calendar-day .appointment-badge {
+  background-color: #bde4ff;
+  color: #007acc;
+  font-weight: bold;
+  font-size: 9px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-top: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: auto;
+}
+
+/* Appointments section */
+.appointments-section .appointment-card {
+    max-width: 75%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    margin-top: 0.5rem;
+    background: white;
+}
+
+.appointment-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  background: white;
+}
+
+.appointment-card h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+}
+
+.appointment-card ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+    color: #757575;
+}
+
+.appointment-card button {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  background-color: #E3E3E3;
+  cursor: pointer;
+}
+
+/* Weekday labels */
+.calendar-grid > div:nth-child(-n + 7) {
+  font-weight: 700;
+  text-align: start;
+  padding: 6px 0;
+  border: 1px solid #dddddd7b;
+  color: #555;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  font-family: 'Segoe UI', sans-serif;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  background-color: #E3E3E3;
+  cursor: pointer;
+}

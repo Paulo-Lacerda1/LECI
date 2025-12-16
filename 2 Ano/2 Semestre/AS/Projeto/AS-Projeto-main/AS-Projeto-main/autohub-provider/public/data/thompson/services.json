@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Premium Exterior Clean",
+    "price": "From €18",
+    "duration": "25-35 min",
+    "details": "Extras"
+  },
+  {
+    "title": "Oil Change",
+    "price": "From €30",
+    "duration": "20–30 min",
+    "details": "Includes oil and filter replacement"
+  },
+  {
+    "title": "Tire Rotation",
+    "price": "From €10",
+    "duration": "15–25 min",
+    "details": "Extends tire lifespan and improves handling"
+  },
+  {
+    "title": "Full Inspection",
+    "price": "From €35",
+    "duration": "30-45 min",
+    "details": "15-point check incl. brakes, fluids, lights"
+  },
+  {
+    "title": "Interior Cleaning",
+    "price": "From €12",
+    "duration": "20–30 min",
+    "details": "Vacuuming, surface wipe and window cleaning"
+  },
+  {
+    "title": "Brake Replacement",
+    "price": "From €60",
+    "duration": "45–60 min",
+    "details": "Includes break pads and safety check"
+  }
+]
