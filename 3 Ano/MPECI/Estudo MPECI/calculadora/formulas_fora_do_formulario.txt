@@ -1,0 +1,43 @@
+FORMULAS / RELAÇÕES NÃO EXPLÍCITAS NO FORMULÁRIO
+
+1) Conversão de bitrate para taxa de chegada (pacotes por segundo)
+
+λ = R / (8 · B)
+
+R = bitrate do fluxo (bits/s)
+B = tamanho do pacote (Bytes)
+
+
+2) Tempo médio de serviço a partir da capacidade do link
+
+E[S] = (8 · B) / C
+
+B = tamanho do pacote (Bytes)
+C = capacidade do sistema (bits/s)
+
+mu = 1 / E[S]
+
+3) Segundo momento do tempo de serviço para pacotes de tamanho constante
+
+E[S²] = (E[S])²
+
+
+4) Carga por fluxo
+
+ρ_k = λ_k · E[S_k]
+
+
+5) Carga total do sistema
+
+ρ_total = Σ ρ_k
+
+
+6) Atraso médio total no sistema por classe
+
+W_k = W_Qk + E[S_k]
+
+
+7) Convenção de prioridades
+
+k = 1  → maior prioridade
+k maior → menor prioridade → maior atraso

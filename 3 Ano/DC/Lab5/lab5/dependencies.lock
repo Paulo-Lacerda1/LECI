@@ -1,0 +1,16 @@
+dependencies:
+  idf:
+    source:
+      type: idf
+    version: 5.5.1
+  sd_card:
+    dependencies: []
+    source:
+      path: /home/paulo/esp/v5.5.1/esp-idf/examples/storage/sd_card/sdmmc/components/sd_card
+      type: local
+    version: '*'
+direct_dependencies:
+- sd_card
+manifest_hash: cbc35bac0aa5e7ce2c40f064999c53af5b1c90545312a2af3d05fadc9d2754ca
+target: esp32c6
+version: 2.0.0

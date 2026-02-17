@@ -1,0 +1,1 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/paulo/esp/esp-idf/tools/python_env/idf5.5_py3.12_env/bin/python -DESP_PLATFORM=1 -DSDKCONFIG='/home/paulo/Desktop/DC/Lab9/lab9/sdkconfig' -DCCACHE_ENABLE=0 /home/paulo/Desktop/DC/Lab9/lab9

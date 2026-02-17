@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/librdy.a CMakeFiles/rdy.dir/rdy_501_open.cpp.o CMakeFiles/rdy.dir/rdy_502_close.cpp.o CMakeFiles/rdy.dir/rdy_503_print.cpp.o CMakeFiles/rdy.dir/rdy_504_insert.cpp.o CMakeFiles/rdy.dir/rdy_505_retrieve.cpp.o
+/usr/bin/ranlib /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/librdy.a

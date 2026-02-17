@@ -1,0 +1,16 @@
+dependencies:
+  idf:
+    source:
+      type: idf
+    version: 5.5.1
+  protocol_examples_common:
+    dependencies: []
+    source:
+      path: /home/paulo/esp/v5.5.1/esp-idf/examples/common_components/protocol_examples_common
+      type: local
+    version: '*'
+direct_dependencies:
+- protocol_examples_common
+manifest_hash: e213eefd9eb0cbc4f815bcf6aad46802487ab9c0e1d125afe3b8777b4bd72ae5
+target: esp32c6
+version: 2.0.0

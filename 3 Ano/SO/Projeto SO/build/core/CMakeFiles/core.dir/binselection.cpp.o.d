@@ -1,0 +1,22 @@
+core/CMakeFiles/core.dir/binselection.cpp.o: \
+ /home/paulo/Desktop/ProjetoSO/somm25nm-g21/src/core/binselection.cpp \
+ /usr/x86_64-linux-gnu/include/stdc-predef.h \
+ /home/paulo/Desktop/ProjetoSO/somm25nm-g21/include/binselection.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+ /usr/x86_64-linux-gnu/include/stdint.h \
+ /usr/x86_64-linux-gnu/include/bits/libc-header-start.h \
+ /usr/x86_64-linux-gnu/include/features.h \
+ /usr/x86_64-linux-gnu/include/features-time64.h \
+ /usr/x86_64-linux-gnu/include/bits/wordsize.h \
+ /usr/x86_64-linux-gnu/include/bits/timesize.h \
+ /usr/x86_64-linux-gnu/include/sys/cdefs.h \
+ /usr/x86_64-linux-gnu/include/bits/long-double.h \
+ /usr/x86_64-linux-gnu/include/gnu/stubs.h \
+ /usr/x86_64-linux-gnu/include/gnu/stubs-64.h \
+ /usr/x86_64-linux-gnu/include/bits/types.h \
+ /usr/x86_64-linux-gnu/include/bits/typesizes.h \
+ /usr/x86_64-linux-gnu/include/bits/time64.h \
+ /usr/x86_64-linux-gnu/include/bits/wchar.h \
+ /usr/x86_64-linux-gnu/include/bits/stdint-intn.h \
+ /usr/x86_64-linux-gnu/include/bits/stdint-uintn.h \
+ /usr/x86_64-linux-gnu/include/bits/stdint-least.h

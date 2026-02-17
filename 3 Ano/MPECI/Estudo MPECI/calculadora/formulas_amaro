@@ -1,0 +1,146 @@
+========================================
+CÁBULA – SIGNIFICADO DOS SÍMBOLOS (FILAS)
+========================================
+
+------------------------------------------------
+TEOREMA DE LITTLE
+L = λ W
+------------------------------------------------
+L  : número médio de clientes no sistema
+λ  : taxa média de chegadas (clientes por unidade de tempo)
+W  : tempo médio que um cliente passa no sistema
+     (espera + serviço)
+
+------------------------------------------------
+M/M/1 – ATRASO MÉDIO NO SISTEMA
+W = 1 / (μ − λ)
+------------------------------------------------
+W  : atraso médio no sistema
+λ  : taxa de chegadas (Poisson)
+μ  : taxa de serviço (μ = 1 / tempo médio de serviço)
+
+Condição de estabilidade:
+λ < μ
+
+------------------------------------------------
+M/G/1 – ATRASO MÉDIO NA FILA DE ESPERA
+W_Q = λ E[S²] / ( 2 (1 − λ E[S]) )
+------------------------------------------------
+W_Q   : atraso médio apenas na fila de espera
+λ     : taxa de chegadas
+S     : variável aleatória "tempo de serviço"
+E[S]  : tempo médio de serviço
+E[S²] : segundo momento do tempo de serviço
+
+ρ = λ E[S]  → carga do sistema
+Condição de estabilidade:
+ρ < 1
+
+------------------------------------------------
+M/G/1 COM PRIORIDADES (NÃO PREEMPTIVO)
+------------------------------------------------
+
+ρ_k = λ_k E[S_k]
+
+ρ_k : carga associada à prioridade k
+λ_k : taxa de chegadas da prioridade k
+S_k : tempo de serviço da prioridade k
+
+-----------------
+Para k = 1 (prioridade mais alta):
+-----------------
+W_Q1 = ( Σ_{i=1}^n λ_i E[S_i²] ) / ( 2 (1 − ρ_1) )
+
+-----------------
+Para k > 1:
+-----------------
+W_Qk = ( Σ_{i=1}^n λ_i E[S_i²] ) /
+       ( 2 (1 − ρ_1 − ... − ρ_{k−1}) (1 − ρ_1 − ... − ρ_k) )
+
+W_Qk : atraso médio na fila da prioridade k
+
+------------------------------------------------
+PROCESSO DE NASCIMENTO E MORTE
+(PROBABILIDADES LIMITE)
+------------------------------------------------
+
+π_0 = 1 / ( 1 + Σ_{i=1}^∞ ( λ_0 λ_1 ... λ_{i−1} ) / ( μ_1 μ_2 ... μ_i ) )
+
+π_n = ( λ_0 λ_1 ... λ_{n−1} ) / ( μ_1 μ_2 ... μ_n ) · π_0
+
+π_n : probabilidade limite de estar no estado n
+λ_i : taxa de nascimento no estado i
+μ_i : taxa de morte no estado i
+
+------------------------------------------------
+M/M/1/m – PROBABILIDADE DE n CLIENTES NO SISTEMA
+------------------------------------------------
+
+π_n = ( (λ/μ)^n ) / ( Σ_{i=0}^m (λ/μ)^i )
+
+π_n : probabilidade de existirem n clientes no sistema
+λ   : taxa de chegadas
+μ   : taxa de serviço
+m   : capacidade máxima do sistema
+n   : número de clientes (0 ≤ n ≤ m)
+
+------------------------------------------------
+M/M/m/m – PROBABILIDADE DE n CLIENTES NO SISTEMA
+------------------------------------------------
+
+π_n = ( (λ/μ)^n / n! ) / ( Σ_{i=0}^m ( (λ/μ)^i / i! ) )
+
+π_n : probabilidade de existirem n clientes no sistema
+λ   : taxa de chegadas
+μ   : taxa de serviço
+m   : número de servidores
+n   : número de clientes no sistema
+
+Nota:
+n = m  → sistema cheio (bloqueio)
+(Erlang B)
+
+-------------------------------------------------
+FORMULAS / RELAÇÕES NÃO EXPLÍCITAS NO FORMULÁRIO
+
+1) Conversão de bitrate para taxa de chegada (pacotes por segundo)
+
+λ = R / (8 · B)
+
+R = bitrate do fluxo (bits/s)
+B = tamanho do pacote (Bytes)
+
+
+2) Tempo médio de serviço a partir da capacidade do link
+
+E[S] = (8 · B) / C
+
+B = tamanho do pacote (Bytes)
+C = capacidade do sistema (bits/s)
+
+mu = 1 / E[S]
+
+3) Segundo momento do tempo de serviço para pacotes de tamanho constante
+
+E[S²] = (E[S])²
+
+
+4) Carga por fluxo
+
+ρ_k = λ_k · E[S_k]
+
+
+5) Carga total do sistema
+
+ρ_total = Σ ρ_k
+
+
+6) Atraso médio total no sistema por classe
+
+W_k = W_Qk + E[S_k]
+
+
+7) Convenção de prioridades
+
+k = 1  → maior prioridade
+k maior → menor prioridade → maior atraso

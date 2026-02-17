@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libswp.a CMakeFiles/swp.dir/swp_601_open.cpp.o CMakeFiles/swp.dir/swp_602_close.cpp.o CMakeFiles/swp.dir/swp_603_print.cpp.o CMakeFiles/swp.dir/swp_604_insert.cpp.o CMakeFiles/swp.dir/swp_605_retrieve.cpp.o CMakeFiles/swp.dir/swp_606_unblock.cpp.o
+/usr/bin/ranlib /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libswp.a

@@ -1,0 +1,110 @@
+Formulas1:
+P(∼D ∣ ∼M)= 1 - P(D ∣ ∼M)​
+P(M ∩ D)= P(D|M) . P(M)
+P(~A ∣ B) = 1 − P( A ∣ B)
+--------------------------------------------------------
+Formulas2:
+σ**2=Var(S)
+--------------------------------------------------------
+cov(X,Y) != 0 , logo não são independentes.
+--------------------------------------------------------
+Decidir as aproximacaoes... Poisson OU Normalizacao	
+Evento raro?        → Poisson
+np pequeno (≤10)?   → Poisson
+p muito pequeno?    → Poisson , logo lambda = np
+
+np e n(1−p) grandes → Normal
+--------------------------------------------------------
+E[aX + b]   = a E[X] + b
+Var(aX + b) = a^2 Var(X)
+--------------------------------------------------------
+Normalizacao:
+Z = (X - m) / σ
+
+Simetria
+Q(−x) = 1 − Q(x)
+UM ÚNICO LIMITE
+P(Z ≥ a) = Q(a)
+P(Z > a) = Q(a)
+P(Z ≤ a) = 1 − Q(a)
+P(Z < a) = 1 − Q(a)
+P(Z ≥ −a) = 1 − Q(a)
+P(Z ≤ −a) = Q(a)
+INTERVALOS (a < b)
+P(a < Z < b) = Q(a) − Q(b)
+P(a ≤ Z ≤ b) = Q(a) − Q(b)
+P(Z < a) = 1 − Q(a)
+P(Z > b) = Q(b)
+P(Z ≤ a ou Z ≥ b) = (1 − Q(a)) + Q(b)
+INTERVALOS COM NEGATIVOS
+P(−a < Z < b) = Q(a) − Q(b)
+P(−a ≤ Z ≤ b) = Q(a) − Q(b)
+P(a < Z < −b) = (1 − Q(b)) − Q(a)
+INTERVALOS SIMÉTRICOS
+P(−a < Z < a) = 1 − 2Q(a)
+P(|Z| < a) = 1 − 2Q(a)
+P(|Z| ≥ a) = 2Q(a)
+
+---------------------------------------------------------
+
+UNIFORME U(a,b)
+a : limite inferior do intervalo
+b : limite superior do intervalo
+x : valor da variável aleatória
+-> todos os valores em [a,b] são igualmente prováveis
+se for continua, P ( c < X < d) = (d - c) / (b - a) 
+	         P ( X < c) = (c - a) / (b - a)  
+
+
+EXPONENCIAL Exp(λ)
+λ : taxa do processo (eventos por unidade de tempo)
+x : tempo até ocorrer o evento
+-> tempo de espera até um evento acontecer
+X ~ Exp(λ)
+
+Função de distribuição acumulada (CDF):
+F(x) = P(X ≤ x) = 1 − e^(−λx) , x ≥ 0
+
+Probabilidade de cauda:
+P(X > x) = e^(−λx)
+
+Probabilidade entre dois valores:
+P(a < X < b) = F(b) − F(a)
+P(a < X < b) = e^(−λa) − e^(−λb)
+
+Probabilidade condicional (propriedade sem memória):
+P(X > a + b | X > a) = P(X > b) = e^(−λb)
+
+
+NORMAL (GAUSSIANA) N(μ,σ²)
+μ : média
+σ² : variância
+σ : desvio padrão
+x : valor da variável aleatória
+-> fenómenos naturais, erros, ruído
+
+BERNOULLI(p)
+p : probabilidade de sucesso
+X = 1 : sucesso
+X = 0 : insucesso
+-> uma experiência com dois resultados possíveis
+
+BINOMIAL(n,p)
+n : número de experiências independentes
+p : probabilidade de sucesso em cada experiência
+k : número de sucessos
+C(n,k) : número de combinações de k sucessos em n experiências
+-> contar sucessos em n tentativas (dois resultados possíveis)
+
+POISSON(α)
+α : número médio de ocorrências num intervalo. (E[X] ou Var(x)
+k : número de ocorrências observadas
+e : número de Euler
+-> contar eventos raros num intervalo fixo
+
+GEOMÉTRICA(p)
+p : probabilidade de sucesso
+k : número de tentativas até ao primeiro sucesso
+-> número de ensaios até ocorrer o primeiro sucesso
+--------------------------------------------------------
+

@@ -1,0 +1,442 @@
+
+[33;1m=== TEST 1: simOpen ===[0m
+
+
+[33;1m=== TEST 2: simLoadBatch ===[0m
+
+
+[33;1m=== TEST 3: Initial state after load ===[0m
+
+
+SIM module internal state:
+  proc[0]: (idle)
+  proc[1]: (idle)
+
+JOB module internal state:
+JOB: 0x00000001
+  Submission time: 0.0
+  Finish time: UNDEF
+  Memory size: 256/0x100
+  Next burst index: 0
+  Burst profile: 4.0, 2.0, 3.0
+JOB: 0x00000002
+  Submission time: 1.5
+  Finish time: UNDEF
+  Memory size: 512/0x200
+  Next burst index: 0
+  Burst profile: 6.0, 1.0, 2.0
+JOB: 0x00000003
+  Submission time: 3.0
+  Finish time: UNDEF
+  Memory size: 128/0x80
+  Next burst index: 0
+  Burst profile: 5.0
+
+FEQ module internal state:
+Time: 0.0
+  type: SUBMIT
+  JID: 0x00000001
+Time: 1.5
+  type: SUBMIT
+  JID: 0x00000002
+Time: 3.0
+  type: SUBMIT
+  JID: 0x00000003
+
+RDY module internal state:
+  (empty)
+
+SWP module internal state:
+  (empty)
+
+MEM module internal state: all blocks (28):
+  block[0]: addr: 0x10000000; size: 0x400; PID: (none)
+  block[1]: addr: 0x10000400; size: 0x400; PID: (none)
+  block[2]: addr: 0x10000800; size: 0x400; PID: (none)
+  block[3]: addr: 0x10000c00; size: 0x400; PID: (none)
+  block[4]: addr: 0x10001000; size: 0x400; PID: (none)
+  block[5]: addr: 0x10001400; size: 0x400; PID: (none)
+  block[6]: addr: 0x10001800; size: 0x400; PID: (none)
+  block[7]: addr: 0x10001c00; size: 0x400; PID: (none)
+  block[8]: addr: 0x10002000; size: 0x400; PID: (none)
+  block[9]: addr: 0x10002400; size: 0x400; PID: (none)
+  block[10]: addr: 0x10002800; size: 0x400; PID: (none)
+  block[11]: addr: 0x10002c00; size: 0x400; PID: (none)
+  block[12]: addr: 0x10003000; size: 0x400; PID: (none)
+  block[13]: addr: 0x10003400; size: 0x400; PID: (none)
+  block[14]: addr: 0x10003800; size: 0x400; PID: (none)
+  block[15]: addr: 0x10003c00; size: 0x400; PID: (none)
+  block[16]: addr: 0x10004000; size: 0x800; PID: (none)
+  block[17]: addr: 0x10004800; size: 0x800; PID: (none)
+  block[18]: addr: 0x10005000; size: 0x800; PID: (none)
+  block[19]: addr: 0x10005800; size: 0x800; PID: (none)
+  block[20]: addr: 0x10006000; size: 0x800; PID: (none)
+  block[21]: addr: 0x10006800; size: 0x800; PID: (none)
+  block[22]: addr: 0x10007000; size: 0x800; PID: (none)
+  block[23]: addr: 0x10007800; size: 0x800; PID: (none)
+  block[24]: addr: 0x10008000; size: 0x1000; PID: (none)
+  block[25]: addr: 0x10009000; size: 0x1000; PID: (none)
+  block[26]: addr: 0x1000a000; size: 0x1000; PID: (none)
+  block[27]: addr: 0x1000b000; size: 0x1000; PID: (none)
+Continue (Y/n)? 
+[33;1m=== TEST 4: simStep() - single steps (10 steps) ===[0m
+
+simStep() #1 -> has more events
+
+SIM module internal state:
+  proc[0]: (idle)
+  proc[1]: (idle)
+
+JOB module internal state:
+JOB: 0x00000001
+  Submission time: 0.0
+  Finish time: UNDEF
+  Memory size: 256/0x100
+  Next burst index: 0
+  Burst profile: 4.0, 2.0, 3.0
+JOB: 0x00000002
+  Submission time: 1.5
+  Finish time: UNDEF
+  Memory size: 512/0x200
+  Next burst index: 0
+  Burst profile: 6.0, 1.0, 2.0
+JOB: 0x00000003
+  Submission time: 3.0
+  Finish time: UNDEF
+  Memory size: 128/0x80
+  Next burst index: 0
+  Burst profile: 5.0
+
+FEQ module internal state:
+Time: 0.0
+  type: ADMIT
+  PID: 101
+Time: 1.5
+  type: SUBMIT
+  JID: 0x00000002
+Time: 3.0
+  type: SUBMIT
+  JID: 0x00000003
+
+RDY module internal state:
+  (empty)
+
+SWP module internal state:
+  (empty)
+
+MEM module internal state: all blocks (28):
+  block[0]: addr: 0x10000000; size: 0x400; PID: (none)
+  block[1]: addr: 0x10000400; size: 0x400; PID: (none)
+  block[2]: addr: 0x10000800; size: 0x400; PID: (none)
+  block[3]: addr: 0x10000c00; size: 0x400; PID: (none)
+  block[4]: addr: 0x10001000; size: 0x400; PID: (none)
+  block[5]: addr: 0x10001400; size: 0x400; PID: (none)
+  block[6]: addr: 0x10001800; size: 0x400; PID: (none)
+  block[7]: addr: 0x10001c00; size: 0x400; PID: (none)
+  block[8]: addr: 0x10002000; size: 0x400; PID: (none)
+  block[9]: addr: 0x10002400; size: 0x400; PID: (none)
+  block[10]: addr: 0x10002800; size: 0x400; PID: (none)
+  block[11]: addr: 0x10002c00; size: 0x400; PID: (none)
+  block[12]: addr: 0x10003000; size: 0x400; PID: (none)
+  block[13]: addr: 0x10003400; size: 0x400; PID: (none)
+  block[14]: addr: 0x10003800; size: 0x400; PID: (none)
+  block[15]: addr: 0x10003c00; size: 0x400; PID: (none)
+  block[16]: addr: 0x10004000; size: 0x800; PID: (none)
+  block[17]: addr: 0x10004800; size: 0x800; PID: (none)
+  block[18]: addr: 0x10005000; size: 0x800; PID: (none)
+  block[19]: addr: 0x10005800; size: 0x800; PID: (none)
+  block[20]: addr: 0x10006000; size: 0x800; PID: (none)
+  block[21]: addr: 0x10006800; size: 0x800; PID: (none)
+  block[22]: addr: 0x10007000; size: 0x800; PID: (none)
+  block[23]: addr: 0x10007800; size: 0x800; PID: (none)
+  block[24]: addr: 0x10008000; size: 0x1000; PID: (none)
+  block[25]: addr: 0x10009000; size: 0x1000; PID: (none)
+  block[26]: addr: 0x1000a000; size: 0x1000; PID: (none)
+  block[27]: addr: 0x1000b000; size: 0x1000; PID: (none)
+Continue (Y/n)? simStep() #2 -> has more events
+
+SIM module internal state:
+  proc[0]: (idle)
+  proc[1]: (idle)
+
+JOB module internal state:
+JOB: 0x00000001
+  Submission time: 0.0
+  Finish time: UNDEF
+  Memory size: 256/0x100
+  Next burst index: 0
+  Burst profile: 4.0, 2.0, 3.0
+JOB: 0x00000002
+  Submission time: 1.5
+  Finish time: UNDEF
+  Memory size: 512/0x200
+  Next burst index: 0
+  Burst profile: 6.0, 1.0, 2.0
+JOB: 0x00000003
+  Submission time: 3.0
+  Finish time: UNDEF
+  Memory size: 128/0x80
+  Next burst index: 0
+  Burst profile: 5.0
+
+FEQ module internal state:
+Time: 0.0
+  type: DISPATCH
+Time: 1.5
+  type: SUBMIT
+  JID: 0x00000002
+Time: 3.0
+  type: SUBMIT
+  JID: 0x00000003
+
+RDY module internal state:
+  PID: 101;   queue time: 0.0;   burst time: 4.0
+
+SWP module internal state:
+  (empty)
+
+MEM module internal state: all blocks (28):
+  block[0]: addr: 0x10000000; size: 0x400; PID: 101
+  block[1]: addr: 0x10000400; size: 0x400; PID: (none)
+  block[2]: addr: 0x10000800; size: 0x400; PID: (none)
+  block[3]: addr: 0x10000c00; size: 0x400; PID: (none)
+  block[4]: addr: 0x10001000; size: 0x400; PID: (none)
+  block[5]: addr: 0x10001400; size: 0x400; PID: (none)
+  block[6]: addr: 0x10001800; size: 0x400; PID: (none)
+  block[7]: addr: 0x10001c00; size: 0x400; PID: (none)
+  block[8]: addr: 0x10002000; size: 0x400; PID: (none)
+  block[9]: addr: 0x10002400; size: 0x400; PID: (none)
+  block[10]: addr: 0x10002800; size: 0x400; PID: (none)
+  block[11]: addr: 0x10002c00; size: 0x400; PID: (none)
+  block[12]: addr: 0x10003000; size: 0x400; PID: (none)
+  block[13]: addr: 0x10003400; size: 0x400; PID: (none)
+  block[14]: addr: 0x10003800; size: 0x400; PID: (none)
+  block[15]: addr: 0x10003c00; size: 0x400; PID: (none)
+  block[16]: addr: 0x10004000; size: 0x800; PID: (none)
+  block[17]: addr: 0x10004800; size: 0x800; PID: (none)
+  block[18]: addr: 0x10005000; size: 0x800; PID: (none)
+  block[19]: addr: 0x10005800; size: 0x800; PID: (none)
+  block[20]: addr: 0x10006000; size: 0x800; PID: (none)
+  block[21]: addr: 0x10006800; size: 0x800; PID: (none)
+  block[22]: addr: 0x10007000; size: 0x800; PID: (none)
+  block[23]: addr: 0x10007800; size: 0x800; PID: (none)
+  block[24]: addr: 0x10008000; size: 0x1000; PID: (none)
+  block[25]: addr: 0x10009000; size: 0x1000; PID: (none)
+  block[26]: addr: 0x1000a000; size: 0x1000; PID: (none)
+  block[27]: addr: 0x1000b000; size: 0x1000; PID: (none)
+Continue (Y/n)? simStep() #3 -> has more events
+
+SIM module internal state:
+  proc[0]: 101
+  proc[1]: (idle)
+
+JOB module internal state:
+JOB: 0x00000001
+  Submission time: 0.0
+  Finish time: UNDEF
+  Memory size: 256/0x100
+  Next burst index: 1
+  Burst profile: 4.0, 2.0, 3.0
+JOB: 0x00000002
+  Submission time: 1.5
+  Finish time: UNDEF
+  Memory size: 512/0x200
+  Next burst index: 0
+  Burst profile: 6.0, 1.0, 2.0
+JOB: 0x00000003
+  Submission time: 3.0
+  Finish time: UNDEF
+  Memory size: 128/0x80
+  Next burst index: 0
+  Burst profile: 5.0
+
+FEQ module internal state:
+Time: 1.5
+  type: SUBMIT
+  JID: 0x00000002
+Time: 3.0
+  type: SUBMIT
+  JID: 0x00000003
+Time: 4.0
+  type: WAIT_EVENT
+  CID: 0
+
+RDY module internal state:
+  (empty)
+
+SWP module internal state:
+  (empty)
+
+MEM module internal state: all blocks (28):
+  block[0]: addr: 0x10000000; size: 0x400; PID: 101
+  block[1]: addr: 0x10000400; size: 0x400; PID: (none)
+  block[2]: addr: 0x10000800; size: 0x400; PID: (none)
+  block[3]: addr: 0x10000c00; size: 0x400; PID: (none)
+  block[4]: addr: 0x10001000; size: 0x400; PID: (none)
+  block[5]: addr: 0x10001400; size: 0x400; PID: (none)
+  block[6]: addr: 0x10001800; size: 0x400; PID: (none)
+  block[7]: addr: 0x10001c00; size: 0x400; PID: (none)
+  block[8]: addr: 0x10002000; size: 0x400; PID: (none)
+  block[9]: addr: 0x10002400; size: 0x400; PID: (none)
+  block[10]: addr: 0x10002800; size: 0x400; PID: (none)
+  block[11]: addr: 0x10002c00; size: 0x400; PID: (none)
+  block[12]: addr: 0x10003000; size: 0x400; PID: (none)
+  block[13]: addr: 0x10003400; size: 0x400; PID: (none)
+  block[14]: addr: 0x10003800; size: 0x400; PID: (none)
+  block[15]: addr: 0x10003c00; size: 0x400; PID: (none)
+  block[16]: addr: 0x10004000; size: 0x800; PID: (none)
+  block[17]: addr: 0x10004800; size: 0x800; PID: (none)
+  block[18]: addr: 0x10005000; size: 0x800; PID: (none)
+  block[19]: addr: 0x10005800; size: 0x800; PID: (none)
+  block[20]: addr: 0x10006000; size: 0x800; PID: (none)
+  block[21]: addr: 0x10006800; size: 0x800; PID: (none)
+  block[22]: addr: 0x10007000; size: 0x800; PID: (none)
+  block[23]: addr: 0x10007800; size: 0x800; PID: (none)
+  block[24]: addr: 0x10008000; size: 0x1000; PID: (none)
+  block[25]: addr: 0x10009000; size: 0x1000; PID: (none)
+  block[26]: addr: 0x1000a000; size: 0x1000; PID: (none)
+  block[27]: addr: 0x1000b000; size: 0x1000; PID: (none)
+Continue (Y/n)? simStep() #4 -> has more events
+
+SIM module internal state:
+  proc[0]: 101
+  proc[1]: (idle)
+
+JOB module internal state:
+JOB: 0x00000001
+  Submission time: 0.0
+  Finish time: UNDEF
+  Memory size: 256/0x100
+  Next burst index: 1
+  Burst profile: 4.0, 2.0, 3.0
+JOB: 0x00000002
+  Submission time: 1.5
+  Finish time: UNDEF
+  Memory size: 512/0x200
+  Next burst index: 0
+  Burst profile: 6.0, 1.0, 2.0
+JOB: 0x00000003
+  Submission time: 3.0
+  Finish time: UNDEF
+  Memory size: 128/0x80
+  Next burst index: 0
+  Burst profile: 5.0
+
+FEQ module internal state:
+Time: 1.5
+  type: ADMIT
+  PID: 102
+Time: 3.0
+  type: SUBMIT
+  JID: 0x00000003
+Time: 4.0
+  type: WAIT_EVENT
+  CID: 0
+
+RDY module internal state:
+  (empty)
+
+SWP module internal state:
+  (empty)
+
+MEM module internal state: all blocks (28):
+  block[0]: addr: 0x10000000; size: 0x400; PID: 101
+  block[1]: addr: 0x10000400; size: 0x400; PID: (none)
+  block[2]: addr: 0x10000800; size: 0x400; PID: (none)
+  block[3]: addr: 0x10000c00; size: 0x400; PID: (none)
+  block[4]: addr: 0x10001000; size: 0x400; PID: (none)
+  block[5]: addr: 0x10001400; size: 0x400; PID: (none)
+  block[6]: addr: 0x10001800; size: 0x400; PID: (none)
+  block[7]: addr: 0x10001c00; size: 0x400; PID: (none)
+  block[8]: addr: 0x10002000; size: 0x400; PID: (none)
+  block[9]: addr: 0x10002400; size: 0x400; PID: (none)
+  block[10]: addr: 0x10002800; size: 0x400; PID: (none)
+  block[11]: addr: 0x10002c00; size: 0x400; PID: (none)
+  block[12]: addr: 0x10003000; size: 0x400; PID: (none)
+  block[13]: addr: 0x10003400; size: 0x400; PID: (none)
+  block[14]: addr: 0x10003800; size: 0x400; PID: (none)
+  block[15]: addr: 0x10003c00; size: 0x400; PID: (none)
+  block[16]: addr: 0x10004000; size: 0x800; PID: (none)
+  block[17]: addr: 0x10004800; size: 0x800; PID: (none)
+  block[18]: addr: 0x10005000; size: 0x800; PID: (none)
+  block[19]: addr: 0x10005800; size: 0x800; PID: (none)
+  block[20]: addr: 0x10006000; size: 0x800; PID: (none)
+  block[21]: addr: 0x10006800; size: 0x800; PID: (none)
+  block[22]: addr: 0x10007000; size: 0x800; PID: (none)
+  block[23]: addr: 0x10007800; size: 0x800; PID: (none)
+  block[24]: addr: 0x10008000; size: 0x1000; PID: (none)
+  block[25]: addr: 0x10009000; size: 0x1000; PID: (none)
+  block[26]: addr: 0x1000a000; size: 0x1000; PID: (none)
+  block[27]: addr: 0x1000b000; size: 0x1000; PID: (none)
+Continue (Y/n)? simStep() #5 -> has more events
+
+SIM module internal state:
+  proc[0]: 101
+  proc[1]: (idle)
+
+JOB module internal state:
+JOB: 0x00000001
+  Submission time: 0.0
+  Finish time: UNDEF
+  Memory size: 256/0x100
+  Next burst index: 1
+  Burst profile: 4.0, 2.0, 3.0
+JOB: 0x00000002
+  Submission time: 1.5
+  Finish time: UNDEF
+  Memory size: 512/0x200
+  Next burst index: 0
+  Burst profile: 6.0, 1.0, 2.0
+JOB: 0x00000003
+  Submission time: 3.0
+  Finish time: UNDEF
+  Memory size: 128/0x80
+  Next burst index: 0
+  Burst profile: 5.0
+
+FEQ module internal state:
+Time: 1.5
+  type: DISPATCH
+Time: 3.0
+  type: SUBMIT
+  JID: 0x00000003
+Time: 4.0
+  type: WAIT_EVENT
+  CID: 0
+
+RDY module internal state:
+  PID: 102;   queue time: 1.5;   burst time: 6.0
+
+SWP module internal state:
+  (empty)
+
+MEM module internal state: all blocks (28):
+  block[0]: addr: 0x10000000; size: 0x400; PID: 101
+  block[1]: addr: 0x10000400; size: 0x400; PID: 102
+  block[2]: addr: 0x10000800; size: 0x400; PID: (none)
+  block[3]: addr: 0x10000c00; size: 0x400; PID: (none)
+  block[4]: addr: 0x10001000; size: 0x400; PID: (none)
+  block[5]: addr: 0x10001400; size: 0x400; PID: (none)
+  block[6]: addr: 0x10001800; size: 0x400; PID: (none)
+  block[7]: addr: 0x10001c00; size: 0x400; PID: (none)
+  block[8]: addr: 0x10002000; size: 0x400; PID: (none)
+  block[9]: addr: 0x10002400; size: 0x400; PID: (none)
+  block[10]: addr: 0x10002800; size: 0x400; PID: (none)
+  block[11]: addr: 0x10002c00; size: 0x400; PID: (none)
+  block[12]: addr: 0x10003000; size: 0x400; PID: (none)
+  block[13]: addr: 0x10003400; size: 0x400; PID: (none)
+  block[14]: addr: 0x10003800; size: 0x400; PID: (none)
+  block[15]: addr: 0x10003c00; size: 0x400; PID: (none)
+  block[16]: addr: 0x10004000; size: 0x800; PID: (none)
+  block[17]: addr: 0x10004800; size: 0x800; PID: (none)
+  block[18]: addr: 0x10005000; size: 0x800; PID: (none)
+  block[19]: addr: 0x10005800; size: 0x800; PID: (none)
+  block[20]: addr: 0x10006000; size: 0x800; PID: (none)
+  block[21]: addr: 0x10006800; size: 0x800; PID: (none)
+  block[22]: addr: 0x10007000; size: 0x800; PID: (none)
+  block[23]: addr: 0x10007800; size: 0x800; PID: (none)
+  block[24]: addr: 0x10008000; size: 0x1000; PID: (none)
+  block[25]: addr: 0x10009000; size: 0x1000; PID: (none)
+  block[26]: addr: 0x1000a000; size: 0x1000; PID: (none)
+  block[27]: addr: 0x1000b000; size: 0x1000; PID: (none)
+Continue (Y/n)? 

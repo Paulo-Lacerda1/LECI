@@ -1,0 +1,12 @@
+% line: Job id ; Submission time ; Memory size ; Burst profile
+% Burst profile: CPU-burst , (I/O-burst , CPU-burst)*
+% Jod id: 8 hex digit
+% Submission time: real number
+% Memory size: integer number
+% CPU-burst, I/O-burst: real number
+
+12345678;0.0;50000;100,10.0,101       % 3-burst profile
+abcdef00;10.1;0X1000000;100,1,101,2,102,3,103
+A0B1C2D3;10.2;0x4000000;1000
+B1111111;22.1;13000000;22,11,122,21,222,31,322,41,422
+

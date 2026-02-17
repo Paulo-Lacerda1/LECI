@@ -1,0 +1,56 @@
+group/rdy/CMakeFiles/rdy.dir/rdy_504_insert.cpp.o: \
+ /home/paulo/Desktop/ProjetoSO/somm25nm-g21/src/group/rdy/rdy_504_insert.cpp \
+ /usr/x86_64-linux-gnu/include/stdc-predef.h \
+ /home/paulo/Desktop/ProjetoSO/somm25nm-g21/include/rdy.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+ /usr/x86_64-linux-gnu/include/stdint.h \
+ /usr/x86_64-linux-gnu/include/bits/libc-header-start.h \
+ /usr/x86_64-linux-gnu/include/features.h \
+ /usr/x86_64-linux-gnu/include/features-time64.h \
+ /usr/x86_64-linux-gnu/include/bits/wordsize.h \
+ /usr/x86_64-linux-gnu/include/bits/timesize.h \
+ /usr/x86_64-linux-gnu/include/sys/cdefs.h \
+ /usr/x86_64-linux-gnu/include/bits/long-double.h \
+ /usr/x86_64-linux-gnu/include/gnu/stubs.h \
+ /usr/x86_64-linux-gnu/include/gnu/stubs-64.h \
+ /usr/x86_64-linux-gnu/include/bits/types.h \
+ /usr/x86_64-linux-gnu/include/bits/typesizes.h \
+ /usr/x86_64-linux-gnu/include/bits/time64.h \
+ /usr/x86_64-linux-gnu/include/bits/wchar.h \
+ /usr/x86_64-linux-gnu/include/bits/stdint-intn.h \
+ /usr/x86_64-linux-gnu/include/bits/stdint-uintn.h \
+ /usr/x86_64-linux-gnu/include/bits/stdint-least.h \
+ /usr/x86_64-linux-gnu/include/stdio.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+ /usr/x86_64-linux-gnu/include/bits/types/__fpos_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/__mbstate_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/__fpos64_t.h \
+ /usr/x86_64-linux-gnu/include/bits/types/__FILE.h \
+ /usr/x86_64-linux-gnu/include/bits/types/FILE.h \
+ /usr/x86_64-linux-gnu/include/bits/types/struct_FILE.h \
+ /usr/x86_64-linux-gnu/include/bits/types/cookie_io_functions_t.h \
+ /usr/x86_64-linux-gnu/include/bits/stdio_lim.h \
+ /usr/x86_64-linux-gnu/include/bits/floatn.h \
+ /usr/x86_64-linux-gnu/include/bits/floatn-common.h \
+ /home/paulo/Desktop/ProjetoSO/somm25nm-g21/include/exception.h \
+ /usr/include/c++/13/exception \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+ /usr/include/c++/13/pstl/pstl_config.h \
+ /usr/include/c++/13/bits/exception.h \
+ /usr/include/c++/13/bits/exception_ptr.h \
+ /usr/include/c++/13/bits/exception_defines.h \
+ /usr/include/c++/13/bits/cxxabi_init_exception.h \
+ /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/hash_bytes.h \
+ /usr/include/c++/13/new /usr/include/c++/13/bits/move.h \
+ /usr/include/c++/13/type_traits \
+ /usr/include/c++/13/bits/nested_exception.h \
+ /usr/x86_64-linux-gnu/include/errno.h \
+ /usr/x86_64-linux-gnu/include/bits/errno.h \
+ /usr/x86_64-linux-gnu/include/linux/errno.h \
+ /usr/x86_64-linux-gnu/include/asm/errno.h \
+ /usr/x86_64-linux-gnu/include/asm-generic/errno.h \
+ /usr/x86_64-linux-gnu/include/asm-generic/errno-base.h \
+ /usr/x86_64-linux-gnu/include/bits/types/error_t.h
