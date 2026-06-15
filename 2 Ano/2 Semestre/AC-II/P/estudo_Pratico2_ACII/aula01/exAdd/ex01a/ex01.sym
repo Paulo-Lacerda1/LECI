@@ -1,0 +1,19 @@
+GAS LISTING ex01.s 			page 1
+
+
+DEFINED SYMBOLS
+              ex01.s:1      *ABS*:0000000000000001 UP
+              ex01.s:2      *ABS*:0000000000000000 DOWN
+              ex01.s:14     .text:0000000000000000 main
+              ex01.s:21     .text:0000000000000014 while
+              ex01.s:62     .text:00000000000000bc endWhile
+              ex01.s:73     .text:00000000000000d0 wait
+              ex01.s:46     .text:0000000000000074 if1
+              ex01.s:49     .text:0000000000000084 if2
+              ex01.s:52     .text:0000000000000094 if3
+              ex01.s:57     .text:00000000000000ac else3
+              ex01.s:60     .text:00000000000000b4 endif3
+              ex01.s:77     .text:00000000000000e0 waitFor
+              ex01.s:81     .text:00000000000000f4 waitEndFor
+
+NO UNDEFINED SYMBOLS

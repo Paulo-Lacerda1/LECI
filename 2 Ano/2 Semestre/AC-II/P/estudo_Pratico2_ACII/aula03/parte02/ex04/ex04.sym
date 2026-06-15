@@ -1,0 +1,27 @@
+GAS LISTING ex04.s 			page 1
+
+
+DEFINED SYMBOLS
+              ex04.s:1      *ABS*:000000000000bf88 ADDR_BASE_HI
+              ex04.s:3      *ABS*:000000000000000c RESET_CORE_TIMER
+              ex04.s:4      *ABS*:000000000000000b READ_CORE_TIMER
+              ex04.s:6      *ABS*:0000000000006060 LATB
+              ex04.s:7      *ABS*:0000000000006120 LATE
+              ex04.s:8      *ABS*:00000000000060e0 LATD
+              ex04.s:10     *ABS*:0000000000006040 TRISB
+              ex04.s:11     *ABS*:0000000000006100 TRISE
+              ex04.s:12     *ABS*:00000000000060c0 TRISD
+              ex04.s:14     *ABS*:0000000000006050 PORTB
+              ex04.s:15     *ABS*:0000000000006110 PORTE
+              ex04.s:16     *ABS*:00000000000060d0 PORTD
+              ex04.s:28     .text:0000000000000000 main
+              ex04.s:45     .text:0000000000000024 case1
+              ex04.s:71     .text:0000000000000090 case2
+              ex04.s:59     .text:0000000000000050 wait1
+              ex04.s:67     .text:0000000000000084 reset_left
+              ex04.s:69     .text:0000000000000088 continue_left
+              ex04.s:80     .text:00000000000000a8 wait2
+              ex04.s:90     .text:00000000000000dc reset_right
+              ex04.s:92     .text:00000000000000e0 continue_right
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,19 @@
+GAS LISTING ex05.s 			page 1
+
+
+DEFINED SYMBOLS
+              ex05.s:1      *ABS*:000000000000bf88 ADDR_BASE_HI
+              ex05.s:3      *ABS*:0000000000006060 LATB
+              ex05.s:4      *ABS*:0000000000006120 LATE
+              ex05.s:5      *ABS*:00000000000060e0 LATD
+              ex05.s:7      *ABS*:0000000000006040 TRISB
+              ex05.s:8      *ABS*:0000000000006100 TRISE
+              ex05.s:9      *ABS*:00000000000060c0 TRISD
+              ex05.s:11     *ABS*:0000000000006050 PORTB
+              ex05.s:12     *ABS*:0000000000006110 PORTE
+              ex05.s:13     *ABS*:00000000000060d0 PORTD
+              ex05.s:23     .text:0000000000000000 main
+              ex05.s:32     .text:0000000000000014 loop
+              ex05.s:50     .text:0000000000000044 wait
+
+NO UNDEFINED SYMBOLS

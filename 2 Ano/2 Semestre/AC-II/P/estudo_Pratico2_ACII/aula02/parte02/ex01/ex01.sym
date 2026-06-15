@@ -1,0 +1,12 @@
+GAS LISTING ex01.s 			page 1
+
+
+DEFINED SYMBOLS
+              ex01.s:32     .text:0000000000000000 main
+              ex01.s:86     .text:00000000000000ac configD11
+              ex01.s:94     .text:00000000000000c0 outD11
+              ex01.s:70     .text:0000000000000078 delay
+              ex01.s:73     .text:0000000000000080 delayWhile
+              ex01.s:80     .text:00000000000000a4 delayEndWhile
+
+NO UNDEFINED SYMBOLS

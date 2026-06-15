@@ -1,0 +1,9 @@
+GAS LISTING ex01.s 			page 1
+
+
+DEFINED SYMBOLS
+              ex01.s:20     .text:0000000000000000 main
+              ex01.s:22     .text:0000000000000004 while
+              ex01.s:32     .text:0000000000000034 endw
+
+NO UNDEFINED SYMBOLS
