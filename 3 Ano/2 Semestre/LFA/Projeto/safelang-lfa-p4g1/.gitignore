@@ -1,0 +1,11 @@
+*.o
+__pycache__
+.vscode
+.idea
+~*
+*.pyc
+*.class
+*.tokens
+*.interp
+*.cache/
+

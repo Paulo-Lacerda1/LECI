@@ -1,0 +1,321 @@
+group program;
+
+// ─────────────────────────────────────────────
+//  Main Class
+// ─────────────────────────────────────────────
+
+program(arg1, className) ::= <<
+import java.math.BigInteger;
+import java.math.BigDecimal;
+import java.util.Scanner;
+import java.util.ArrayList;
+import rational.IntegerType;
+import rational.FractionType;
+import utils.Utils;
+
+public class <className> {
+    public static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        <arg1; separator="\n">
+    }
+
+    public static String readLine(String arg1){
+        System.out.print(arg1);
+        return input.nextLine();
+    }
+
+    public static FractionType cvtToFraction(String text) {
+        return new FractionType(text);
+    }
+
+    public static IntegerType cvtToInteger(String text){
+        return new IntegerType(text);
+    }
+}
+>>
+
+// ─────────────────────────────────────────────
+//  Arithmetic, parentheses and negate
+// ─────────────────────────────────────────────
+
+rationalAdd(arg1, arg2)    ::= "(<arg1>).add(<arg2>)"
+rationalSub(arg1, arg2)    ::= "(<arg1>).subtract(<arg2>)"
+rationalMul(arg1, arg2)    ::= "(<arg1>).multiply(<arg2>)"
+rationalDiv(arg1, arg2)    ::= "(<arg1>).divide(<arg2>)"
+rationalQuot(arg1, arg2)   ::= "(<arg1>).quotient(<arg2>)"
+rationalMod(arg1, arg2)    ::= "(<arg1>).remainder(<arg2>)"
+rationalNegate(arg1)       ::= "(<arg1>).negate()"
+rationalParents(arg1)      ::= "(<arg1>)"
+
+// ─────────────────────────────────────────────
+//  Strings & Suffixes
+// ─────────────────────────────────────────────
+
+stringConcat(arg1, arg2)   ::= "<arg1> + <arg2>"
+formatCmd(arg1, arg2) ::= "Utils.formatCmd(<arg1>, <arg2>, \"left\")"
+appendSuffix(arg1, arg2)   ::= "String.valueOf(<arg1>) + \"<arg2>\""
+
+// ─────────────────────────────────────────────
+//  Converters, Casts & Coercions
+// ─────────────────────────────────────────────
+
+convertToInteger(arg1)    ::= "cvtToInteger(<arg1>)"
+convertToFraction(arg1)   ::= "cvtToFraction(<arg1>)"
+convertToString(arg1)     ::= "String.valueOf(<arg1>)"
+castRational(arg1, arg2)   ::= "((<arg1>)(<arg2>))"
+toFraction(arg1)          ::= "(<arg1>).toFraction()"
+toInteger(arg1)           ::= "(<arg1>).toInteger()"
+toIntegerSized(arg1, arg2) ::= "(<arg1>).toInteger(<arg2>)"
+toFractionSized(arg1, arg2) ::= "(<arg1>).toFraction(<arg2>)"
+
+// ─────────────────────────────────────────────
+//  Literals
+// ─────────────────────────────────────────────
+
+integerLiteral(arg1)       ::= "new IntegerType(\"<arg1>\")"
+fractionLiteral(arg1)      ::= "new FractionType(\"<arg1>\")"
+
+
+// ─────────────────────────────────────────────
+//  Read and Write
+// ─────────────────────────────────────────────
+
+readExpr(arg1)             ::= "readLine(<arg1>)"
+writeExpr(arg1)            ::= "System.out.print(<arg1>);"
+writeLnExpr(arg1)          ::= "System.out.println(<arg1>);"
+writeLnEmpty()             ::= "System.out.println();"
+
+// ─────────────────────────────────────────────
+//  Type and Unit declaration / Runtime Registry
+// ─────────────────────────────────────────────
+
+declareType(arg1)          ::= "// [type] <arg1>"
+declareUnit(arg1)          ::= "// [unit] <arg1>"
+
+// For runtime dynamic conversions matching visitor methods
+registerUnit(arg1, arg2, arg3)        ::= "// Runtime registry: SafelangUnits.register(\"<arg1>\", \"<arg2>\", <arg3>);"
+registerUnitSuffix(arg1, arg2, arg3, arg4) ::= "// Runtime registry: SafelangUnits.register(\"<arg1>\", \"<arg2>\", \"<arg3>\", <arg4>);"
+
+declareVar(arg1, arg2) ::= <<
+<if(arg1)><arg1> <arg2> = null;<endif>
+>>
+
+// ─────────────────────────────────────────────
+//  Assigns
+// ─────────────────────────────────────────────
+
+assignVal(arg1, arg2)      ::= "<arg1> = <arg2>;"
+assignValType(arg1, arg2)  ::= "<arg1> = <arg2>;"
+
+assignTryVal(arg1, arg2, arg3) ::= <<
+try {
+    <arg1> = <arg2>;
+} catch (Exception e) {
+    System.err.println("[line <arg3>]   [ERROR]  " + e.getMessage());
+    System.exit(1);
+}
+>>
+
+// ─────────────────────────────────────────────
+//  Dimension Unit Mapping (Turned cleanly to documentation comments)
+// ─────────────────────────────────────────────
+
+dimensionUnit(arg1, arg2, arg3) ::= <<
+// Extra unit: <arg2> for <arg1> | Conversion factor literal: <arg3>
+>>
+
+dimensionUnitSuffix(arg1, arg2, arg3, arg4) ::= <<
+// Extra unit: <arg2> for <arg1> | Suffix: <arg3> | Conversion factor literal: <arg4>
+>>
+
+// ─────────────────────────────────────────────
+//  Dimension Structural Types
+// ─────────────────────────────────────────────
+
+typeUnit(arg1, arg2, arg3) ::= <<
+// Dimension: <arg1> | Unit: <arg2> | Base: <arg3>
+>>
+
+typeUnitSuffix(arg1, arg2, arg3, arg4) ::= <<
+// Dimension: <arg1> | Unit: <arg2> | Suffix: <arg3> | Base: <arg4>
+>>
+
+typeDependent(arg1, arg2, arg3, arg4, arg5) ::= <<
+// Dependent Dimension: <arg1> = <arg2> <arg3> <arg4> | Base: <arg5>
+>>
+
+typeDependentUnit(arg1, arg2, arg3, arg4, arg5, arg6) ::= <<
+// Dependent Dimension: <arg1> | Unit: <arg2> | <arg3> <arg4> <arg5> | Base: <arg6>
+>>
+
+typeDependentUnitSuffix(arg1, arg2, arg3, arg4, arg5, arg6, arg7) ::= <<
+// Dependent Dimension: <arg1> | Unit: <arg2> | Suffix: <arg3> | <arg4> <arg5> <arg6> | Base: <arg7>
+>>
+
+// ─────────────────────────────────────────────
+//  Booleans Declaration
+// ─────────────────────────────────────────────
+
+booleanParent(arg1)                 ::= "(<arg1>)"
+
+booleanGreater(arg1, arg2)          ::= "<arg1>.compareTo(<arg2>) > 0"
+booleanGreaterEqual(arg1, arg2)     ::= "<arg1>.compareTo(<arg2>) >= 0"
+
+booleanLesser(arg1, arg2)           ::= "<arg1>.compareTo(<arg2>) \< 0"
+booleanLesserEqual(arg1, arg2)      ::= "<arg1>.compareTo(<arg2>) \<= 0"
+
+booleanEqual(arg1, arg2)            ::= "<arg1>.equals(<arg2>)"
+booleanNotEqual(arg1, arg2)         ::= "!(<arg1>.equals(<arg2>))"
+booleanNot(arg1) ::= "!(<arg1>)"
+
+booleanOr(arg1, arg2)               ::= "<arg1> || <arg2>"
+booleanAnd(arg1, arg2)              ::= "<arg1> && <arg2>"
+
+
+// ─────────────────────────────────────────────
+//  Condition Declaration
+// ─────────────────────────────────────────────
+
+conditionIfElse(arg1, arg2)         ::= <<
+    if(<arg1>) {
+        <arg2; separator="\n">
+    }
+>>
+
+conditionIfEnd(arg1, arg2)          ::= <<
+    if(<arg1>) {
+        <arg2; separator="\n">
+    }
+>>
+
+conditionElseIf(arg1, arg2)         ::= <<
+    else if (<arg1>) {
+        <arg2; separator="\n">
+    }
+>>
+
+conditionElseNorm(arg1)             ::= <<
+    else {
+        <arg1; separator="\n">
+    }
+>>
+
+
+
+// Assert
+
+assertStmt(arg1, arg2) ::= <<
+    if (!(<arg1>)) {
+        throw new RuntimeException("Assertion failed at line <arg2>");
+    }
+>>
+
+// ─────────────────────────────────────────────
+//  For Declaration
+// ─────────────────────────────────────────────
+
+loopForAssignExisting(arg1, arg2, arg3, arg4) ::= <<
+    for(int v_counter_<arg1> = (<arg2>).numerator.intValue(); v_counter_<arg1> \<= (<arg3>).numerator.intValue(); v_counter_<arg1>++) {
+        <arg1> = new IntegerType(java.math.BigInteger.valueOf(v_counter_<arg1>));
+        <arg4; separator="\n">
+    }
+>>
+
+loopForAssignNew(arg1, arg2, arg3, arg4) ::= <<
+    for(int v_counter_<arg1> = (<arg2>).numerator.intValue(); v_counter_<arg1> \<= (<arg3>).numerator.intValue(); v_counter_<arg1>++) {
+        IntegerType <arg1> = new IntegerType(java.math.BigInteger.valueOf(v_counter_<arg1>));
+        <arg4; separator="\n">
+    }
+>>
+
+loopForNorm(arg1, arg2, arg3) ::= <<
+    for(int v_x = (<arg1>).numerator.intValue(); v_x \<= (<arg2>).numerator.intValue(); v_x++) {
+        <arg3; separator="\n">
+    }
+>>
+
+
+// ─────────────────────────────────────────────
+//  While Declaration
+// ─────────────────────────────────────────────
+
+loopWhileNorm(arg1, arg2)       ::= <<
+    while(<arg1>) {
+        <arg2; separator="\n">
+    }
+>>
+
+loopWhileUntil(arg1, arg2)      ::= <<
+    while(!(<arg1>)) {
+        <arg2; separator="\n">
+    }
+>>
+
+
+// ─────────────────────────────────────────────
+//  Try Declaration
+// ─────────────────────────────────────────────
+
+/*
+try:
+      'try' ((commonStat ';')* (commonStat ';'?)?) 'end'                                              #TryNorm
+    | 'try' ((commonStat ';')* (commonStat ';'?)?) rescue 'end'                                       #TryRescue
+    ;
+
+rescue:
+      'rescue' ((commonStat ';')* (commonStat ';'?)?)                                                 #RescueNorm
+    | 'rescue' (commonStat ';')* 'retry' ';'?                                                         #RescueRetry
+    ;
+*/
+
+tryNorm(arg1)               ::= <<
+    try {
+        <arg1; separator="\n">
+    } catch(Exception e) {
+        throw new RuntimeException(e);
+    }
+>>
+
+tryRescueNorm(arg1, arg2)   ::= <<
+    try {
+        <arg1; separator="\n">
+    } catch(Exception e) {
+        <arg2; separator="\n">
+    }
+>>
+
+tryRescueRetry(arg1, arg2, arg3) ::= <<
+
+    for(int counter_<arg1> = 0; counter_<arg1> \< 10; counter_<arg1>++){
+        try {
+            <arg2; separator="\n">
+            break;
+        } catch(Exception e) {
+            <arg3; separator="\n">
+            // Utils.showError(e);
+            if(counter_<arg1> != 9) continue;
+            throw new RuntimeException(e);
+        }
+    }
+>>
+
+failStmt(arg1) ::= <<
+    throw new RuntimeException("fail at line <arg1>");
+>>
+
+
+// ─────────────────────────────────────────────
+//  Lists Declaration
+// ─────────────────────────────────────────────
+
+listAdd(arg1, arg2) ::= "<arg1>.add(<arg2>);"
+listGet(arg1, arg2) ::= "<arg1>.get((<arg2>).numerator.intValue() - 1)"
+listLength(arg1) ::= "new IntegerType(java.math.BigInteger.valueOf(<arg1>.size()))"
+
+listDecl(arg1, arg2) ::= "<arg1> <arg2> = new ArrayList\<>();"
+listCopy(arg1, arg2, arg3) ::= "<arg1> <arg2> = new ArrayList\<>(<arg3>);"
+listValNew(arg1) ::= "<arg1> = new ArrayList\<>();"
+listValCopy(arg1, arg2) ::= "<arg1> = new ArrayList\<>(<arg2>);"
+
+formatCmdPlacement(arg1, arg2, arg3) ::= "Utils.formatCmd(<arg1>, <arg2>, <arg3>)"

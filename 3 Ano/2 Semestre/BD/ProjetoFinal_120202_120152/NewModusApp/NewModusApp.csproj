@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E7EFC54-D160-435D-AE1D-EE3E23D44D7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NewModusApp</RootNamespace>
+    <AssemblyName>NewModusApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <RuntimeIdentifiers>win</RuntimeIdentifiers>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Resources.Extensions">
+      <HintPath>$(NuGetPackageRoot)system.resources.extensions\8.0.0\lib\net462\System.Resources.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Buffers" Version="4.5.1" />
+    <PackageReference Include="System.Memory" Version="4.5.5" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.3" />
+    <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DbConfig.cs" />
+    <Compile Include="Data\Database.cs" />
+    <Compile Include="Forms\FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDashboard.Designer.cs">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDetalhesCompraProntoVestirPopup.Designer.cs">
+      <DependentUpon>FrmDetalhesCompraProntoVestirPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMedidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMedidas.Designer.cs">
+      <DependentUpon>FrmMedidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmEncomendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEncomendas.Designer.cs">
+      <DependentUpon>FrmEncomendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmEncomendasMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEncomendasMenu.Designer.cs">
+      <DependentUpon>FrmEncomendasMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmEncomendasPorMedidaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEncomendasPorMedidaMenu.Designer.cs">
+      <DependentUpon>FrmEncomendasPorMedidaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmNovaEncomendaPorMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNovaEncomendaPorMedida.Designer.cs">
+      <DependentUpon>FrmNovaEncomendaPorMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMateriaisPedidoPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMateriaisPedidoPopup.Designer.cs">
+      <DependentUpon>FrmMateriaisPedidoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPedidosPorMedidaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPedidosPorMedidaLista.Designer.cs">
+      <DependentUpon>FrmPedidosPorMedidaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmProntoVestirMenu.Designer.cs">
+      <DependentUpon>FrmProntoVestirMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmVerMateriaisPedidoPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmVerMateriaisPedidoPopup.Designer.cs">
+      <DependentUpon>FrmVerMateriaisPedidoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmProntoVestirMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNovaCompraProntoVestir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNovaCompraProntoVestir.Designer.cs">
+      <DependentUpon>FrmNovaCompraProntoVestir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDetalhesCompraProntoVestirPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmProntoVestir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmProntoVestir.Designer.cs">
+      <DependentUpon>FrmProntoVestir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInventario.Designer.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmInventario.Tecidos.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInventario.Materiais.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInventario.Produtos.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\CompraProntoVestir.cs" />
+    <Compile Include="Models\DetalheCompraProntoVestir.cs" />
+    <Compile Include="Models\Encomenda.cs" />
+    <Compile Include="Models\EncomendaItem.cs" />
+    <Compile Include="Models\ItemEncomendaMaterial.cs" />
+    <Compile Include="Models\ItemEncomendaTecido.cs" />
+    <Compile Include="Models\Medida.cs" />
+    <Compile Include="NewModusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewModusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DashboardRepository.cs" />
+    <Compile Include="Repositories\EncomendasRepository.cs" />
+    <Compile Include="Repositories\MedidasRepository.cs" />
+    <Compile Include="Repositories\MaterialRepository.cs" />
+    <Compile Include="Repositories\ProntoVestirRepository.cs" />
+    <Compile Include="Repositories\TecidoRepository.cs" />
+    <Compile Include="Utils\DataGridViewExtensions.cs" />
+    <EmbeddedResource Include="Forms\FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMedidas.resx">
+      <DependentUpon>FrmMedidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNovaEncomendaPorMedida.resx">
+      <DependentUpon>FrmNovaEncomendaPorMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPedidosPorMedidaLista.resx">
+      <DependentUpon>FrmPedidosPorMedidaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmProntoVestir.resx">
+      <DependentUpon>FrmProntoVestir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInventario.resx">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="NewModusDataSet.xsc">
+      <DependentUpon>NewModusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NewModusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewModusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NewModusDataSet.xss">
+      <DependentUpon>NewModusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Database\01_DDL.sql" />
+    <None Include="Database\02_Inserts.sql" />
+    <None Include="Database\05_StoredProcedures.sql" />
+    <None Include="Database\06_Triggers.sql" />
+    <None Include="Database\07_Indexes.sql" />
+    <None Include="Database\install_database.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\03_UDF.sql" />
+    <Content Include="Database\04_Views.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>cd "$(ProjectDir)Database"
+call sync_database.bat</PreBuildEvent>
+  </PropertyGroup>
+</Project>

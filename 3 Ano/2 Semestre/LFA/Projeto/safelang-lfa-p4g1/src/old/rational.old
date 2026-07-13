@@ -1,0 +1,36 @@
+
+private static String validateIntegerLiteral(String value) {
+    String cleaned = value.replaceAll("\\s", "");
+    if (cleaned.matches("[+-]?\\d+")) return cleaned;
+    throw new IllegalArgumentException("InvalidIntegerFormat");
+}
+
+
+
+protected Rational create(BigInteger num, BigInteger den) {
+    // BigInteger[] reduced = reduce(num, den);
+
+    try {
+        return this.getClass()
+                .getConstructor(BigInteger.class, BigInteger.class)
+                .newInstance(num, den);
+
+    } catch (Exception e) {
+        throw new RuntimeException(e);
+    }
+}
+
+protected static BigInteger[] reduce(BigInteger num, BigInteger den) {
+    if (den.signum() < 0) {
+        num = num.negate();
+        den = den.negate();
+    }
+    BigInteger gcd = num.gcd(den);
+    return new BigInteger[]{ num.divide(gcd), den.divide(gcd) };
+}
+
+private Rational resultType(Rational other) {
+    if (this instanceof FractionType || other instanceof FractionType)
+        return new FractionType(BigInteger.ONE, BigInteger.ONE);
+    return this;
+}
