@@ -1,0 +1,65 @@
+---------------------------------------------------
+Quando está em L, a probabilidade de ir para X é:
+taxa(L→X) / soma das taxas de saída de L
+...................................................
+Teorema de Little 
+L = λ · W
+
+L = número médio de elementos no sistema (clientes, pacotes, pedidos)
+λ = taxa média de chegada (elementos por unidade de tempo)
+W = tempo médio que um elemento passa no sistema
+...................................................
+MTBF = Mean Time Between Failures
+MTTR = Mean Time To Repair
+CC   = taxa média de cortes/falhas por km por ano
+       (falhas / (km·ano))
+----------------------------------------------------
+
+
+================================
+MODELOS DE FILAS M/M/m/m
+================================
+
+M/M/1
+--------------------------------
+Chegadas     : Poisson (λ)
+Serviço      : Exponencial (μ)
+Servidores   : 1
+Capacidade   : Infinita (fila grande)
+Palavra-chave: espera, sem bloqueio
+
+M/M/1/m
+--------------------------------
+Chegadas     : Poisson
+Serviço      : Exponencial (o tempo que um cliente demora a ser servido é aleatório, sem memória)
+Servidores   : 1
+Capacidade   : m clientes (bloqueia)
+Palavra-chave: fila limitada, perda
+
+M/G/1
+--------------------------------
+Chegadas     : Poisson
+Serviço      : Genérico (não exponencial)
+Servidores   : 1
+Capacidade   : Infinita
+Palavra-chave: vários tamanhos, genérico
+W = Wq + E[S]
+(atraso total = espera + serviço)
+
+
+M/M/m
+--------------------------------
+Chegadas     : Poisson
+Serviço      : Exponencial
+Servidores   : m
+Capacidade   : Infinita
+Palavra-chave: vários servidores, fila
+
+M/M/m/m
+--------------------------------
+Chegadas     : Poisson
+Serviço      : Exponencial
+Servidores   : m
+Capacidade   : m clientes (sem fila)
+Palavra-chave: bloqueio imediato, Erlang B
+

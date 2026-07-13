@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libfeq.a CMakeFiles/feq.dir/feq_401_open.cpp.o CMakeFiles/feq.dir/feq_402_close.cpp.o CMakeFiles/feq.dir/feq_403_print.cpp.o CMakeFiles/feq.dir/feq_404_insert.cpp.o CMakeFiles/feq.dir/feq_405_retrieve.cpp.o
+/usr/bin/ranlib /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libfeq.a

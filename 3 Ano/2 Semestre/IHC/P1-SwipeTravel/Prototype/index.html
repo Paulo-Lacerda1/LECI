@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwipeTravel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <section id="screen-auth" class="screen active auth-screen">
+      <div class="auth-shell">
+        <div class="auth-hero">
+          <div class="auth-logo-wrap">
+            <img src="logo.png" alt="SwipeTravel logo" class="auth-logo" />
+          </div>
+          <h1>Plan smarter, travel together</h1>
+          <p>Sign in to your account to continue or create a new account in a few seconds.</p>
+        </div>
+
+        <div class="auth-card">
+          <div class="tab-row auth-tab-row">
+            <button class="chip active" data-auth-mode="login">Sign in</button>
+            <button class="chip" data-auth-mode="register">Create Account</button>
+          </div>
+
+          <div id="auth-feedback" class="auth-feedback hidden"></div>
+
+          <div id="auth-login-form">
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input id="login-email" class="text-input" type="email" placeholder="ana@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input id="login-password" class="text-input" type="password" placeholder="Write your password" />
+            </div>
+            <button class="primary-btn" id="login-submit">Sign in</button>
+            <div class="helper-text auth-helper" style="text-align: center; line-height: 1.6;">
+              <strong>Demo Accounts (Password: 123)</strong><br>
+              joao@swipetravel.app<br>
+              tomas@swipetravel.app<br>
+              sofia@swipetravel.app<br>
+              nuno@swipetravel.app<br>
+            </div>
+          </div>
+
+          <div id="auth-register-form" class="hidden">
+            <div class="form-group">
+              <label for="register-name">Name</label>
+              <input id="register-name" class="text-input" placeholder="Ana Silva" />
+            </div>
+            <div class="form-group">
+              <label for="register-email">Email</label>
+              <input id="register-email" class="text-input" type="email" placeholder="ana@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="register-password">Password</label>
+              <input id="register-password" class="text-input" type="password" placeholder="Create a password" />
+            </div>
+            <div class="form-group">
+              <label for="register-confirm-password">Confirm Password</label>
+              <input id="register-confirm-password" class="text-input" type="password" placeholder="Repeat the password" />
+            </div>
+            <button class="primary-btn" id="register-submit">Create Account</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="screen-home" class="screen">
+      <div class="topbar">
+        <div class="brand">
+          <h1>Hello, User 👋</h1>
+          <div class="brand-mark">
+            <img src="logo.png" alt="SwipeTravel logo" class="brand-logo" style="background: transparent;" />
+            <div class="subtitle">SwipeTravel</div>
+          </div>
+        </div>
+        <button class="icon-btn" id="go-profile">👤</button>
+      </div>
+
+      <div class="hero-card" role="region" aria-label="Hero introduction">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="promo-spark" aria-hidden="true">✦</span> <strong class="promo-heading">Plan smarter, travel together</strong>
+          </div>
+          <p class="hero-subtitle"> Votes, expenses and itinerary — all in one place for the whole group.
+          </p>
+        </div>
+      </div>
+
+      <div class="section" id="pending-actions-section">
+        <div class="section-title">
+          <h3 class="promo-heading">Pending actions</h3>
+          <span id="pending-count-label">0 items</span>
+        </div>
+        <div id="pending-actions-list"></div>
+      </div>
+
+      <div class="section">
+        <div class="promo-heading-wrap">
+          <h3 class="promo-heading">May promotions</h3>
+        </div>
+
+        <div class="promo-grid">
+
+          <div class="promo-card-img">
+            <div class="promo-bg" style="background-image: url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=700&q=80');"></div>
+            <div class="promo-overlay"></div>
+            <div class="promo-content">
+              <div class="promo-left">
+                <h4 class="promo-title">Flights to Paris</h4>
+                <p class="promo-meta">Round trip • Various companies</p>
+              </div>
+              <div class="promo-right">
+                <span class="promo-badge-disc">-30%</span>
+                <button class="promo-link-btn">See offer →</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-card-img">
+            <div class="promo-bg" style="background-image: url('https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=700&q=80');"></div>
+            <div class="promo-overlay"></div>
+            <div class="promo-content">
+              <div class="promo-left">
+                <h4 class="promo-title">Getaway in Barcelona</h4>
+                <p class="promo-meta">Flight + 3 nights (city center)</p>
+              </div>
+              <div class="promo-right">
+                <span class="promo-badge-disc">-25%</span>
+                <button class="promo-link-btn">See offer →</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-card-img">
+            <div class="promo-bg" style="background-image: url('https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?w=700&q=80');"></div>
+            <div class="promo-overlay"></div>
+            <div class="promo-content">
+              <div class="promo-left">
+                <h4 class="promo-title">Almelo package</h4>
+                <p class="promo-meta">For groups of 4+ people</p>
+              </div>
+              <div class="promo-right">
+                <span class="promo-badge-disc">-15%</span>
+                <button class="promo-link-btn">See offer →</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="screen-trips" class="screen">
+      <div class="topbar">
+        <div class="brand">
+          <h2>Travel groups</h2>
+          <div class="subtitle">Planning and closed trips</div>
+        </div>
+        <div class="topbar-placeholder"></div>
+      </div>
+
+      <div class="tab-row">
+        <button class="chip active" data-trip-filter="active">Planning / Ongoing</button>
+        <button class="chip" data-trip-filter="closed">Closed / History</button>
+      </div>
+
+      <div class="trip-list" id="trips-list"></div>
+      
+      <div class="spacer-16"></div>
+      <button class="primary-btn" id="open-create-trip">+ Create new trip</button>
+    </section>
+
+    <section id="screen-trip-detail" class="screen">
+      <div class="topbar">
+        <button class="icon-btn" data-back="trips">←</button>
+        <div class="brand centered-brand">
+          <h2 id="trip-detail-title">Trip</h2>
+          <div class="subtitle" id="trip-detail-subtitle">Details</div>
+        </div>
+        <button class="small-link" id="trip-finish-btn" style="color: var(--primary); font-weight: 800; font-size: 0.95rem; background: #eef2ff; padding: 6px 12px; border-radius: 10px;">Finish</button>
+      </div>
+
+      <div class="tab-row">
+        <button class="chip active" data-detail-tab="votes">Votes</button>
+        <button class="chip" data-detail-tab="itinerary">Itinerary</button>
+        <button class="chip" data-detail-tab="members">Members</button> 
+        <button class="chip" data-detail-tab="expenses">Expenses</button>
+      </div>
+
+      <div id="trip-tab-votes" class="tab-panel section">
+        <div class="section-title">
+          <h3>Winning decisions</h3>
+          <span id="vote-progress-label">0/0 completed</span>
+        </div>
+        <div class="panel">
+          <h4>Winning destination</h4>
+          <div id="winning-destination"></div>
+        </div>
+        <div class="panel">
+          <h4>Winning accommodation</h4>
+          <div id="winning-accommodation"></div>
+        </div>
+        <div class="panel">
+          <h4>Approved activities</h4>
+          <div id="approved-activities"></div>
+        </div>
+        <button class="primary-btn" id="open-suggestions">Vote</button>
+        <div class="spacer-8"></div>
+        <button class="secondary-btn" id="export-pdf-btn">Export PDF</button>
+      </div>
+
+      <div id="trip-tab-itinerary" class="tab-panel section hidden">
+        <div class="section-title">
+          <h3>Your itinerary</h3>
+          <span id="itinerary-day-label">Day 1</span>
+        </div>
+        <div class="panel">
+          <h4>Now and next</h4>
+          <div id="itinerary-current"></div>
+          <div class="spacer-16"></div>
+          <div class="btn-row">
+            <button class="secondary-btn">Open in Maps</button>
+            <button class="secondary-btn">View PDF</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="trip-tab-members" class="tab-panel section hidden">
+        <div class="section-title">
+          <h3>Group members</h3>
+          <button class="small-link" id="open-add-member">+ Add member</button>
+        </div>
+        <div class="member-list" id="member-list-inline"></div>
+      </div>
+
+      <div id="trip-tab-expenses" class="tab-panel section hidden">
+        <div class="section-title">
+          <h3>Final balances</h3>
+          <span id="group-total-spent">€0</span>
+        </div>
+        <div class="balance-card section expense-summary-card">
+          <div class="big-number" id="pending-balance-count">0 pending</div>
+          <div class="helper-text">Track who still needs to pay and mark balances as settled.</div>
+        </div>
+        <button class="primary-btn" id="open-add-expense-inline">+ Add expense</button>
+        <div class="spacer-8"></div>
+        <div class="expense-list" id="expense-list"></div>
+      </div>
+    </section>
+
+    <section id="screen-suggestions" class="screen">
+      <div class="topbar">
+        <button class="icon-btn" data-back="trip-detail">←</button>
+        <div class="brand centered-brand">
+          <h2 id="suggestions-title">Trip suggestions</h2>
+          <div class="subtitle">Swipe left or right</div>
+        </div>
+        <div class="topbar-placeholder"></div>
+      </div>
+
+      <button class="primary-btn" id="open-add-suggestion">
+      + Add suggestion
+      </button>
+
+      <div class="spacer-16"></div>
+      <div id="suggestion-deck"></div>
+    </section>
+
+    <section id="screen-profile" class="screen">
+      <div class="topbar">
+        <button class="icon-btn" data-back="home">←</button>
+        <div class="brand centered-brand">
+          <h2>Profile</h2>
+          <div class="subtitle">Your activity and preferences</div>
+        </div>
+        <div class="topbar-placeholder"></div>
+      </div>
+
+      <div class="section">
+        <div class="row-between">
+          <div class="member-info">
+            <div class="avatar" id="profile-avatar">You</div>
+            <div>
+              <strong id="profile-user-name">Utilizador</strong>
+              <div class="muted" id="profile-user-role">Trip organiser</div>
+            </div>
+          </div>
+          <span class="status-badge progress">Active</span>
+        </div>
+        <div class="spacer-16"></div>
+        <button class="secondary-btn" id="logout-btn">Sign out</button>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <h3>Stats</h3>
+          <span>Demo</span>
+        </div>
+        <div class="trip-list">
+          <div class="trip-card"><strong id="profile-stat-trips">0</strong><div class="muted">Trips created</div></div>
+          <div class="trip-card"><strong id="profile-stat-members">0</strong><div class="muted">Group members involved</div></div>
+          <div class="trip-card"><strong id="profile-stat-expenses">0</strong><div class="muted">Expenses registered</div></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <h3>My trips</h3>
+          <span id="trip-count-label">0 trips</span>
+        </div>
+        <div class="trip-list" id="home-trip-list"></div>
+      </div>
+    </section>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn active" data-nav="home"><span>🏠</span><span>Home</span></button>
+      <button class="nav-btn" data-nav="trips"><span>✈️</span><span>Trips</span></button>
+      <button class="nav-btn" data-nav="profile"><span>👤</span><span>Profile</span></button>
+    </nav>
+  </div>
+
+  <div class="modal" id="modal-create-trip">
+    <div class="modal-sheet">
+      <div class="topbar modal-topbar">
+        <button class="icon-btn" data-close-modal="modal-create-trip">✕</button>
+        <div class="brand centered-brand">
+          <h2>New trip</h2>
+        </div>
+        <button class="small-link" id="save-trip-btn">Save</button>
+      </div>
+      <div class="form-card">
+        <div class="form-group">
+          <label for="trip-name">Name</label>
+          <input id="trip-name" class="text-input" />
+        </div>
+
+        <div class="form-group">
+          <label for="trip-destination">Destination</label>
+          <input id="trip-destination" class="text-input" />
+        </div>
+
+        <div style="display: flex; gap: 10px; margin-bottom: 16px;">
+        <div style="flex: 1;">
+          <label style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 0.9rem;">Start Date</label>
+          <input type="date" id="trip-start-date" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;">
+        </div>
+        <div style="flex: 1;">
+          <label style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 0.9rem;">End Date</label>
+          <input type="date" id="trip-end-date" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1;">
+        </div>
+      </div>
+
+        <div class="form-group">
+          <label for="trip-budget">Max budget per person (€)</label>
+          <input id="trip-budget" class="number-input money-style" type="number" min="0" placeholder="Ex: 400" />
+        </div>
+
+        <div class="form-group">
+          <label>Select members to invite</label>
+          <div id="trip-contact-list" class="checkbox-group">
+            <label class="checkbox-item"><input type="checkbox" value="João"> João</label>
+            <label class="checkbox-item"><input type="checkbox" value="Ricardo"> Ricardo</label>
+            <label class="checkbox-item"><input type="checkbox" value="Tomás"> Tomás</label>
+            <label class="checkbox-item"><input type="checkbox" value="Sofia"> Sofia</label>
+            <label class="checkbox-item"><input type="checkbox" value="Nuno"> Nuno</label>
+            <label class="checkbox-item"><input type="checkbox" value="Leonor"> Leonor</label>
+          </div>
+        </div>
+
+        <button class="primary-btn" id="create-trip-submit">Create trip and continue</button>
+      </div>
+    </div> </div> <div class="modal" id="modal-add-expense">
+    <div class="modal-sheet">
+      <div class="topbar modal-topbar">
+        <button class="icon-btn" data-close-modal="modal-add-expense">✕</button>
+        <div class="brand centered-brand">
+          <h2>Add expense</h2>
+        </div>
+        <div class="topbar-placeholder"></div>
+      </div>
+
+      <div class="form-card">
+        <div class="form-group">
+          <label for="expense-description">Description</label>
+          <input id="expense-description" class="text-input" placeholder="New expense" />
+        </div>
+        <div class="form-group">
+          <label for="expense-total">Total amount (€)</label>
+          <input id="expense-total" class="number-input" type="number" min="0" step="0.01" placeholder="60" />
+        </div>
+        <div class="form-group">
+          <label for="expense-split">Split between</label>
+          <select id="expense-split" class="select-input">
+            <option value="all">All members</option>
+            <option value="custom">Custom count</option>
+          </select>
+        </div>
+        
+        <div class="form-group hidden" id="expense-custom-count-group">
+          <label>Select participants</label>
+          <div id="expense-custom-members" class="checkbox-group"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="expense-payer">Who paid?</label>
+          <select id="expense-payer" class="select-input">
+            <option value="Tu" selected>Me (You)</option>
+            <option value="Tomas">Tomas</option>
+            <option value="Sofia">Sofia</option>
+            <option value="Nuno">Nuno</option>
+          </select>
+        </div>
+        
+        <div class="btn-row">
+          <button class="secondary-btn" data-close-modal="modal-add-expense">Cancel</button>
+          <button class="primary-btn" id="save-expense-btn">Save expense</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-add-member">
+    <div class="modal-sheet">
+      <div class="topbar modal-topbar">
+        <button class="icon-btn" data-close-modal="modal-add-member">✕</button>
+        <div class="brand centered-brand">
+          <h2>Add member</h2>
+        </div>
+        <div class="topbar-placeholder"></div>
+      </div>
+
+      <div class="form-card">
+        <div class="form-group">
+          <label>Select members to invite</label>
+          <div id="add-member-contact-list" class="checkbox-group">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="include-previous-expenses">Include in previous expenses?</label>
+          <select id="include-previous-expenses" class="select-input">
+            <option value="no">No, only future expenses</option>
+            <option value="yes">Yes, include all previous expenses</option>
+          </select>
+          <div class="helper-text">This follows the behaviour shown in your prototype.</div>
+        </div>
+        <div class="btn-row">
+          <button class="secondary-btn" data-close-modal="modal-add-member">Cancel</button>
+          <button class="primary-btn" id="save-member-btn">Add member</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-add-suggestion">
+    <div class="modal-sheet">
+      <div class="topbar modal-topbar">
+        <button class="icon-btn" data-close-modal="modal-add-suggestion">✕</button>
+        <div class="brand centered-brand">
+          <h2>Add suggestion</h2>
+        </div>
+        <div class="topbar-placeholder"></div>
+      </div>
+
+      <div class="form-card">
+        <div class="form-group">
+          <label for="suggestion-city">Destination</label>
+          <input id="suggestion-city" class="text-input"  />
+        </div>
+
+        <div class="form-group">
+          <label for="suggestion-subtitle">Description</label>
+          <input id="suggestion-subtitle" class="text-input"  />
+        </div>
+
+        <div class="form-group">
+          <label for="suggestion-cost">Average cost (€)</label>
+          <input id="suggestion-cost" class="number-input" type="number" min="0"  />
+        </div>
+
+        <div class="form-group">
+          <label for="suggestion-image">Photo</label>
+          <input id="suggestion-image" type="file" accept="image/*" />
+        </div>
+
+        <div class="btn-row">
+          <button class="secondary-btn" data-close-modal="modal-add-suggestion">Cancel</button>
+          <button class="primary-btn" id="save-suggestion-btn">Save suggestion</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

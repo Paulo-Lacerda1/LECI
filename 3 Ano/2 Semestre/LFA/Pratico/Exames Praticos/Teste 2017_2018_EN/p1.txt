@@ -1,0 +1,5 @@
+output 2+3i;
+output 4;
+output i;
+4-i => c;
+output c;

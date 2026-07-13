@@ -1,0 +1,71 @@
+CREATE SCHEMA Company;
+GO
+CREATE DATABASE Company;
+
+CREATE TABLE DEPARTMENT(
+	Dname			VARCHAR(45) 	NOT NULL,
+	Dnumber			INT				CHECK(Dnumber> 0),
+	Mgr_Ssn			CHAR(9),
+	Mgr_start_date	DATE,
+
+	PRIMARY KEY (Dnumber),
+	UNIQUE (Dname),
+);
+
+CREATE TABLE EMPLOYEE (
+	Fname		VARCHAR(15)		NOT NULL,
+	Minit		CHAR,
+	Lname		VARCHAR(15)		NOT NULL,
+	Ssn			CHAR(9),
+	Bdate		DATE,
+	e_Address	VARCHAR(30),	
+	Sex			CHAR			NOT NULL	CHECK(Sex='F' OR Sex='M'),
+	Salary		DECIMAL(10,2)	NOT NULL	CHECK(Salary > 12),
+	Super_ssn	CHAR(9),
+	Dno			INT				NOT NULL
+	
+	PRIMARY KEY (Ssn),	
+	FOREIGN KEY (Super_ssn) REFERENCES EMPLOYEE(Ssn),
+	FOREIGN KEY (Dno) REFERENCES DEPARTMENT (Dnumber)
+);
+
+ALTER TABLE DEPARTMENT ADD CONSTRAINT DEPTMGRFK FOREIGN KEY (Mgr_ssn) REFERENCES EMPLOYEE (Ssn);
+
+CREATE TABLE DEPT_LOCATIONS(
+	Dnumber		INT,
+	Dlocation	VARCHAR(30)
+
+	PRIMARY KEY (Dnumber,Dlocation),
+	FOREIGN KEY (Dnumber) REFERENCES DEPARTMENT(Dnumber)
+);
+
+CREATE TABLE PROJECT(
+	Pname		VARCHAR(45)		NOT NULL,
+	Pnumber		INT				CHECK(Pnumber> 0),
+	Plocation	VARCHAR(15)		NOT NULL,
+	Dnum		INT				NOT NULL,
+
+	PRIMARY KEY (Pnumber),
+	UNIQUE (Pname),
+	FOREIGN KEY (Dnum) REFERENCES DEPARTMENT (Dnumber)
+);
+
+CREATE TABLE WORKS_ON(
+	Essn	CHAR(9)			NOT NULL,
+	Pno		INT				NOT NULL,
+	[Hours]	DECIMAL(4,2)	NOT NULL,
+
+	PRIMARY KEY (Essn,Pno),
+	FOREIGN KEY (Pno) REFERENCES PROJECT (Pnumber),
+	FOREIGN KEY (Essn) REFERENCES EMPLOYEE (Ssn)
+);
+
+CREATE TABLE DEPENDENT(
+	Essn			CHAR(9)			NOT NULL,
+	Dependent_name	VARCHAR(45)		NOT NULL,
+	Sex				CHAR,
+	Bdate			DATE,
+
+	PRIMARY KEY (Essn,Dependent_name),
+	FOREIGN KEY (Essn) REFERENCES EMPLOYEE (Ssn)
+);

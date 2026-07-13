@@ -1,0 +1,358 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Página-1" id="8NsvcoJkkhPOsdFxCpwi">
+    <mxGraphModel dx="1158" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="parKojxtipF54LoTdVx4-1" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" value="Instituição" vertex="1">
+          <mxGeometry height="90" width="180" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-2" parent="parKojxtipF54LoTdVx4-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-3" parent="parKojxtipF54LoTdVx4-2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="PK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-4" parent="parKojxtipF54LoTdVx4-2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="Nome" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-5" parent="parKojxtipF54LoTdVx4-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-6" parent="parKojxtipF54LoTdVx4-5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-7" parent="parKojxtipF54LoTdVx4-5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="Endereço" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-27" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" value="Autor" vertex="1">
+          <mxGeometry height="120" width="180" x="160" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-28" parent="parKojxtipF54LoTdVx4-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-29" parent="parKojxtipF54LoTdVx4-28" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="PK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-30" parent="parKojxtipF54LoTdVx4-28" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="Email" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-31" parent="parKojxtipF54LoTdVx4-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-32" parent="parKojxtipF54LoTdVx4-31" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-33" parent="parKojxtipF54LoTdVx4-31" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="Nome" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-34" parent="parKojxtipF54LoTdVx4-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1">
+          <mxGeometry height="30" width="180" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-35" parent="parKojxtipF54LoTdVx4-34" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" value="FK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-36" parent="parKojxtipF54LoTdVx4-34" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="NomeInstituição" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-37" edge="1" parent="1" source="parKojxtipF54LoTdVx4-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="parKojxtipF54LoTdVx4-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-38" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;whiteSpace=wrap;" value="EscritoPor" vertex="1">
+          <mxGeometry height="90" width="250" x="380" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-39" parent="parKojxtipF54LoTdVx4-38" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-40" parent="parKojxtipF54LoTdVx4-39" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;html=1;whiteSpace=wrap;" value="PK,FK1" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-41" parent="parKojxtipF54LoTdVx4-39" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;" value="Numero_artigo_cientifico" vertex="1">
+          <mxGeometry height="30" width="190" x="60" as="geometry">
+            <mxRectangle height="30" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-42" parent="parKojxtipF54LoTdVx4-38" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="250" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-43" parent="parKojxtipF54LoTdVx4-42" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;html=1;whiteSpace=wrap;" value="PK,FK2" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-44" parent="parKojxtipF54LoTdVx4-42" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;" value="email_autor_artigo_cientifico" vertex="1">
+          <mxGeometry height="30" width="190" x="60" as="geometry">
+            <mxRectangle height="30" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-51" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" value="ArtigoCientifico" vertex="1">
+          <mxGeometry height="120" width="180" x="420" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-52" parent="parKojxtipF54LoTdVx4-51" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-53" parent="parKojxtipF54LoTdVx4-52" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="PK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-54" parent="parKojxtipF54LoTdVx4-52" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="NReg" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-55" parent="parKojxtipF54LoTdVx4-51" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-56" parent="parKojxtipF54LoTdVx4-55" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-57" parent="parKojxtipF54LoTdVx4-55" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="Titulo" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-79" parent="parKojxtipF54LoTdVx4-51" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1">
+          <mxGeometry height="30" width="180" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-80" parent="parKojxtipF54LoTdVx4-79" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" value="FK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-81" parent="parKojxtipF54LoTdVx4-79" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="ID_Conferencia" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-65" edge="1" parent="1" source="parKojxtipF54LoTdVx4-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.01;entryY=0.676;entryDx=0;entryDy=0;entryPerimeter=0;" target="parKojxtipF54LoTdVx4-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="125" />
+              <mxPoint x="360" y="150" />
+              <mxPoint x="120" y="150" />
+              <mxPoint x="120" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-96" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" value="Participantes" vertex="1">
+          <mxGeometry height="210" width="180" x="150" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-97" parent="parKojxtipF54LoTdVx4-96" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-98" parent="parKojxtipF54LoTdVx4-97" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="PK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-99" parent="parKojxtipF54LoTdVx4-97" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="Email" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-100" parent="parKojxtipF54LoTdVx4-96" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-101" parent="parKojxtipF54LoTdVx4-100" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-102" parent="parKojxtipF54LoTdVx4-100" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="Nome" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-103" parent="parKojxtipF54LoTdVx4-96" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-104" parent="parKojxtipF54LoTdVx4-103" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-105" parent="parKojxtipF54LoTdVx4-103" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="Morada" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-106" parent="parKojxtipF54LoTdVx4-96" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-107" parent="parKojxtipF54LoTdVx4-106" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-108" parent="parKojxtipF54LoTdVx4-106" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="DataInscrição" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-109" parent="parKojxtipF54LoTdVx4-96" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1">
+          <mxGeometry height="30" width="180" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-110" parent="parKojxtipF54LoTdVx4-109" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" value="FK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-111" parent="parKojxtipF54LoTdVx4-109" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="ID_Conferencia" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-181" parent="parKojxtipF54LoTdVx4-96" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1">
+          <mxGeometry height="30" width="180" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-182" parent="parKojxtipF54LoTdVx4-181" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" value="FK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-183" parent="parKojxtipF54LoTdVx4-181" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" value="NomeInstuitição" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-141" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;whiteSpace=wrap;" value="Estudante" vertex="1">
+          <mxGeometry height="90" width="180" x="150" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-142" parent="parKojxtipF54LoTdVx4-141" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-143" parent="parKojxtipF54LoTdVx4-142" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;html=1;whiteSpace=wrap;" value="PK,FK" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-144" parent="parKojxtipF54LoTdVx4-142" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;" value="Email" vertex="1">
+          <mxGeometry height="30" width="120" x="60" as="geometry">
+            <mxRectangle height="30" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-148" parent="parKojxtipF54LoTdVx4-141" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-149" parent="parKojxtipF54LoTdVx4-148" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;html=1;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-150" parent="parKojxtipF54LoTdVx4-148" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;whiteSpace=wrap;" value="Comprovativo" vertex="1">
+          <mxGeometry height="30" width="120" x="60" as="geometry">
+            <mxRectangle height="30" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-160" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;whiteSpace=wrap;" value="Não Estudante" vertex="1">
+          <mxGeometry height="80" width="180" x="150" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-161" parent="parKojxtipF54LoTdVx4-160" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;html=1;" value="" vertex="1">
+          <mxGeometry height="20" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-162" parent="parKojxtipF54LoTdVx4-161" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;html=1;whiteSpace=wrap;" value="PK,FK" vertex="1">
+          <mxGeometry height="20" width="60" as="geometry">
+            <mxRectangle height="20" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-163" parent="parKojxtipF54LoTdVx4-161" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;" value="Email" vertex="1">
+          <mxGeometry height="20" width="120" x="60" as="geometry">
+            <mxRectangle height="20" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-164" parent="parKojxtipF54LoTdVx4-160" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-165" parent="parKojxtipF54LoTdVx4-164" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;html=1;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-166" parent="parKojxtipF54LoTdVx4-164" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;whiteSpace=wrap;" value="Comprovativo" vertex="1">
+          <mxGeometry height="30" width="120" x="60" as="geometry">
+            <mxRectangle height="30" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-167" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" value="Conferencia" vertex="1">
+          <mxGeometry height="60" width="180" x="420" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-168" parent="parKojxtipF54LoTdVx4-167" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-169" parent="parKojxtipF54LoTdVx4-168" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="PK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-170" parent="parKojxtipF54LoTdVx4-168" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" value="ID" vertex="1">
+          <mxGeometry height="30" width="150" x="30" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-180" edge="1" parent="1" source="parKojxtipF54LoTdVx4-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.003;entryY=0.835;entryDx=0;entryDy=0;entryPerimeter=0;" target="parKojxtipF54LoTdVx4-168">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="345" />
+              <mxPoint x="390" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-185" edge="1" parent="1" source="parKojxtipF54LoTdVx4-181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.007;entryY=0.793;entryDx=0;entryDy=0;entryPerimeter=0;" target="parKojxtipF54LoTdVx4-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="515" />
+              <mxPoint x="110" y="94" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-186" edge="1" parent="1" source="parKojxtipF54LoTdVx4-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="parKojxtipF54LoTdVx4-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-187" edge="1" parent="1" source="parKojxtipF54LoTdVx4-161" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.004;entryY=0.847;entryDx=0;entryDy=0;entryPerimeter=0;" target="parKojxtipF54LoTdVx4-97">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="700" />
+              <mxPoint x="90" y="375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-188" edge="1" parent="1" source="parKojxtipF54LoTdVx4-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.003;entryY=0.348;entryDx=0;entryDy=0;entryPerimeter=0;" target="parKojxtipF54LoTdVx4-168">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="parKojxtipF54LoTdVx4-189" edge="1" parent="1" source="parKojxtipF54LoTdVx4-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="parKojxtipF54LoTdVx4-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="95" />
+              <mxPoint x="370" y="285" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

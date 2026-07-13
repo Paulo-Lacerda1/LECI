@@ -1,0 +1,38 @@
+CONDICAO DE ESTABILIDADE — MODELOS DE FILAS
+
+IDEIA GERAL:
+taxa de chegadas < capacidade total de servico
+
+M/M/1
+rho = lambda / mu
+estavel <=> rho < 1  <=>  lambda < mu
+
+M/G/1
+rho = lambda * E[S]
+estavel <=> rho < 1
+
+M/M/m
+rho = lambda / (m * mu)
+estavel <=> rho < 1
+
+M/M/1/m
+sempre estavel
+(fila finita, ha perdas)
+
+
+M/M/m/m
+sempre estavel
+(sistema de perdas, Erlang B)
+-----------------------------------------
+SIGNIFICADO:
+lambda = taxa de chegadas
+mu     = taxa de servico (por servidor)
+m      = numero de servidores
+E[S]   = tempo medio de servico
+
+servico exponencial com taxa mu:
+E[S] = 1/mu
+servico deterministico (tempo fixo T):
+E[S] = T
+
+rho    = utilizacao

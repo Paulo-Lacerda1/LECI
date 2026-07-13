@@ -1,0 +1,3 @@
+output input "n";
+(input "n1") : (input "n2") => div;
+output div;

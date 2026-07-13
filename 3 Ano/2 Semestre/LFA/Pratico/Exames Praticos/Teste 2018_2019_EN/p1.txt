@@ -1,0 +1,6 @@
+show [1,2];
+[3] -> v1;
+show v1;
+show 3;
+5.5 -> e1;
+show e1;

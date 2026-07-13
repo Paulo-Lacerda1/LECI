@@ -1,2 +1,0 @@
-/usr/bin/ar qc /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libmem.a CMakeFiles/mem.dir/mem_701_open.cpp.o CMakeFiles/mem.dir/mem_702_close.cpp.o CMakeFiles/mem.dir/mem_703_print.cpp.o CMakeFiles/mem.dir/mem_704_alloc.cpp.o CMakeFiles/mem.dir/mem_705_free.cpp.o CMakeFiles/mem.dir/mem_706_biggest_free.cpp.o
-/usr/bin/ranlib /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libmem.a

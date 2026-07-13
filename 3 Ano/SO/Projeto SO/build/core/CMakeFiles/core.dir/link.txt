@@ -1,2 +1,0 @@
-/usr/bin/ar qc /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libcore.a CMakeFiles/core.dir/exception.cpp.o CMakeFiles/core.dir/probing.cpp.o CMakeFiles/core.dir/binselection.cpp.o
-/usr/bin/ranlib /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libcore.a

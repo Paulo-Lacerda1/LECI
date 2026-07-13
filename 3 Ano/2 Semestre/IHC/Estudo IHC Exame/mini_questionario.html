@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questionário Dinâmico de IHC</title>
+  <style>
+    :root {
+      --bg: #f6f3fb;
+      --card: #ffffff;
+      --text: #221b2f;
+      --muted: #6b6179;
+      --primary: #7c3aed;
+      --primary-dark: #5b21b6;
+      --good: #15803d;
+      --bad: #b91c1c;
+      --warn: #b45309;
+      --border: #ddd6fe;
+      --soft: #ede9fe;
+      --shadow: 0 12px 30px rgba(45, 27, 78, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, #ede9fe 0, transparent 30%),
+        radial-gradient(circle at bottom right, #ddd6fe 0, transparent 25%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .app {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #7c3aed, #a78bfa);
+      color: white;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: rgba(255,255,255,0.88);
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: 0 8px 20px rgba(45, 27, 78, 0.06);
+    }
+
+    .stat .label {
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin-bottom: 4px;
+    }
+
+    .stat .value {
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .progress-wrap {
+      height: 12px;
+      border-radius: 999px;
+      background: #f1eff7;
+      overflow: hidden;
+      margin-bottom: 18px;
+    }
+
+    .progress {
+      height: 100%;
+      width: 0%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--primary), #c084fc);
+      transition: width 0.25s ease;
+    }
+
+    .question-meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--primary-dark);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 6px 10px;
+    }
+
+    .question {
+      font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+      line-height: 1.3;
+      margin: 8px 0 20px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .options {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 14px;
+      padding: 12px 16px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.08s ease, background 0.2s ease, border 0.2s ease;
+      font-family: inherit;
+    }
+
+    button:active { transform: translateY(1px); }
+
+    .option {
+      text-align: left;
+      background: #fbfaff;
+      color: var(--text);
+      border: 2px solid #ebe5ff;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      line-height: 1.4;
+    }
+
+    .option:hover {
+      border-color: #c4b5fd;
+      background: #f5f3ff;
+    }
+
+    .option.selected {
+      border-color: var(--primary);
+      background: #ede9fe;
+    }
+
+    .option.correct {
+      border-color: #86efac;
+      background: #ecfdf5;
+      color: #14532d;
+    }
+
+    .option.wrong {
+      border-color: #fecaca;
+      background: #fef2f2;
+      color: #7f1d1d;
+    }
+
+    .letter {
+      min-width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: white;
+      border: 1px solid #ddd6fe;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: var(--primary-dark);
+    }
+
+    .feedback {
+      display: none;
+      padding: 16px;
+      border-radius: 16px;
+      margin: 14px 0 18px;
+      line-height: 1.5;
+    }
+
+    .feedback.show { display: block; }
+    .feedback.good {
+      background: #ecfdf5;
+      border: 1px solid #bbf7d0;
+      color: #14532d;
+    }
+
+    .feedback.bad {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      color: #7f1d1d;
+    }
+
+    .feedback.neutral {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      color: #78350f;
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .left-controls, .right-controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .primary:hover { background: var(--primary-dark); }
+
+    .secondary {
+      background: #ede9fe;
+      color: var(--primary-dark);
+    }
+
+    .secondary:hover { background: #ddd6fe; }
+
+    .ghost {
+      background: transparent;
+      border: 2px solid #ddd6fe;
+      color: var(--primary-dark);
+    }
+
+    .ghost:hover { background: #f5f3ff; }
+
+    .danger {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .danger:hover { background: #fecaca; }
+
+    .results {
+      display: none;
+      margin-top: 22px;
+    }
+
+    .results.show { display: block; }
+
+    .result-title {
+      font-size: 1.7rem;
+      margin: 0 0 10px;
+      letter-spacing: -0.03em;
+    }
+
+    .theme-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .theme {
+      background: #fbfaff;
+      border: 1px solid #ebe5ff;
+      border-radius: 16px;
+      padding: 12px;
+    }
+
+    .theme strong { display: block; margin-bottom: 4px; }
+
+    .review {
+      margin-top: 18px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .review-item {
+      border: 1px solid #ebe5ff;
+      border-radius: 16px;
+      padding: 12px;
+      background: #fbfaff;
+    }
+
+    .review-item.ok { border-color: #bbf7d0; }
+    .review-item.no { border-color: #fecaca; }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .kbd {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: #f3f0ff;
+      border: 1px solid #ddd6fe;
+      border-radius: 6px;
+      padding: 1px 5px;
+    }
+
+    @media (max-width: 760px) {
+      .topbar { grid-template-columns: repeat(2, 1fr); }
+      .card, header { padding: 18px; border-radius: 18px; }
+      .controls { align-items: stretch; }
+      .left-controls, .right-controls { width: 100%; }
+      .controls button { flex: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Questionário Dinâmico de IHC</h1>
+      <p class="subtitle">20 perguntas com correcção automática, respostas escondidas e explicações. Clica numa opção, confirma, vê a explicação e avança.</p>
+    </header>
+
+    <section class="topbar">
+      <div class="stat">
+        <div class="label">Pergunta</div>
+        <div class="value" id="statQuestion">1/20</div>
+      </div>
+      <div class="stat">
+        <div class="label">Pontuação</div>
+        <div class="value" id="statScore">0</div>
+      </div>
+      <div class="stat">
+        <div class="label">Respondidas</div>
+        <div class="value" id="statAnswered">0</div>
+      </div>
+      <div class="stat">
+        <div class="label">Percentagem</div>
+        <div class="value" id="statPercent">0%</div>
+      </div>
+    </section>
+
+    <main class="card" id="quizCard">
+      <div class="progress-wrap">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <div class="question-meta">
+        <span class="pill" id="questionNumber">Pergunta 1</span>
+        <span class="pill" id="questionTheme">Tema</span>
+      </div>
+
+      <div class="question" id="questionText"></div>
+      <div class="options" id="options"></div>
+
+      <div class="feedback neutral" id="feedback">
+        Escolhe uma opção e confirma a resposta.
+      </div>
+
+      <div class="controls">
+        <div class="left-controls">
+          <button class="ghost" id="prevBtn">← Anterior</button>
+          <button class="ghost" id="nextBtn">Seguinte →</button>
+        </div>
+        <div class="right-controls">
+          <button class="secondary" id="revealBtn">Mostrar explicação</button>
+          <button class="primary" id="checkBtn">Confirmar</button>
+          <button class="danger" id="resetBtn">Reiniciar</button>
+        </div>
+      </div>
+
+      <p class="small">Atalhos: <span class="kbd">1</span>–<span class="kbd">4</span> para escolher, <span class="kbd">Enter</span> para confirmar, <span class="kbd">→</span>/<span class="kbd">←</span> para navegar.</p>
+    </main>
+
+    <section class="card results" id="results">
+      <h2 class="result-title" id="resultTitle">Resultado</h2>
+      <p id="resultSummary"></p>
+      <div class="theme-grid" id="themeGrid"></div>
+      <div class="review" id="review"></div>
+    </section>
+  </div>
+
+  <script>
+    const questions = [
+  {
+    "id": 1,
+    "tema": "Avaliação de usabilidade",
+    "pergunta": "A avaliação heurística é um método de avaliação de usabilidade que:",
+    "opcoes": [
+      "É empírico, porque envolve utilizadores reais.",
+      "Só pode ser usado nas fases finais do desenvolvimento.",
+      "Deve ser realizado por vários avaliadores.",
+      "Produz uma medida exacta e objectiva da usabilidade."
+    ],
+    "correta": 2,
+    "explicacao": "A avaliação heurística é um método analítico: não envolve utilizadores finais, mas avaliadores que inspeccionam a interface com base em heurísticas. Idealmente, é feita por vários avaliadores, porque uma só pessoa dificilmente encontra todos os problemas."
+  },
+  {
+    "id": 2,
+    "tema": "SUS",
+    "pergunta": "O SUS (System Usability Scale) é:",
+    "opcoes": [
+      "Um questionário aplicado a utilizadores depois de usarem o sistema.",
+      "Um método analítico realizado por especialistas.",
+      "Um protocolo específico para avaliar apenas a facilidade de aprendizagem.",
+      "Um modelo usado para prever tempos de execução de tarefas."
+    ],
+    "correta": 0,
+    "explicacao": "O SUS é um questionário de percepção de usabilidade preenchido por utilizadores após a utilização do sistema. Dá uma pontuação padronizada, mas não deve ser interpretado como uma medida perfeita ou absoluta da usabilidade."
+  },
+  {
+    "id": 3,
+    "tema": "Usabilidade",
+    "pergunta": "Uma boa usabilidade envolve essencialmente:",
+    "opcoes": [
+      "Apenas satisfação do utilizador.",
+      "Apenas eficiência.",
+      "Eficácia, eficiência e satisfação, entre outros factores.",
+      "Apenas estética visual."
+    ],
+    "correta": 2,
+    "explicacao": "A usabilidade não é só a interface ser bonita. Inclui conseguir realizar a tarefa correctamente, com esforço/tempo aceitável e com satisfação. Normas mais recentes também consideram factores como risco e cobertura de contexto."
+  },
+  {
+    "id": 4,
+    "tema": "HIPS",
+    "pergunta": "No Sistema Humano de Processamento de Informação, a propriocepção:",
+    "opcoes": [
+      "Está relacionada com a percepção da posição do corpo.",
+      "É apenas outro nome para visão periférica.",
+      "Só é relevante em interfaces de texto.",
+      "É irrelevante em realidade virtual."
+    ],
+    "correta": 0,
+    "explicacao": "A propriocepção permite perceber a posição e movimento do corpo. Em sistemas como realidade virtual, gestos e ambientes imersivos, isto é importante porque influencia conforto, controlo e possível cybersickness."
+  },
+  {
+    "id": 5,
+    "tema": "Manipulação directa",
+    "pergunta": "Em que estilo de interacção se realizam acções directamente sobre representações visuais dos objectos?",
+    "opcoes": [
+      "Linguagem de comandos.",
+      "Manipulação directa.",
+      "Linguagem natural.",
+      "Pergunta-resposta."
+    ],
+    "correta": 1,
+    "explicacao": "Na manipulação directa, o utilizador actua directamente sobre objectos visuais, por exemplo arrastar um ficheiro, seleccionar texto ou fazer pinch-to-zoom numa imagem."
+  },
+  {
+    "id": 6,
+    "tema": "GOMS",
+    "pergunta": "O modelo GOMS permite principalmente:",
+    "opcoes": [
+      "Modelar objectivos, operações, métodos e regras de selecção usados pelo utilizador.",
+      "Medir a satisfação emocional do utilizador.",
+      "Substituir testes com utilizadores em todos os casos.",
+      "Avaliar apenas problemas visuais de cor e contraste."
+    ],
+    "correta": 0,
+    "explicacao": "GOMS significa Goals, Operators, Methods and Selection rules. É útil para analisar tarefas e prever desempenho em tarefas bem definidas, mas não avalia satisfação nem substitui totalmente métodos com utilizadores."
+  },
+  {
+    "id": 7,
+    "tema": "Mensagens de erro",
+    "pergunta": "Qual é a melhor mensagem para indicar que o utilizador tentou sair sem guardar?",
+    "opcoes": [
+      "Fatal error #231.",
+      "Erro 1654!!",
+      "Save file before exiting.",
+      "Illegal operation detected."
+    ],
+    "correta": 2,
+    "explicacao": "Uma boa mensagem de erro deve ser específica, breve, compreensível e útil. 'Save file before exiting' diz claramente o que aconteceu e o que o utilizador deve fazer."
+  },
+  {
+    "id": 8,
+    "tema": "Dispositivos de entrada",
+    "pergunta": "Qual destes é um dispositivo apontador de controlo directo?",
+    "opcoes": [
+      "Rato.",
+      "Joystick.",
+      "Touchscreen.",
+      "Trackball."
+    ],
+    "correta": 2,
+    "explicacao": "No touchscreen, o utilizador toca directamente no alvo no ecrã. No rato, joystick e trackball, o controlo é indirecto, porque há uma separação entre o movimento físico e o cursor."
+  },
+  {
+    "id": 9,
+    "tema": "Memória",
+    "pergunta": "Uma directriz importante para reduzir a carga de memória do utilizador é:",
+    "opcoes": [
+      "Obrigar o utilizador a decorar todos os comandos.",
+      "Preferir reconhecimento em vez de recordação.",
+      "Esconder opções para tornar a interface mais limpa.",
+      "Evitar qualquer feedback visual."
+    ],
+    "correta": 1,
+    "explicacao": "Interfaces devem ajudar o utilizador a reconhecer opções disponíveis, em vez de o obrigarem a lembrar comandos ou informação. Isto reduz carga cognitiva e erros."
+  },
+  {
+    "id": 10,
+    "tema": "Human-Centered Design",
+    "pergunta": "As metodologias Human-Centered Design caracterizam-se por:",
+    "opcoes": [
+      "Serem focadas apenas na tecnologia disponível.",
+      "Evitarem avaliação durante o desenvolvimento.",
+      "Serem iterativas e focadas nas necessidades dos utilizadores.",
+      "Só considerarem requisitos funcionais."
+    ],
+    "correta": 2,
+    "explicacao": "O Human-Centered Design começa por compreender os utilizadores, tarefas e contexto. É iterativo e inclui avaliação ao longo dos ciclos de desenvolvimento."
+  },
+  {
+    "id": 11,
+    "tema": "Participatory Design",
+    "pergunta": "O projecto participado caracteriza-se por:",
+    "opcoes": [
+      "Envolver utilizadores apenas no fim.",
+      "Envolver utilizadores ao longo do processo.",
+      "Excluir utilizadores para evitar enviesamento.",
+      "Ser um método puramente quantitativo."
+    ],
+    "correta": 1,
+    "explicacao": "No participatory design, os utilizadores participam activamente no processo de desenvolvimento, contribuindo em várias fases, não apenas na avaliação final."
+  },
+  {
+    "id": 12,
+    "tema": "Menus",
+    "pergunta": "Os menus são particularmente adequados quando:",
+    "opcoes": [
+      "O utilizador tem baixa experiência, usa o sistema ocasionalmente e a tarefa é estruturada.",
+      "Existem milhares de opções ao mesmo nível.",
+      "O utilizador precisa de máxima flexibilidade e rapidez.",
+      "A tarefa exige introdução livre de muitos comandos complexos."
+    ],
+    "correta": 0,
+    "explicacao": "Menus favorecem reconhecimento em vez de recordação, ajudam utilizadores menos experientes e reduzem erros sintácticos. Tornam-se menos adequados quando há demasiadas opções ou necessidade de elevada flexibilidade."
+  },
+  {
+    "id": 13,
+    "tema": "Linguagens de comandos",
+    "pergunta": "As interfaces baseadas em linguagem de comandos geralmente:",
+    "opcoes": [
+      "São baseadas em reconhecimento e não em memória.",
+      "São pouco flexíveis.",
+      "Exigem mais aprendizagem, mas podem ser muito eficientes para utilizadores experientes.",
+      "São ideais para utilizadores sem treino."
+    ],
+    "correta": 2,
+    "explicacao": "Linguagens de comandos exigem recordação e aprendizagem, mas podem ser rápidas, flexíveis e poderosas para utilizadores experientes."
+  },
+  {
+    "id": 14,
+    "tema": "Memória de longa duração",
+    "pergunta": "No HIPS, a memória de longa duração:",
+    "opcoes": [
+      "Tem capacidade muito limitada, como a memória de trabalho.",
+      "Só retém 7 ± 2 unidades de informação.",
+      "Armazena conhecimento, experiências e padrões durante períodos longos.",
+      "É igual ao buffer perceptivo."
+    ],
+    "correta": 2,
+    "explicacao": "A memória de longa duração armazena conhecimento e experiências. A limitação clássica de poucas unidades aplica-se mais à memória de curto prazo/trabalho, não à memória de longa duração."
+  },
+  {
+    "id": 15,
+    "tema": "Touchscreens",
+    "pergunta": "Os touchscreens são mais adequados quando:",
+    "opcoes": [
+      "Os alvos são pequenos e muito próximos.",
+      "Há necessidade intensa de entrada de texto.",
+      "Os alvos são grandes, discretos e distribuídos no ecrã.",
+      "O espaço de ecrã deve ser totalmente preservado."
+    ],
+    "correta": 2,
+    "explicacao": "Touchscreens funcionam bem com alvos grandes e fáceis de seleccionar. São menos adequados para entrada intensiva de texto ou alvos muito pequenos, porque aumentam erros e esforço."
+  },
+  {
+    "id": 16,
+    "tema": "Design de ecrãs",
+    "pergunta": "Uma boa regra de layout de informação é:",
+    "opcoes": [
+      "Usar o máximo de informação possível no mesmo ecrã.",
+      "Agrupar itens relacionados e deixar espaço em branco suficiente.",
+      "Usar sempre letras maiúsculas para melhorar a leitura.",
+      "Evitar alinhamentos para tornar a interface mais dinâmica."
+    ],
+    "correta": 1,
+    "explicacao": "O layout deve agrupar informação relacionada, usar alinhamentos consistentes e evitar clutter visual. Espaço em branco bem usado melhora a leitura e a percepção de grupos."
+  },
+  {
+    "id": 17,
+    "tema": "Gestalt",
+    "pergunta": "Segundo os princípios de Gestalt aplicados ao design de ecrãs:",
+    "opcoes": [
+      "Elementos próximos tendem a ser percebidos como relacionados.",
+      "Elementos semelhantes nunca são agrupados mentalmente.",
+      "A proximidade não influencia a percepção.",
+      "A organização visual não afecta a compreensão."
+    ],
+    "correta": 0,
+    "explicacao": "Pela lei da proximidade, elementos próximos tendem a ser percebidos como grupo. Também a similaridade, continuidade e fechamento influenciam a interpretação visual."
+  },
+  {
+    "id": 18,
+    "tema": "Modelos mentais",
+    "pergunta": "Um modelo mental é:",
+    "opcoes": [
+      "A implementação técnica interna do sistema.",
+      "A representação interna que o utilizador constrói sobre como o sistema funciona.",
+      "O manual oficial do sistema.",
+      "Um diagrama usado apenas pelos programadores."
+    ],
+    "correta": 1,
+    "explicacao": "O modelo mental é aquilo que o utilizador acredita sobre o funcionamento do sistema. É usado para prever comportamentos, explicar resultados e decidir que acções executar."
+  },
+  {
+    "id": 19,
+    "tema": "Modelo conceptual",
+    "pergunta": "Um bom modelo conceptual deve:",
+    "opcoes": [
+      "Ajudar o utilizador a formar um modelo mental adequado.",
+      "Esconder totalmente os processos do sistema.",
+      "Evitar feedback para reduzir distracções.",
+      "Ser sempre diferente de sistemas conhecidos."
+    ],
+    "correta": 0,
+    "explicacao": "O modelo conceptual é a forma como a interface apresenta a funcionalidade ao utilizador. Deve tornar processos relevantes visíveis, dar feedback, ser coerente e, quando útil, usar metáforas adequadas."
+  },
+  {
+    "id": 20,
+    "tema": "Manipulação directa",
+    "pergunta": "Uma característica típica da manipulação directa é:",
+    "opcoes": [
+      "Acções lentas, irreversíveis e sem feedback.",
+      "Objectos invisíveis e comandos abstractos.",
+      "Representação contínua dos objectos e acções rápidas, incrementais e reversíveis.",
+      "Obrigatoriedade de usar apenas linguagem natural."
+    ],
+    "correta": 2,
+    "explicacao": "A manipulação directa envolve representação visual contínua dos objectos, acções físicas em vez de comandos abstractos e resultados visíveis, rápidos, incrementais e reversíveis."
+  }
+];
+
+    let index = 0;
+    let answers = Array(questions.length).fill(null);
+    let checked = Array(questions.length).fill(false);
+    let explanationShown = Array(questions.length).fill(false);
+
+    const $ = (id) => document.getElementById(id);
+
+    function score() {
+      return questions.reduce((acc, q, i) => acc + (checked[i] && answers[i] === q.correta ? 1 : 0), 0);
+    }
+
+    function answeredCount() {
+      return checked.filter(Boolean).length;
+    }
+
+    function updateStats() {
+      const s = score();
+      const a = answeredCount();
+      const p = a === 0 ? 0 : Math.round((s / a) * 100);
+      $("statQuestion").textContent = `${index + 1}/${questions.length}`;
+      $("statScore").textContent = `${s}`;
+      $("statAnswered").textContent = `${a}`;
+      $("statPercent").textContent = `${p}%`;
+      $("progress").style.width = `${((index + 1) / questions.length) * 100}%`;
+    }
+
+    function renderQuestion() {
+      const q = questions[index];
+      $("questionNumber").textContent = `Pergunta ${index + 1}`;
+      $("questionTheme").textContent = q.tema;
+      $("questionText").textContent = q.pergunta;
+
+      const options = $("options");
+      options.innerHTML = "";
+
+      q.opcoes.forEach((op, i) => {
+        const btn = document.createElement("button");
+        btn.className = "option";
+        btn.innerHTML = `<span class="letter">${String.fromCharCode(65 + i)}</span><span>${op}</span>`;
+        btn.onclick = () => selectOption(i);
+
+        if (answers[index] === i) btn.classList.add("selected");
+
+        if (checked[index]) {
+          btn.disabled = true;
+          if (i === q.correta) btn.classList.add("correct");
+          if (answers[index] === i && i !== q.correta) btn.classList.add("wrong");
+        }
+
+        options.appendChild(btn);
+      });
+
+      $("prevBtn").disabled = index === 0;
+      $("nextBtn").textContent = index === questions.length - 1 ? "Ver resultado →" : "Seguinte →";
+      $("checkBtn").disabled = checked[index];
+      $("checkBtn").textContent = checked[index] ? "Confirmada" : "Confirmar";
+
+      renderFeedback();
+      updateStats();
+      renderResultsIfDone();
+    }
+
+    function selectOption(i) {
+      if (checked[index]) return;
+      answers[index] = i;
+      renderQuestion();
+    }
+
+    function checkAnswer() {
+      if (answers[index] === null) {
+        $("feedback").className = "feedback neutral show";
+        $("feedback").innerHTML = "Escolhe uma opção antes de confirmar.";
+        return;
+      }
+      checked[index] = true;
+      explanationShown[index] = true;
+      renderQuestion();
+    }
+
+    function renderFeedback() {
+      const q = questions[index];
+      const fb = $("feedback");
+
+      if (!checked[index] && !explanationShown[index]) {
+        fb.className = "feedback neutral";
+        fb.textContent = "Escolhe uma opção e confirma a resposta.";
+        return;
+      }
+
+      if (!checked[index] && explanationShown[index]) {
+        fb.className = "feedback neutral show";
+        fb.innerHTML = `<strong>Explicação:</strong> ${q.explicacao}`;
+        return;
+      }
+
+      const ok = answers[index] === q.correta;
+      fb.className = `feedback ${ok ? "good" : "bad"} show`;
+      fb.innerHTML = `
+        <strong>${ok ? "Certo." : "Errado."}</strong>
+        A resposta correcta é <strong>${String.fromCharCode(65 + q.correta)}</strong>.
+        <br><br><strong>Explicação:</strong> ${q.explicacao}
+      `;
+    }
+
+    function revealExplanation() {
+      explanationShown[index] = true;
+      renderFeedback();
+    }
+
+    function next() {
+      if (index < questions.length - 1) {
+        index++;
+        renderQuestion();
+      } else {
+        $("results").classList.add("show");
+        $("results").scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    function prev() {
+      if (index > 0) {
+        index--;
+        renderQuestion();
+      }
+    }
+
+    function resetQuiz() {
+      if (!confirm("Queres reiniciar o questionário?")) return;
+      index = 0;
+      answers = Array(questions.length).fill(null);
+      checked = Array(questions.length).fill(false);
+      explanationShown = Array(questions.length).fill(false);
+      $("results").classList.remove("show");
+      renderQuestion();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function renderResultsIfDone() {
+      if (answeredCount() !== questions.length) return;
+
+      const s = score();
+      const percent = Math.round((s / questions.length) * 100);
+
+      $("results").classList.add("show");
+      $("resultTitle").textContent = `Resultado final: ${s}/${questions.length} (${percent}%)`;
+
+      let msg = "";
+      if (percent >= 90) msg = "Muito forte. Estás perto de modo exame.";
+      else if (percent >= 75) msg = "Bom resultado. Revê sobretudo os temas onde falhaste.";
+      else if (percent >= 50) msg = "Base razoável, mas ainda convém treinar com explicações.";
+      else msg = "Ainda há lacunas importantes. Faz nova tentativa depois de reveres os conceitos.";
+
+      $("resultSummary").textContent = msg;
+
+      const themes = {};
+      questions.forEach((q, i) => {
+        if (!themes[q.tema]) themes[q.tema] = { total: 0, ok: 0 };
+        themes[q.tema].total++;
+        if (answers[i] === q.correta) themes[q.tema].ok++;
+      });
+
+      $("themeGrid").innerHTML = Object.entries(themes).map(([tema, val]) => `
+        <div class="theme">
+          <strong>${tema}</strong>
+          <span>${val.ok}/${val.total} certas</span>
+        </div>
+      `).join("");
+
+      $("review").innerHTML = questions.map((q, i) => {
+        const ok = answers[i] === q.correta;
+        const given = answers[i] === null ? "Sem resposta" : String.fromCharCode(65 + answers[i]);
+        const correct = String.fromCharCode(65 + q.correta);
+        return `
+          <div class="review-item ${ok ? "ok" : "no"}">
+            <strong>${i + 1}. ${q.pergunta}</strong><br>
+            A tua resposta: <strong>${given}</strong> · Correcta: <strong>${correct}</strong><br>
+            <span class="small">${q.explicacao}</span>
+          </div>
+        `;
+      }).join("");
+    }
+
+    $("checkBtn").onclick = checkAnswer;
+    $("revealBtn").onclick = revealExplanation;
+    $("nextBtn").onclick = next;
+    $("prevBtn").onclick = prev;
+    $("resetBtn").onclick = resetQuiz;
+
+    document.addEventListener("keydown", (e) => {
+      if (["1", "2", "3", "4"].includes(e.key)) {
+        selectOption(Number(e.key) - 1);
+      }
+      if (e.key === "Enter") {
+        checkAnswer();
+      }
+      if (e.key === "ArrowRight") {
+        next();
+      }
+      if (e.key === "ArrowLeft") {
+        prev();
+      }
+    });
+
+    renderQuestion();
+  </script>
+</body>
+</html>

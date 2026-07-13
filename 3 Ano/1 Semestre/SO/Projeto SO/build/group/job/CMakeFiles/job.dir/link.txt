@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libjob.a CMakeFiles/job.dir/job_201_open.cpp.o CMakeFiles/job.dir/job_202_close.cpp.o CMakeFiles/job.dir/job_203_print.cpp.o CMakeFiles/job.dir/job_204_insert.cpp.o CMakeFiles/job.dir/job_205_get.cpp.o CMakeFiles/job.dir/job_206_set.cpp.o
+/usr/bin/ranlib /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libjob.a

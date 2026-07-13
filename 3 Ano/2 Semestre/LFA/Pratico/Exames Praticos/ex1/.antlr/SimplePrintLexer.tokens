@@ -1,0 +1,7 @@
+PRINT=1
+ASSIGN=2
+ID=3
+STRING=4
+WS=5
+'print'=1
+':'=2

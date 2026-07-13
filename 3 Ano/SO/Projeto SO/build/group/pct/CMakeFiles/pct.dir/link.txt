@@ -1,2 +1,0 @@
-/usr/bin/ar qc /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libpct.a CMakeFiles/pct.dir/pct_301_open.cpp.o CMakeFiles/pct.dir/pct_302_close.cpp.o CMakeFiles/pct.dir/pct_303_print.cpp.o CMakeFiles/pct.dir/pct_304_new.cpp.o CMakeFiles/pct.dir/pct_305_get.cpp.o CMakeFiles/pct.dir/pct_306_set.cpp.o CMakeFiles/pct.dir/pct_307_delete.cpp.o
-/usr/bin/ranlib /home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libpct.a

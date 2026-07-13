@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "/home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libsim.a"
+  "/home/paulo/Desktop/ProjetoSO/somm25nm-g21/lib/libsim.pdb"
+  "CMakeFiles/sim.dir/sim_101_open.cpp.o"
+  "CMakeFiles/sim.dir/sim_101_open.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_102_close.cpp.o"
+  "CMakeFiles/sim.dir/sim_102_close.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_103_print.cpp.o"
+  "CMakeFiles/sim.dir/sim_103_print.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_104_load_batch.cpp.o"
+  "CMakeFiles/sim.dir/sim_104_load_batch.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_105_run.cpp.o"
+  "CMakeFiles/sim.dir/sim_105_run.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_106_step.cpp.o"
+  "CMakeFiles/sim.dir/sim_106_step.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_110_step_submit.cpp.o"
+  "CMakeFiles/sim.dir/sim_110_step_submit.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_111_step_admit.cpp.o"
+  "CMakeFiles/sim.dir/sim_111_step_admit.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_112_step_dispatch.cpp.o"
+  "CMakeFiles/sim.dir/sim_112_step_dispatch.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_113_step_wait_event.cpp.o"
+  "CMakeFiles/sim.dir/sim_113_step_wait_event.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_114_step_exit.cpp.o"
+  "CMakeFiles/sim.dir/sim_114_step_exit.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_115_step_event_occurs.cpp.o"
+  "CMakeFiles/sim.dir/sim_115_step_event_occurs.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_116_step_activate.cpp.o"
+  "CMakeFiles/sim.dir/sim_116_step_activate.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_117_step_delete.cpp.o"
+  "CMakeFiles/sim.dir/sim_117_step_delete.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_118_step_preempt.cpp.o"
+  "CMakeFiles/sim.dir/sim_118_step_preempt.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_119_step_suspend.cpp.o"
+  "CMakeFiles/sim.dir/sim_119_step_suspend.cpp.o.d"
+  "CMakeFiles/sim.dir/sim_120_job_launcher.cpp.o"
+  "CMakeFiles/sim.dir/sim_120_job_launcher.cpp.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/sim.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

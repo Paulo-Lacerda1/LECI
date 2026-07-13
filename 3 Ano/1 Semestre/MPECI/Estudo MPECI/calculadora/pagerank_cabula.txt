@@ -1,0 +1,62 @@
+PROCESSO PARA CALCULAR O PAGERANK (RESUMO PARA CÁBULA)
+
+1) Modelar a Web como um grafo dirigido
+- Cada página é um nó.
+- Cada hyperlink é uma aresta dirigida da página origem para a página destino.
+
+2) Contar links de saída
+- Para cada página i, contar d_i = número de links de saída dessa página.
+
+3) Construir a matriz de transição H
+- H[j,i] = 1 / d_i se existir link da página i para a página j
+- H[j,i] = 0 caso contrário
+- Cada coluna da matriz soma 1 (matriz estocástica).
+
+4) Inicialização
+- Considerar n páginas.
+- Vector inicial de PageRank:
+  r^(0) = [1/n, 1/n, ..., 1/n]^T
+-----------------------------------------------------------
+G = β · H + (1 − β) · (1/n) · 11ᵀ
+
+G → matriz Google (matriz de transição final)
+
+β → fator de amortecimento (probabilidade de seguir um link)
+
+tipicamente β = 0.85
+
+H → matriz de hyperlinks
+
+H[j,i] = 1/dᵢ se existir link de i para j
+
+0 caso contrário
+
+n → número total de páginas
+
+1/n → probabilidade uniforme de saltar para qualquer página
+
+1 → vetor coluna de 1s
+
+11ᵀ → matriz cheia de 1s
+
+modela o “salto aleatório” (teleport)
+
+-----------------------------------------------------------
+
+Equação do PageRank (estado estacionário)
+
+r = G · r
+r → vetor PageRank
+
+rᵢ → importância (probabilidade estacionária) da página i
+
+Σ rᵢ = 1
+-----------------------------------------------------------
+Iteração
+
+r^(k+1) = G · r^(k)
+r^(k) → PageRank na iteração k
+
+r^(k+1) → PageRank na iteração seguinte
+
+converge para a distribuição estacionária

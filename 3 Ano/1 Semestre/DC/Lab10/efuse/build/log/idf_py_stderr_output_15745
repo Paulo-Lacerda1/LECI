@@ -1,0 +1,1 @@
+Command: /home/paulo/esp/v5.5.1/esp-idf/tools/python_env/idf5.5_py3.12_env/bin/python -mespefuse summary -p /dev/ttyUSB0 --chip esp32c6

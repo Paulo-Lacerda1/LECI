@@ -1,0 +1,2 @@
+source /home/paulo/Desktop/DC/Lab8/Lab8/build/bootloader/gdbinit/symbols
+source /home/paulo/Desktop/DC/Lab8/Lab8/build/bootloader/gdbinit/connect

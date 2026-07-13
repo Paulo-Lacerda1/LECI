@@ -1,0 +1,9 @@
+** p3.txt
+
+read => c1;
+output c1;
+
+output read + 3i;
+
+read * (2+i) => c2;
+output c2;  
