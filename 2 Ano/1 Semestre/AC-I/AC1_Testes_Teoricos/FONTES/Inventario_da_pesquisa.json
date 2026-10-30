@@ -1,0 +1,2397 @@
+{
+  "data": "2026-10-30",
+  "repositorios": [
+    {
+      "repositorio": "laramatos22/AC1_MIECT",
+      "url": "https://github.com/laramatos22/AC1_MIECT",
+      "revisao": "6db917018357250741029714e9d20c2b38e91785",
+      "ficheiros_na_arvore": 159,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "RodrigoRosmaninho/miect_stuff",
+      "url": "https://github.com/RodrigoRosmaninho/miect_stuff",
+      "revisao": "6c8a7ecf75278bf34d575e47095b9738b373391f",
+      "ficheiros_na_arvore": 980,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "joaogasparp/leci_2ano",
+      "url": "https://github.com/joaogasparp/leci_2ano",
+      "revisao": "344e26d938b90c5d26034a00679dfbe840ed8b38",
+      "ficheiros_na_arvore": 3974,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "tiagooliveira95/LECI-MIECT",
+      "url": "https://github.com/tiagooliveira95/LECI-MIECT",
+      "revisao": "d11c8df51443594fc2a915736104235fcf9d6ecf",
+      "ficheiros_na_arvore": 966,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "martaaoliveira/UA-Course-MIECT",
+      "url": "https://github.com/martaaoliveira/UA-Course-MIECT",
+      "revisao": "282164c363f3d5d7cba4da271469936d856ad606",
+      "ficheiros_na_arvore": 35655,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "matilde-morais/ua-leci",
+      "url": "https://github.com/matilde-morais/ua-leci",
+      "revisao": "2fbcedfc70ea9a3200293cc0c30556dd22f006f7",
+      "ficheiros_na_arvore": 626,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "Tiago-AlvesUA/SO",
+      "url": "https://github.com/Tiago-AlvesUA/SO",
+      "revisao": "4f02d466f5ea75f98db78ace8f59dc99914d65c6",
+      "ficheiros_na_arvore": 321,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "mateus-fonte/AC1",
+      "url": "https://github.com/mateus-fonte/AC1",
+      "revisao": "b73c9684a9dabdaa3a28b1c88f723694b00b73ef",
+      "ficheiros_na_arvore": 14,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "laramatos22/AC1_2021",
+      "url": "https://github.com/laramatos22/AC1_2021",
+      "revisao": "1ba90e4ce97ea83c387f5ebcbe2e6aff27ee6b74",
+      "ficheiros_na_arvore": 184,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "eduardoalves001/LECI",
+      "url": "https://github.com/eduardoalves001/LECI",
+      "revisao": "c99efb203da349d6cf51039ca204ddebceec7cb3",
+      "ficheiros_na_arvore": 4289,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "DiogoTCouto/LECI",
+      "url": "https://github.com/DiogoTCouto/LECI",
+      "revisao": "91e15c39f5d2004625a978afb6ea62cae394ce26",
+      "ficheiros_na_arvore": 1,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "aokiLourenco/AC1",
+      "url": "https://github.com/aokiLourenco/AC1",
+      "revisao": "cf075ba324f84fb74001c1c395ef9df879ad7c4f",
+      "ficheiros_na_arvore": 135,
+      "ficheiros_incluidos": 5
+    },
+    {
+      "repositorio": "ElSebasdg/LECI",
+      "url": "https://github.com/ElSebasdg/LECI",
+      "revisao": "5d05b86b9f67b1b5cdd35a961ec8d7adf0ec0224",
+      "ficheiros_na_arvore": 1211,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "matleitner/LECT",
+      "url": "https://github.com/matleitner/LECT",
+      "revisao": "89b4f9bee36cde9a7e305c8a79deb3a2da716779",
+      "ficheiros_na_arvore": 29145,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "RodrigoRosmaninho/projects-ect",
+      "url": "https://github.com/RodrigoRosmaninho/projects-ect",
+      "revisao": "79473e25f0af5f04aa8b99297597171484796fe3",
+      "ficheiros_na_arvore": 4517,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "JoaoRes/miect",
+      "url": "https://github.com/JoaoRes/miect",
+      "revisao": "50b955648133fd6f8fae08882455bbbc2090c4b1",
+      "ficheiros_na_arvore": 970,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "v1centebarros/lei-so-p2",
+      "url": "https://github.com/v1centebarros/lei-so-p2",
+      "revisao": "bf28096c595b29e87d396d6708b9a8fe42904ed3",
+      "ficheiros_na_arvore": 24,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "JOKAsLAB/University-UA-LECI",
+      "url": "https://github.com/JOKAsLAB/University-UA-LECI",
+      "revisao": "fa95732993000802783c34d12bcf9088fe2bbabd",
+      "ficheiros_na_arvore": 1418,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "bearkillerPT/AC1",
+      "url": "https://github.com/bearkillerPT/AC1",
+      "revisao": "a2034a1d411b1e9255f7b05886555299faf9b2b6",
+      "ficheiros_na_arvore": 55,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "Joaoleite25/LECI",
+      "url": "https://github.com/Joaoleite25/LECI",
+      "revisao": "c3fe9dc83af74f6584b8ab751fd2f2c5ae0654ea",
+      "ficheiros_na_arvore": 2556,
+      "ficheiros_incluidos": 2
+    },
+    {
+      "repositorio": "TheGoncaloSilva/computer_arch_1",
+      "url": "https://github.com/TheGoncaloSilva/computer_arch_1",
+      "revisao": "47d3774bd0d4575ef9458ad74398545bd6174f77",
+      "ficheiros_na_arvore": 158,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "PedroDSFerreira/uni-ac-i",
+      "url": "https://github.com/PedroDSFerreira/uni-ac-i",
+      "revisao": "68505bac3730589e2b411885db7d71605adbea80",
+      "ficheiros_na_arvore": 79,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "FilipeMiguelVale/MIECT_KIT",
+      "url": "https://github.com/FilipeMiguelVale/MIECT_KIT",
+      "revisao": "ed1dc5b163531597eda379610b9607d39ae2c6f5",
+      "ficheiros_na_arvore": 13,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "franciscoribeiro05/computer_architecture_I",
+      "url": "https://github.com/franciscoribeiro05/computer_architecture_I",
+      "revisao": "1f0ad3967d089873173252c9498e11f046b43d80",
+      "ficheiros_na_arvore": 73,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "Ricardo-Antunes0/LECI",
+      "url": "https://github.com/Ricardo-Antunes0/LECI",
+      "revisao": "be3d5008ec16080256d78152bbce762db50695cf",
+      "ficheiros_na_arvore": 1961,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "MarcoASRamos/UA-ECT",
+      "url": "https://github.com/MarcoASRamos/UA-ECT",
+      "revisao": "7fdae2b6e9e8c81e1f1303b32d21e28bd555a56d",
+      "ficheiros_na_arvore": 6240,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "FranciscoRibeiro03/computer-architecture-i",
+      "url": "https://github.com/FranciscoRibeiro03/computer-architecture-i",
+      "revisao": "b1b386bd5068d89d24aa1329b98d4c0586bd626b",
+      "ficheiros_na_arvore": 30,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "marco-almeida/LECI",
+      "url": "https://github.com/marco-almeida/LECI",
+      "revisao": "22a8bf2ca779a5cf8cb8c722779cb8bc98e3bfc7",
+      "ficheiros_na_arvore": 4257,
+      "ficheiros_incluidos": 7
+    },
+    {
+      "repositorio": "RafaelCurado/ac1",
+      "url": "https://github.com/RafaelCurado/ac1",
+      "revisao": "93ecbcdd8b867c860aa329efa87f8b75f78d0c50",
+      "ficheiros_na_arvore": 39,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "andreclerigo/leci_3ano",
+      "url": "https://github.com/andreclerigo/leci_3ano",
+      "revisao": "a3ceb6bc54f4100006120296b1197c4a47ca1ce2",
+      "ficheiros_na_arvore": 1782,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "funhete1/LECI",
+      "url": "https://github.com/funhete1/LECI",
+      "revisao": "c4dd7d18e34abb32c1b7d4da4bf074a058714b60",
+      "ficheiros_na_arvore": 2119,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "Raf4morim/MIECT",
+      "url": "https://github.com/Raf4morim/MIECT",
+      "revisao": "33b8c08360d27a400bb98ca1940deb66eba40e2b",
+      "ficheiros_na_arvore": 16488,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "rafamsantos/MIECT-LECI",
+      "url": "https://github.com/rafamsantos/MIECT-LECI",
+      "revisao": "dcdae4d0da15453b373a3dc1f73ff35b74b796f3",
+      "ficheiros_na_arvore": 3115,
+      "ficheiros_incluidos": 58
+    },
+    {
+      "repositorio": "EduardoFernandesUA/AC1",
+      "url": "https://github.com/EduardoFernandesUA/AC1",
+      "revisao": "a300041b42b35d628d1eea3577bfbec509c2d54a",
+      "ficheiros_na_arvore": 77,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "pedralmeida22/MIECT",
+      "url": "https://github.com/pedralmeida22/MIECT",
+      "revisao": "b67d2a5165cbbfb1792f063cd1b05f9b4c6a565b",
+      "ficheiros_na_arvore": 10920,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "jmuachifi/UA-MIECT",
+      "url": "https://github.com/jmuachifi/UA-MIECT",
+      "revisao": "144c3e7803561797d96e0a3178b7e37d714a96d7",
+      "ficheiros_na_arvore": 5375,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "FranciscoCardita/leci-ac1",
+      "url": "https://github.com/FranciscoCardita/leci-ac1",
+      "revisao": "eb143b3c9a87b482e22cf6de3be4daa90777615c",
+      "ficheiros_na_arvore": 84,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "luisbfsousa2/leci_backup",
+      "url": "https://github.com/luisbfsousa2/leci_backup",
+      "revisao": "4d1c26332eeafc431f6e23d3f2a2eec4072677e4",
+      "ficheiros_na_arvore": 3661,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "Paulo-Lacerda1/LECI",
+      "url": "https://github.com/Paulo-Lacerda1/LECI",
+      "revisao": "53ac90ca27f4d5dc19cf289e0d105a28d23fdf2b",
+      "ficheiros_na_arvore": 190309,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "GilFernandes2000/AC1",
+      "url": "https://github.com/GilFernandes2000/AC1",
+      "revisao": "9a2db08ee0b3d0f77ad7db3a1286b219850cbd58",
+      "ficheiros_na_arvore": 42,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "luisbfsousa/leci",
+      "url": "https://github.com/luisbfsousa/leci",
+      "revisao": "b73920bef16489f4da9d384824d4e581893cdd87",
+      "ficheiros_na_arvore": 3661,
+      "ficheiros_incluidos": 24
+    },
+    {
+      "repositorio": "Torrakanor611/UA-ECT",
+      "url": "https://github.com/Torrakanor611/UA-ECT",
+      "revisao": "7fdae2b6e9e8c81e1f1303b32d21e28bd555a56d",
+      "ficheiros_na_arvore": 6240,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "pedromsilva99/MIECT",
+      "url": "https://github.com/pedromsilva99/MIECT",
+      "revisao": "1c421e58282a1a8cf9243fe2aaf59ff9543992b7",
+      "ficheiros_na_arvore": 5998,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "DiogoTCouto/AC1",
+      "url": "https://github.com/DiogoTCouto/AC1",
+      "revisao": "a7a607672c6d2a53aa00b76ae644d9369538de92",
+      "ficheiros_na_arvore": 1,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "obiwit/100cerebros",
+      "url": "https://github.com/obiwit/100cerebros",
+      "revisao": "65ded0ffd3b526f77cab29eec218084af3bdfb70",
+      "ficheiros_na_arvore": 5763,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "laramatos22/AC1-2022",
+      "url": "https://github.com/laramatos22/AC1-2022",
+      "revisao": "df67ce62db4932c8e70f71a006d6fa320107a0fa",
+      "ficheiros_na_arvore": 84,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "fmatos23/Universidade",
+      "url": "https://github.com/fmatos23/Universidade",
+      "revisao": "644f4c89b16cf2404b3c9141f8928362573151f2",
+      "ficheiros_na_arvore": 286,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "tiagooliveira95/ArquiteturaComputadores-ECT",
+      "url": "https://github.com/tiagooliveira95/ArquiteturaComputadores-ECT",
+      "revisao": "9cd09523d652ccdacc3cb65f563ecc9400c35934",
+      "ficheiros_na_arvore": 431,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "InsNSantos4/SO",
+      "url": "https://github.com/InsNSantos4/SO",
+      "revisao": "efbaecc94b5dc5d950fee81a339bbd00429d6caf",
+      "ficheiros_na_arvore": 61,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "andreclerigo/leci_2ano",
+      "url": "https://github.com/andreclerigo/leci_2ano",
+      "revisao": "185ac6961fc827b698f709b6b2225ed3378abf57",
+      "ficheiros_na_arvore": 2299,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "ahridesu/Arquiteturas-Computadores",
+      "url": "https://github.com/ahridesu/Arquiteturas-Computadores",
+      "revisao": "a9fe598808a74f0fde642512a6c8e60b39c5c115",
+      "ficheiros_na_arvore": 105,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "biagante/AC1",
+      "url": "https://github.com/biagante/AC1",
+      "revisao": "96f50824b9c34abcc0d081fffb12b0919ff19e1d",
+      "ficheiros_na_arvore": 146,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "Karkanius/MIECT",
+      "url": "https://github.com/Karkanius/MIECT",
+      "revisao": "9ca9ca118a0875991bcd9bd324105ff9bc444495",
+      "ficheiros_na_arvore": 2947,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "JPCGameiro/UA-ECT",
+      "url": "https://github.com/JPCGameiro/UA-ECT",
+      "revisao": "7fdae2b6e9e8c81e1f1303b32d21e28bd555a56d",
+      "ficheiros_na_arvore": 6240,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "Bruno-SLopes/MIECT",
+      "url": "https://github.com/Bruno-SLopes/MIECT",
+      "revisao": "25941b96162bb1815c9a35d8b080ece437b58550",
+      "ficheiros_na_arvore": 361,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "TiagoMostardinha/UA",
+      "url": "https://github.com/TiagoMostardinha/UA",
+      "revisao": "e6fe7aa13ea89cb5912dd048342b5647832f2997",
+      "ficheiros_na_arvore": 4,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "joaomonteir0/SO",
+      "url": "https://github.com/joaomonteir0/SO",
+      "revisao": "38712149c458a42ed53600aa5b24188161af08da",
+      "ficheiros_na_arvore": 82,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "RodrigoSantosgit/2ano",
+      "url": "https://github.com/RodrigoSantosgit/2ano",
+      "revisao": "8dc35a829efca78be4abddbaaf61d59f74330f09",
+      "ficheiros_na_arvore": 423,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "digas99/ac1-exercicios",
+      "url": "https://github.com/digas99/ac1-exercicios",
+      "revisao": "9cc5a0d3e7b93849b4286aee5d1b353f3af83ff8",
+      "ficheiros_na_arvore": 147,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "paulogil93/ac1",
+      "url": "https://github.com/paulogil93/ac1",
+      "revisao": "0f2227f87653f0289b9c62a73fbe0c93f520b1c1",
+      "ficheiros_na_arvore": 123,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "Samy3737/miect",
+      "url": "https://github.com/Samy3737/miect",
+      "revisao": "40d78a7a7d57a6f9aa2c5aba4a6a074104448d2b",
+      "ficheiros_na_arvore": 2115,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "pedrovt/ac1",
+      "url": "https://github.com/pedrovt/ac1",
+      "revisao": "3f11faddd1ea34dbdef06961d7d64ef4c009c211",
+      "ficheiros_na_arvore": 130,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "DavidPalricas/LECI-Projects",
+      "url": "https://github.com/DavidPalricas/LECI-Projects",
+      "revisao": "3372ebf052d3c96b1640a17b72fe787dda2e707c",
+      "ficheiros_na_arvore": 898,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "fbarbosa2002/UA-LECI",
+      "url": "https://github.com/fbarbosa2002/UA-LECI",
+      "revisao": "79493e060d6fec5dbd1b0ec8eb7744a556c6832e",
+      "ficheiros_na_arvore": 3514,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "biagante/SO",
+      "url": "https://github.com/biagante/SO",
+      "revisao": "8687379b132b5ee39043f97999217c4fa9e62be9",
+      "ficheiros_na_arvore": 148,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "GabrielJanicas/AC1",
+      "url": "https://github.com/GabrielJanicas/AC1",
+      "revisao": "b6a554540bfca7cb5324973c10a56ffdb0c6691c",
+      "ficheiros_na_arvore": 30,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "dfdias/Sebenta-AC1",
+      "url": "https://github.com/dfdias/Sebenta-AC1",
+      "revisao": "95985883a6b2261c170b6521ee49ae49f7f78821",
+      "ficheiros_na_arvore": 53,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "TiagoRG/uaveiro-leci",
+      "url": "https://github.com/TiagoRG/uaveiro-leci",
+      "revisao": "f049327ea430f3b6fd417ef0b3fb22b5cd9a16a8",
+      "ficheiros_na_arvore": 2092,
+      "ficheiros_incluidos": 2
+    },
+    {
+      "repositorio": "luissantanaa/Arquitetura-Computadores1",
+      "url": "https://github.com/luissantanaa/Arquitetura-Computadores1",
+      "revisao": "c525eeb2aca30e5d319ab8b65b58e6f6efc7db3a",
+      "ficheiros_na_arvore": 342,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "BrunoGomes22/LECI-UA",
+      "url": "https://github.com/BrunoGomes22/LECI-UA",
+      "revisao": "b1446bdc104c17bce67d52296c10ba815e0d6214",
+      "ficheiros_na_arvore": 11048,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "miguelovila/ua-leci",
+      "url": "https://github.com/miguelovila/ua-leci",
+      "revisao": "a5d5779bff5b7f3734923f0f31ce7b326fc320de",
+      "ficheiros_na_arvore": 6329,
+      "ficheiros_incluidos": 1
+    },
+    {
+      "repositorio": "OrlandoMarinheiro/LECI",
+      "url": "https://github.com/OrlandoMarinheiro/LECI",
+      "revisao": "63f8d2c5372257010f3c56fb55c08e468d42b858",
+      "ficheiros_na_arvore": 1278,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "SamuTheCoder/AC1",
+      "url": "https://github.com/SamuTheCoder/AC1",
+      "revisao": "a8fdeb960bc9699a6ff1a7032db1dd6d8fabafca",
+      "ficheiros_na_arvore": 73,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "joaopferreira01/MIECT",
+      "url": "https://github.com/joaopferreira01/MIECT",
+      "revisao": "4739cf4791f37c4748c3bae2635a32d6496792d1",
+      "ficheiros_na_arvore": 3174,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "hugolardosa/estudoExameAno2Sem1",
+      "url": "https://github.com/hugolardosa/estudoExameAno2Sem1",
+      "revisao": "69af45af57914d6ed3ac573bb4576a8c97ca5948",
+      "ficheiros_na_arvore": 46,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "martaaoliveira/LECI",
+      "url": "https://github.com/martaaoliveira/LECI",
+      "revisao": "52f86464f9c64b03f247585a3da802df853ad414",
+      "ficheiros_na_arvore": 4142,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "bernardofale/AC1",
+      "url": "https://github.com/bernardofale/AC1",
+      "revisao": "5a32425dc09c888701a8705c732dc0575b969f48",
+      "ficheiros_na_arvore": 10,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "TomasX59/AC1",
+      "url": "https://github.com/TomasX59/AC1",
+      "revisao": "61b602e76808070fa781c3838e4af1dd029ed27b",
+      "ficheiros_na_arvore": 57,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "marco-almeida/projects-leci",
+      "url": "https://github.com/marco-almeida/projects-leci",
+      "revisao": "98fbf9c472b4aae2c4aad51bdcf0187da93f8704",
+      "ficheiros_na_arvore": 687,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "Joao-Balseiro/LECI",
+      "url": "https://github.com/Joao-Balseiro/LECI",
+      "revisao": "bbf9ae1b9399f4808a2a6de7d0b776eef49bcd16",
+      "ficheiros_na_arvore": 552,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "RicardoNuno/UniversityAlma",
+      "url": "https://github.com/RicardoNuno/UniversityAlma",
+      "revisao": "197c2daf45242ebfec40c3c617fb4fd205d9848d",
+      "ficheiros_na_arvore": 118,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "AnaSantos05/UA-LECI",
+      "url": "https://github.com/AnaSantos05/UA-LECI",
+      "revisao": "e2076b9c65feac18592cb7f4a209c34cde391abe",
+      "ficheiros_na_arvore": 26,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "marciapires10/MIECT",
+      "url": "https://github.com/marciapires10/MIECT",
+      "revisao": "7c6b4dd540f0ceedfb42c93ddb83f5fa03cfbbb4",
+      "ficheiros_na_arvore": 3430,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "joaoafonso02/Ano2-ECT",
+      "url": "https://github.com/joaoafonso02/Ano2-ECT",
+      "revisao": "a55e123a29c6e73031b60c849dbf249d9104fe21",
+      "ficheiros_na_arvore": 797,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "laramatos22/Sistemas_de_Operacao",
+      "url": "https://github.com/laramatos22/Sistemas_de_Operacao",
+      "revisao": "6ac3ea01ad9b620a9f78a7226f1144fb4ca085dd",
+      "ficheiros_na_arvore": 463,
+      "ficheiros_incluidos": 0
+    },
+    {
+      "repositorio": "Karkanius/MIECT_ano3",
+      "url": "https://github.com/Karkanius/MIECT_ano3",
+      "revisao": "8855b8c2d644bcaf0fba322d21310dc151d31bd8",
+      "ficheiros_na_arvore": 1,
+      "ficheiros_incluidos": 0
+    }
+  ],
+  "contas_adicionais": [
+    {
+      "conta": "benny2000t",
+      "repositorios_listados": [
+        "benny2000t/savings-app-privacy",
+        "benny2000t/UAS-BVCE-privacy",
+        "benny2000t/ProtoSyn.jl"
+      ]
+    },
+    {
+      "conta": "Lararodrigues1",
+      "repositorios_listados": [
+        "Lararodrigues1/Lararodrigues1.github.io",
+        "Lararodrigues1/sd-project1",
+        "Lararodrigues1/ICG",
+        "Lararodrigues1/IC_projeto3",
+        "Lararodrigues1/aad-projects",
+        "Lararodrigues1/mission-generator"
+      ]
+    },
+    {
+      "conta": "JoaoRes",
+      "repositorios_listados": [
+        "JoaoRes/vetcalculator",
+        "JoaoRes/verne_Test",
+        "JoaoRes/IC_proj3",
+        "JoaoRes/CiberRato",
+        "JoaoRes/IC_proj2",
+        "JoaoRes/MDRS_proj1",
+        "JoaoRes/3-ano",
+        "JoaoRes/ProjetoBD",
+        "JoaoRes/miect",
+        "JoaoRes/AMS-WebApp"
+      ]
+    },
+    {
+      "conta": "NCF-AAUAv",
+      "repositorios_listados": [
+        "NCF-AAUAv/ncf-aauav.github.io"
+      ]
+    },
+    {
+      "conta": "tiagooliveira95",
+      "repositorios_listados": [
+        "tiagooliveira95/ia-arkanoid-template",
+        "tiagooliveira95/slopsmith-desktop",
+        "tiagooliveira95/PondEyes",
+        "tiagooliveira95/OrcaSlicer-bambulab",
+        "tiagooliveira95/LECI-MIECT",
+        "tiagooliveira95/Android_Scoped_Storage_Example",
+        "tiagooliveira95/ws_deployment",
+        "tiagooliveira95/ArquiteturaComputadores-ECT",
+        "tiagooliveira95/tiagooliveira95",
+        "tiagooliveira95/iOS-Nanodegree-Projects",
+        "tiagooliveira95/IotProjects",
+        "tiagooliveira95/Computer-Vision-Nanodegree-Projects",
+        "tiagooliveira95/StarWars",
+        "tiagooliveira95/Go-Ubiquitous-UdacityAndroidNanodegree",
+        "tiagooliveira95/XYZReader-UdacityAndroidNanodegree",
+        "tiagooliveira95/BuildItBigger-UdacityAndroidNanodegree",
+        "tiagooliveira95/PopularMovies-UdacityAndroidNanodegree",
+        "tiagooliveira95/Portfolio_UdacityAndroidNanodegree"
+      ]
+    },
+    {
+      "conta": "SardinhaAlmeida",
+      "repositorios_listados": [
+        "SardinhaAlmeida/rawket",
+        "SardinhaAlmeida/altair",
+        "SardinhaAlmeida/alcor",
+        "SardinhaAlmeida/workshop-platform",
+        "SardinhaAlmeida/IM_Projects",
+        "SardinhaAlmeida/eShop_AS_1",
+        "SardinhaAlmeida/ICG_Project",
+        "SardinhaAlmeida/TQS_108796",
+        "SardinhaAlmeida/APSEI",
+        "SardinhaAlmeida/VI_Project",
+        "SardinhaAlmeida/CBD",
+        "SardinhaAlmeida/TQS_ProjetoFinal",
+        "SardinhaAlmeida/PDS",
+        "SardinhaAlmeida/BD",
+        "SardinhaAlmeida/IES_Project",
+        "SardinhaAlmeida/ITW_Project",
+        "SardinhaAlmeida/IHC_Project",
+        "SardinhaAlmeida/IES_108796",
+        "SardinhaAlmeida/SO_Projects",
+        "SardinhaAlmeida/AED_Project02"
+      ]
+    },
+    {
+      "conta": "webdevcody",
+      "repositorios_listados": [
+        "webdevcody/box-yard",
+        "webdevcody/bible-rs-fork",
+        "webdevcody/tiny-town",
+        "webdevcody/survive-the-night-fps",
+        "webdevcody/deadfall",
+        "webdevcody/jev-demos",
+        "webdevcody/jevs-fly",
+        "webdevcody/meeting-tracker",
+        "webdevcody/webdevcody.com",
+        "webdevcody/knowles-glass",
+        "webdevcody/cartastrophe",
+        "webdevcody/the-crawling-dark",
+        "webdevcody/sketchlab.app",
+        "webdevcody/coffeeshop",
+        "webdevcody/mission-control",
+        "webdevcody/launch-pad",
+        "webdevcody/code-racer",
+        "webdevcody/agentic-jumpstart-starter-kit",
+        "webdevcody/go-mailing-list",
+        "webdevcody/skills",
+        "webdevcody/survive-the-night-game",
+        "webdevcody/day-care-connect",
+        "webdevcody/automaker-starter-kit",
+        "webdevcody/the-art-station",
+        "webdevcody/full-stack-campus",
+        "webdevcody/wdc-starter-kit-promo",
+        "webdevcody/wdc-saas-starter-kit",
+        "webdevcody/youtube-video-suggestions",
+        "webdevcody/strudel-cookbook",
+        "webdevcody/strudel-recipes",
+        "webdevcody/tea",
+        "webdevcody/cletus",
+        "webdevcody/tech-tube",
+        "webdevcody/hans-claude-hook",
+        "webdevcody/test-project",
+        "webdevcody/vibert",
+        "webdevcody/collab-board-hathora",
+        "webdevcody/tanstack-course-platform",
+        "webdevcody/addies-art-station",
+        "webdevcody/video-rest-api-course",
+        "webdevcody/docker-chat-app",
+        "webdevcody/the-writing-platform",
+        "webdevcody/terraform-tutorial",
+        "webdevcody/booksmith",
+        "webdevcody/typely",
+        "webdevcody/convex-title-generator",
+        "webdevcody/convex-auth",
+        "webdevcody/helping-hands",
+        "webdevcody/trade-buddy",
+        "webdevcody/get-social",
+        "webdevcody/learning-expo",
+        "webdevcody/react-challenges-course",
+        "webdevcody/health-tracker",
+        "webdevcody/docker-stack-example",
+        "webdevcody/butwhothehellknows.com",
+        "webdevcody/the-story-writer",
+        "webdevcody/survive-the-night-sim",
+        "webdevcody/the-book-review",
+        "webdevcody/meme-generator",
+        "webdevcody/image-scale-python",
+        "webdevcody/background-remover",
+        "webdevcody/type-joy",
+        "webdevcody/htmx-playground",
+        "webdevcody/htmx",
+        "webdevcody/next-drizzle-lucia-sqlite-template",
+        "webdevcody/mailing-list",
+        "webdevcody/million-chests",
+        "webdevcody/questionnaire-lead-generator",
+        "webdevcody/parabolajs",
+        "webdevcody/thumbnail-critique",
+        "webdevcody/my-saas-example",
+        "webdevcody/bearded-theme",
+        "webdevcody/nizzy-starter",
+        "webdevcody/coolify",
+        "webdevcody/simple-vps-deployment",
+        "webdevcody/zsa",
+        "webdevcody/fumadocs",
+        "webdevcody/emoji-drop",
+        "webdevcody/big-brain",
+        "webdevcody/lucia-examples",
+        "webdevcody/bid-buddy",
+        "webdevcody/knock-debug",
+        "webdevcody/semantic-video-vision",
+        "webdevcody/ppai-next-starter",
+        "webdevcody/snowball-battle",
+        "webdevcody/file-drive",
+        "webdevcody/single-vps-host",
+        "webdevcody/dev-finder",
+        "webdevcody/newsletter-manager",
+        "webdevcody/value-vault"
+      ]
+    },
+    {
+      "conta": "g0ncalocunha",
+      "repositorios_listados": [
+        "g0ncalocunha/ase_breathalyzer",
+        "g0ncalocunha/cooperate_request",
+        "g0ncalocunha/IC",
+        "g0ncalocunha/aad_vhdl",
+        "g0ncalocunha/wizard_showdown",
+        "g0ncalocunha/StudySync",
+        "g0ncalocunha/ia-digdug",
+        "g0ncalocunha/LSDProjeto"
+      ]
+    },
+    {
+      "conta": "PedroDSFerreira",
+      "repositorios_listados": [
+        "PedroDSFerreira/review-it",
+        "PedroDSFerreira/homelab",
+        "PedroDSFerreira/eagl.ai",
+        "PedroDSFerreira/PedroDSFerreira.github.io",
+        "PedroDSFerreira/dotfiles",
+        "PedroDSFerreira/rsa-project",
+        "PedroDSFerreira/PedroDSFerreira",
+        "PedroDSFerreira/osm-mec",
+        "PedroDSFerreira/esp32-ble-footswitch",
+        "PedroDSFerreira/zmk-corne",
+        "PedroDSFerreira/uni-c",
+        "PedroDSFerreira/uni-bd",
+        "PedroDSFerreira/fpicker.yazi",
+        "PedroDSFerreira/timewise",
+        "PedroDSFerreira/video-object-detection",
+        "PedroDSFerreira/uni-so",
+        "PedroDSFerreira/uni-labi",
+        "PedroDSFerreira/uni-iei",
+        "PedroDSFerreira/uni-aed",
+        "PedroDSFerreira/uni-pds",
+        "PedroDSFerreira/uni-sm",
+        "PedroDSFerreira/uni-fc",
+        "PedroDSFerreira/uni-ac-i",
+        "PedroDSFerreira/uni-as",
+        "PedroDSFerreira/uni-ac-ii",
+        "PedroDSFerreira/uni-ia",
+        "PedroDSFerreira/uni-sio",
+        "PedroDSFerreira/uni-mpei"
+      ]
+    },
+    {
+      "conta": "babuskyy",
+      "repositorios_listados": [
+        "babuskyy/ICM_Projects",
+        "babuskyy/AS_Project",
+        "babuskyy/IHC_Project",
+        "babuskyy/AS-guioes"
+      ]
+    },
+    {
+      "conta": "MarianaPinto17",
+      "repositorios_listados": [
+        "MarianaPinto17/course4_proj",
+        "MarianaPinto17/blango",
+        "MarianaPinto17/django-postal-codes",
+        "MarianaPinto17/traveland",
+        "MarianaPinto17/MDRS",
+        "MarianaPinto17/AADAssignment2",
+        "MarianaPinto17/HammingCodeAADAssign1",
+        "MarianaPinto17/SD2021",
+        "MarianaPinto17/DDR",
+        "MarianaPinto17/University-Projects",
+        "MarianaPinto17/IHC-AutoHouse",
+        "MarianaPinto17/SO1920-TG",
+        "MarianaPinto17/Gafanhotos",
+        "MarianaPinto17/IIA-TPI1",
+        "MarianaPinto17/IIA-TPI2",
+        "MarianaPinto17/EDC-GAMEDB",
+        "MarianaPinto17/opencv",
+        "MarianaPinto17/84792-85088-SOKOBAN",
+        "MarianaPinto17/BD",
+        "MarianaPinto17/guiao-sobre-pesquisa-MarianaPinto17",
+        "MarianaPinto17/guiao-de-programacao-funcional-MarianaPinto17",
+        "MarianaPinto17/ua-thesis-template",
+        "MarianaPinto17/sql-server-samples",
+        "MarianaPinto17/MemoryGame"
+      ]
+    },
+    {
+      "conta": "Rui-FMF",
+      "repositorios_listados": [
+        "Rui-FMF/labseq",
+        "Rui-FMF/VI",
+        "Rui-FMF/RI",
+        "Rui-FMF/ED",
+        "Rui-FMF/AA",
+        "Rui-FMF/IM_Project2",
+        "Rui-FMF/netlify-anymod",
+        "Rui-FMF/motilitAI",
+        "Rui-FMF/TPW",
+        "Rui-FMF/SIO",
+        "Rui-FMF/IES",
+        "Rui-FMF/IA",
+        "Rui-FMF/CBD",
+        "Rui-FMF/C",
+        "Rui-FMF/IHC",
+        "Rui-FMF/TAA_1",
+        "Rui-FMF/CD",
+        "Rui-FMF/PDS",
+        "Rui-FMF/TPW_Project",
+        "Rui-FMF/SO",
+        "Rui-FMF/AED",
+        "Rui-FMF/MPEI",
+        "Rui-FMF/RS",
+        "Rui-FMF/IAC",
+        "Rui-FMF/FP",
+        "Rui-FMF/POO"
+      ]
+    },
+    {
+      "conta": "GilFernandes2000",
+      "repositorios_listados": [
+        "GilFernandes2000/finviz-mcp-server",
+        "GilFernandes2000/sports-event-planner",
+        "GilFernandes2000/stock-analysis-report",
+        "GilFernandes2000/SQL-injection-detector",
+        "GilFernandes2000/high-availability-firewall",
+        "GilFernandes2000/real-time-department-occupation-tracker",
+        "GilFernandes2000/Ressellr",
+        "GilFernandes2000/yolov5",
+        "GilFernandes2000/GameBET",
+        "GilFernandes2000/BD",
+        "GilFernandes2000/ua-vulnerability-monitor",
+        "GilFernandes2000/bd-trip-planner",
+        "GilFernandes2000/IC-projects",
+        "GilFernandes2000/tetris-ai",
+        "GilFernandes2000/matplotlib-cpp",
+        "GilFernandes2000/lfa-proj-geomatrics",
+        "GilFernandes2000/labi-site-leoes",
+        "GilFernandes2000/MPEI",
+        "GilFernandes2000/Point-Clouds",
+        "GilFernandes2000/AlgC",
+        "GilFernandes2000/AC2",
+        "GilFernandes2000/LFA",
+        "GilFernandes2000/Projeto_Micro_Processador",
+        "GilFernandes2000/LSD",
+        "GilFernandes2000/AC1",
+        "GilFernandes2000/P3",
+        "GilFernandes2000/P2"
+      ]
+    },
+    {
+      "conta": "LiFe1007",
+      "repositorios_listados": [
+        "LiFe1007/LiFe1007",
+        "LiFe1007/AR_2021",
+        "LiFe1007/CI4IOT-Proj2",
+        "LiFe1007/CI4IOT",
+        "LiFe1007/CGJ_First_Project",
+        "LiFe1007/CGJ_Final_Project",
+        "LiFe1007/exercise_ttt-grpc",
+        "LiFe1007/SIRS-Project"
+      ]
+    },
+    {
+      "conta": "amadeuszsz",
+      "repositorios_listados": [
+        "amadeuszsz/autoware-ml",
+        "amadeuszsz/autoware-ml-reports",
+        "amadeuszsz/autoware_universe",
+        "amadeuszsz/autoware",
+        "amadeuszsz/AWML",
+        "amadeuszsz/rosdistro",
+        "amadeuszsz/spconv_cpp",
+        "amadeuszsz/cuda_blackboard",
+        "amadeuszsz/CalibrationTools",
+        "amadeuszsz/bevdet_vendor",
+        "amadeuszsz/ndt_omp",
+        "amadeuszsz/nebula",
+        "amadeuszsz/autoware_launch",
+        "amadeuszsz/autoware_msgs",
+        "amadeuszsz/autoware_utils",
+        "amadeuszsz/tamagawa_imu_driver",
+        "amadeuszsz/aip_launcher",
+        "amadeuszsz/septentrio_gnss_driver",
+        "amadeuszsz/autoware_cmake",
+        "amadeuszsz/ManagedTransformBuffer",
+        "amadeuszsz/autoware_core",
+        "amadeuszsz/autoware-documentation",
+        "amadeuszsz/geometry2",
+        "amadeuszsz/trt_batched_nms",
+        "amadeuszsz/spconv",
+        "amadeuszsz/tensorrt_cmake_module",
+        "amadeuszsz/awsim_labs_sensor_kit_launch",
+        "amadeuszsz/sample_sensor_kit_launch",
+        "amadeuszsz/edge-auto-jetson",
+        "amadeuszsz/autoware-github-actions",
+        "amadeuszsz/AWSIM",
+        "amadeuszsz/f1tenth_xray_vehicle_launch",
+        "amadeuszsz/f1tenth_launch",
+        "amadeuszsz/f1tenth_vehicle_launch",
+        "amadeuszsz/f1tenth_sensor_kit_launch",
+        "amadeuszsz/f1tenth_xray_sensor_kit_launch",
+        "amadeuszsz/vesc_interface",
+        "amadeuszsz/cartographer_utils",
+        "amadeuszsz/trajectory_loader",
+        "amadeuszsz/Raceline-Optimization",
+        "amadeuszsz/ct_icp",
+        "amadeuszsz/create_pkg",
+        "amadeuszsz/ros2_ws",
+        "amadeuszsz/autoware_individual_params",
+        "amadeuszsz/phoxi_collector",
+        "amadeuszsz/li_slam_ros2",
+        "amadeuszsz/rocker",
+        "amadeuszsz/Universal_Robots_ROS2_Driver",
+        "amadeuszsz/phoxi_camera_ros2",
+        "amadeuszsz/lidarslam_ros2",
+        "amadeuszsz/caddy_sensor_kit_launch",
+        "amadeuszsz/flir_spinnaker_ros2",
+        "amadeuszsz/bluespace_ai_xsens_ros_mti_driver",
+        "amadeuszsz/swift_nav_ros2",
+        "amadeuszsz/splines_generator",
+        "amadeuszsz/prius_av",
+        "amadeuszsz/ainstein_radar_ros2",
+        "amadeuszsz/car_demo",
+        "amadeuszsz/yolov3-tf2",
+        "amadeuszsz/CppLinuxSerial",
+        "amadeuszsz/rplidar_ros",
+        "amadeuszsz/ouster_example",
+        "amadeuszsz/gazebo_ros_pkgs",
+        "amadeuszsz/Traffic_Sign_Recognition"
+      ]
+    },
+    {
+      "conta": "pedrovt",
+      "repositorios_listados": [
+        "pedrovt/es-labs",
+        "pedrovt/mvp-terraform",
+        "pedrovt/ams-sports-events-manager",
+        "pedrovt/aa-labs",
+        "pedrovt/pedrovt",
+        "pedrovt/cr-square-root-cop",
+        "pedrovt/cr-labs",
+        "pedrovt/ddr-labs",
+        "pedrovt/cm-android-labs",
+        "pedrovt/plus_time",
+        "pedrovt/aca-labs",
+        "pedrovt/cv-labs",
+        "pedrovt/cv-draughts-webgl",
+        "pedrovt/ua-thesis-template",
+        "pedrovt/ara-labs",
+        "pedrovt/edc-labs",
+        "pedrovt/pedrovt.github.io",
+        "pedrovt/bd-labs",
+        "pedrovt/ar-labs",
+        "pedrovt/ar-project",
+        "pedrovt/bd-yacm",
+        "pedrovt/ihc-yacm",
+        "pedrovt/fr_project",
+        "pedrovt/sofs18-concurrency",
+        "pedrovt/iia",
+        "pedrovt/fr",
+        "pedrovt/so-labs",
+        "pedrovt/ams",
+        "pedrovt/ac2",
+        "pedrovt/runpic32",
+        "pedrovt/algc",
+        "pedrovt/lfa",
+        "pedrovt/tic-tac-toe",
+        "pedrovt/ac1",
+        "pedrovt/mpei",
+        "pedrovt/programacao",
+        "pedrovt/lsd",
+        "pedrovt/labi"
+      ]
+    },
+    {
+      "conta": "Prince-Mendiratta",
+      "repositorios_listados": [
+        "Prince-Mendiratta/Prince-Mendiratta",
+        "Prince-Mendiratta/dotfiles",
+        "Prince-Mendiratta/zero-cost-crm",
+        "Prince-Mendiratta/BasTrade",
+        "Prince-Mendiratta/BotsApp",
+        "Prince-Mendiratta/kartik-portco",
+        "Prince-Mendiratta/nextjs-starter",
+        "Prince-Mendiratta/weather-agent-example",
+        "Prince-Mendiratta/postgres-to-markdown",
+        "Prince-Mendiratta/docs",
+        "Prince-Mendiratta/himanshu",
+        "Prince-Mendiratta/ruark",
+        "Prince-Mendiratta/tldraw",
+        "Prince-Mendiratta/langsmith-docs",
+        "Prince-Mendiratta/langchain",
+        "Prince-Mendiratta/DTU-Alert-Bot",
+        "Prince-Mendiratta/langchainjs",
+        "Prince-Mendiratta/tiktoken",
+        "Prince-Mendiratta/penpot-docs",
+        "Prince-Mendiratta/quant-ux",
+        "Prince-Mendiratta/github-profile-trophy",
+        "Prince-Mendiratta/Apps.Github22",
+        "Prince-Mendiratta/eslint-config-expensify",
+        "Prince-Mendiratta/Timeline-Calculator",
+        "Prince-Mendiratta/intl-api",
+        "Prince-Mendiratta/react-native-image-picker",
+        "Prince-Mendiratta/colorization-WA-interface",
+        "Prince-Mendiratta/xkcd-image",
+        "Prince-Mendiratta/freeCodeCamp",
+        "Prince-Mendiratta/EC2-webserver",
+        "Prince-Mendiratta/mass-repo-editor",
+        "Prince-Mendiratta/boilerplate-rock-paper-scissors",
+        "Prince-Mendiratta/boilerplate-project-secure-real-time-multiplayer-game",
+        "Prince-Mendiratta/boilerplate-SHA-1-password-cracker",
+        "Prince-Mendiratta/boilerplate-port-scanner",
+        "Prince-Mendiratta/boilerplate-project-messageboard",
+        "Prince-Mendiratta/boilerplate-project-stockchecker",
+        "Prince-Mendiratta/boilerplate-infosec",
+        "Prince-Mendiratta/boilerplate-sea-level-predictor",
+        "Prince-Mendiratta/boilerplate-page-view-time-series-visualizer",
+        "Prince-Mendiratta/boilerplate-mean-variance-standard-deviation-calculator",
+        "Prince-Mendiratta/boilerplate-probability-calculator",
+        "Prince-Mendiratta/boilerplate-polygon-area-calculator",
+        "Prince-Mendiratta/boilerplate-budget-app",
+        "Prince-Mendiratta/boilerplate-time-calculator",
+        "Prince-Mendiratta/boilerplate-arithmetic-formatter",
+        "Prince-Mendiratta/boilerplate-project-american-british-english-translator",
+        "Prince-Mendiratta/boilerplate-project-sudoku-solver",
+        "Prince-Mendiratta/boilerplate-project-library",
+        "Prince-Mendiratta/boilerplate-project-issuetracker",
+        "Prince-Mendiratta/boilerplate-project-metricimpconverter",
+        "Prince-Mendiratta/boilerplate-advancednode",
+        "Prince-Mendiratta/boilerplate-mochachai",
+        "Prince-Mendiratta/boilerplate-project-filemetadata",
+        "Prince-Mendiratta/boilerplate-project-exercisetracker",
+        "Prince-Mendiratta/boilerplate-project-urlshortener",
+        "Prince-Mendiratta/boilerplate-project-headerparser",
+        "Prince-Mendiratta/boilerplate-project-timestamp",
+        "Prince-Mendiratta/boilerplate-mongomongoose",
+        "Prince-Mendiratta/boilerplate-express",
+        "Prince-Mendiratta/boilerplate-npm",
+        "Prince-Mendiratta/pdfkit-japanese",
+        "Prince-Mendiratta/mvp",
+        "Prince-Mendiratta/Baileys",
+        "Prince-Mendiratta/ML-For-Beginners",
+        "Prince-Mendiratta/X-tra-Telegram",
+        "Prince-Mendiratta/CPP-Neetcode",
+        "Prince-Mendiratta/CPP-LeetCode",
+        "Prince-Mendiratta/leetcode-cli",
+        "Prince-Mendiratta/X-tra-Strange",
+        "Prince-Mendiratta/Spartans",
+        "Prince-Mendiratta/zaproxy-website",
+        "Prince-Mendiratta/Cpp-Gfg",
+        "Prince-Mendiratta/CPP-Hackerrank",
+        "Prince-Mendiratta/github-api-auth",
+        "Prince-Mendiratta/TeamSwayamCare",
+        "Prince-Mendiratta/Github-OAuth",
+        "Prince-Mendiratta/dotfiles-1",
+        "Prince-Mendiratta/dotfiles-i3-mouseless",
+        "Prince-Mendiratta/android-basics-kotlin-words-app",
+        "Prince-Mendiratta/C-HackerRank",
+        "Prince-Mendiratta/android-basics-kotlin-amphibians-app",
+        "Prince-Mendiratta/webhook",
+        "Prince-Mendiratta/dotfilessss",
+        "Prince-Mendiratta/brr",
+        "Prince-Mendiratta/Engifest",
+        "Prince-Mendiratta/android-basics-kotlin-mars-photos-app",
+        "Prince-Mendiratta/android-basics-kotlin-cupcake-app",
+        "Prince-Mendiratta/android-basics-kotlin-unscramble-app",
+        "Prince-Mendiratta/android-basics-kotlin-dogglers-app"
+      ]
+    },
+    {
+      "conta": "jsousa11",
+      "repositorios_listados": [
+        "jsousa11/Casa_da_Ponta_Negra_Website",
+        "jsousa11/Portfolio",
+        "jsousa11/VI-spotify-music-analytics",
+        "jsousa11/DinenDash-EGS",
+        "jsousa11/RMI_Assignment_2",
+        "jsousa11/RMI_Assignment_1",
+        "jsousa11/TQS_103415",
+        "jsousa11/IES_Project",
+        "jsousa11/IES_103415"
+      ]
+    },
+    {
+      "conta": "LaranjoTomas",
+      "repositorios_listados": [
+        "LaranjoTomas/Universe",
+        "LaranjoTomas/RSA_Projeto",
+        "LaranjoTomas/Deti_coins",
+        "LaranjoTomas/CiberRatoTools",
+        "LaranjoTomas/LaranjoTomas",
+        "LaranjoTomas/Okami",
+        "LaranjoTomas/Third_Year",
+        "LaranjoTomas/Second_Year",
+        "LaranjoTomas/AC2"
+      ]
+    },
+    {
+      "conta": "jgalego25",
+      "repositorios_listados": [
+        "jgalego25/calculator",
+        "jgalego25/etch-a-sketch",
+        "jgalego25/css-exercises",
+        "jgalego25/Object-Oriented-Programming-Project",
+        "jgalego25/runelite",
+        "jgalego25/Turmas",
+        "jgalego25/template"
+      ]
+    },
+    {
+      "conta": "Clamatir",
+      "repositorios_listados": [
+        "Clamatir/Shishudy-Piscine-09-2021"
+      ]
+    },
+    {
+      "conta": "tomasfilipe7",
+      "repositorios_listados": [
+        "tomasfilipe7/MyWebSite",
+        "tomasfilipe7/casino-game",
+        "tomasfilipe7/MoviesAPI",
+        "tomasfilipe7/MediaRecommendation",
+        "tomasfilipe7/CM21_89286",
+        "tomasfilipe7/Give_N_Read",
+        "tomasfilipe7/Software-Engineer-LabProject",
+        "tomasfilipe7/Digital-Systems-Labs-Project",
+        "tomasfilipe7/SD-Project-1",
+        "tomasfilipe7/CV-Project-2",
+        "tomasfilipe7/Computer-Security-Project",
+        "tomasfilipe7/EDC-Project-2",
+        "tomasfilipe7/CV-Project-1",
+        "tomasfilipe7/EDC-Project-1",
+        "tomasfilipe7/Network-Architecture-Project-",
+        "tomasfilipe7/Databases-Project",
+        "tomasfilipe7/Human-Computer-Interaction-Project",
+        "tomasfilipe7/Network-Fundamentals-Project",
+        "tomasfilipe7/Formal-and-automat-languages-Project",
+        "tomasfilipe7/Computer-Labs-Project",
+        "tomasfilipe7/Probabilistic-Methods-for-Computer-Engineering-Project"
+      ]
+    },
+    {
+      "conta": "mauromarques",
+      "repositorios_listados": [
+        "mauromarques/RSA_projeto",
+        "mauromarques/RMICiberRato",
+        "mauromarques/IHC_Projeto",
+        "mauromarques/MPEI-GuiaoAvaliacao2",
+        "mauromarques/AI",
+        "mauromarques/MPEI",
+        "mauromarques/WebApp_HealthClinic_SIO",
+        "mauromarques/SO",
+        "mauromarques/kpopAlbums",
+        "mauromarques/ProjetoFinalLSD",
+        "mauromarques/GuessTheNumber",
+        "mauromarques/mapSwiftUI",
+        "mauromarques/usingCombine",
+        "mauromarques/SimpleUnitTest",
+        "mauromarques/SwiftUI-widgets",
+        "mauromarques/Himeraki_Project",
+        "mauromarques/Neomorphic-buttons",
+        "mauromarques/API-data-loading-and-feeding-dynamic-grid-SwiftUI",
+        "mauromarques/Instagram-study-SwiftUI",
+        "mauromarques/Interface-prototype-SwiftUI",
+        "mauromarques/animatedCharts",
+        "mauromarques/NFCTest",
+        "mauromarques/MonokumaAnimation",
+        "mauromarques/WWDC-2019-scholarship"
+      ]
+    },
+    {
+      "conta": "GabrielHall02",
+      "repositorios_listados": [
+        "GabrielHall02/rea",
+        "GabrielHall02/my-proxy-chain",
+        "GabrielHall02/chatapp",
+        "GabrielHall02/OCRmyPDF_WEB",
+        "GabrielHall02/Wook-Scrapper",
+        "GabrielHall02/TQS_102851",
+        "GabrielHall02/GymScheduler",
+        "GabrielHall02/Rush-Hour",
+        "GabrielHall02/BD",
+        "GabrielHall02/BookHelper",
+        "GabrielHall02/Redes-e-Servicos",
+        "GabrielHall02/Airlift_simulation",
+        "GabrielHall02/Multi-ordered_trees",
+        "GabrielHall02/Network_Monitoring"
+      ]
+    },
+    {
+      "conta": "freePixel",
+      "repositorios_listados": [
+        "freePixel/typeorm",
+        "freePixel/ffmpeg-rest-api",
+        "freePixel/SO",
+        "freePixel/AC2",
+        "freePixel/micsa",
+        "freePixel/6502",
+        "freePixel/2d-now",
+        "freePixel/Tetris",
+        "freePixel/game-of-life",
+        "freePixel/checkers"
+      ]
+    },
+    {
+      "conta": "BennyMarcal",
+      "repositorios_listados": [
+        "BennyMarcal/LoadBallancing-Mwan3",
+        "BennyMarcal/MECT",
+        "BennyMarcal/IC_Project2",
+        "BennyMarcal/IC_Project",
+        "BennyMarcal/IHC_Project",
+        "BennyMarcal/BennyMarcal.github.io",
+        "BennyMarcal/ECT",
+        "BennyMarcal/BennyMarcal"
+      ]
+    },
+    {
+      "conta": "OscarPimentelOP",
+      "repositorios_listados": [
+        "OscarPimentelOP/AC2-Aulas",
+        "OscarPimentelOP/OscarPimentelOP",
+        "OscarPimentelOP/EDCProjeto2",
+        "OscarPimentelOP/GLBert",
+        "OscarPimentelOP/ACA_assignment1",
+        "OscarPimentelOP/EDCProjeto1",
+        "OscarPimentelOP/digital-twins",
+        "OscarPimentelOP/ProjetoSD2",
+        "OscarPimentelOP/so1920-p3g2",
+        "OscarPimentelOP/PraticasDDR",
+        "OscarPimentelOP/ProjetoSD1",
+        "OscarPimentelOP/projARA",
+        "OscarPimentelOP/iia-ia-bomberman",
+        "OscarPimentelOP/lfa1718-KOs",
+        "OscarPimentelOP/mpeiProjeto"
+      ]
+    },
+    {
+      "conta": "antoniorebelop",
+      "repositorios_listados": [
+        "antoniorebelop/antoniorebelop"
+      ]
+    },
+    {
+      "conta": "Koi725",
+      "repositorios_listados": [
+        "Koi725/library-explorer",
+        "Koi725/foldrun-cli",
+        "Koi725/tidemark",
+        "Koi725/NOETARCH",
+        "Koi725/Koi725",
+        "Koi725/career-intelligence-assistant",
+        "Koi725/RoutaPT",
+        "Koi725/android-kotlin-fundamentals",
+        "Koi725/java-web-development",
+        "Koi725/vps-hardener",
+        "Koi725/envguard",
+        "Koi725/humanize-text",
+        "Koi725/deployer",
+        "Koi725/pgeo-lib",
+        "Koi725/netmap-graph-analyzer",
+        "Koi725/TaskFlow---Concurrent-Task-Manager-Java-",
+        "Koi725/Blue-Whisper",
+        "Koi725/Koi725-Banking-Transaction-Analyzer",
+        "Koi725/python-50-job-exam-prep",
+        "Koi725/Staff-Task-Tracker-CRUD-Auth-Basic-Filters-",
+        "Koi725/Advanced-Job_tracker-py",
+        "Koi725/User-Feedback-Collector-Panel-",
+        "Koi725/Expense-Tracker",
+        "Koi725/Journal-App-Py",
+        "Koi725/Advanced-Task-Tracker-CLI-Py",
+        "Koi725/Simple-Login-System-PHP-JSON",
+        "Koi725/Blog-Manager-CLI-Advanced-Py",
+        "Koi725/password-genrator-py",
+        "Koi725/Note-Manager-py",
+        "Koi725/Password-Strength-Checker",
+        "Koi725/Task-Manager",
+        "Koi725/Simple-Login-System-Python-JSON",
+        "Koi725/Phishing",
+        "Koi725/Currency-project-"
+      ]
+    },
+    {
+      "conta": "PauloMaced0",
+      "repositorios_listados": [
+        "PauloMaced0/socialemperors",
+        "PauloMaced0/The-One-Billion-Row-Challenge",
+        "PauloMaced0/Canny-Cuda",
+        "PauloMaced0/credit-card-fraud-detection",
+        "PauloMaced0/Search-Engine",
+        "PauloMaced0/PauloMaced0",
+        "PauloMaced0/nvim",
+        "PauloMaced0/to-do-app",
+        "PauloMaced0/dotfiles",
+        "PauloMaced0/Load-Balancer",
+        "PauloMaced0/Most_Less_Frequent_Words",
+        "PauloMaced0/Graph-Optimisation-Problem",
+        "PauloMaced0/CP_app_clone",
+        "PauloMaced0/client-server-chat-app",
+        "PauloMaced0/Hospital-management-system",
+        "PauloMaced0/IHC",
+        "PauloMaced0/Memory-Management-Simulator",
+        "PauloMaced0/Arduino",
+        "PauloMaced0/restaurant-recommender",
+        "PauloMaced0/digdug-ia",
+        "PauloMaced0/AED_Word_ladder",
+        "PauloMaced0/AED_SpeedRun",
+        "PauloMaced0/Collection_website",
+        "PauloMaced0/Washing_machine",
+        "PauloMaced0/StatsServer_AP",
+        "PauloMaced0/TC-enhanced_Cross-correlation_Function"
+      ]
+    },
+    {
+      "conta": "AlexioPsh",
+      "repositorios_listados": [
+        "AlexioPsh/StoreData",
+        "AlexioPsh/typetest",
+        "AlexioPsh/passwordgame",
+        "AlexioPsh/Matrizauto",
+        "AlexioPsh/Sudoku",
+        "AlexioPsh/Tic-Tac-Toe-"
+      ]
+    },
+    {
+      "conta": "diogoftm",
+      "repositorios_listados": [
+        "diogoftm/diogoftm",
+        "diogoftm/protonpe",
+        "diogoftm/post-quantum-nginx-demo",
+        "diogoftm/QMP-SPDZ",
+        "diogoftm/OTKeys",
+        "diogoftm/letterboxd_stats",
+        "diogoftm/smc-service-blueprint",
+        "diogoftm/tagreader",
+        "diogoftm/minimal-etsi-qkd-004",
+        "diogoftm/TPDV",
+        "diogoftm/AC2",
+        "diogoftm/D-RSA",
+        "diogoftm/CA_E_DES"
+      ]
+    },
+    {
+      "conta": "MPetersonNevesFilho",
+      "repositorios_listados": [
+        "MPetersonNevesFilho/MPetersonNevesFilho",
+        "MPetersonNevesFilho/C_PraticalClasses",
+        "MPetersonNevesFilho/CoffeeCat",
+        "MPetersonNevesFilho/eCommerceFullStack",
+        "MPetersonNevesFilho/nodeWebAPI",
+        "MPetersonNevesFilho/praticaCompiladores",
+        "MPetersonNevesFilho/UA_Mobile_Dev",
+        "MPetersonNevesFilho/ArquiteturaDeRedes",
+        "MPetersonNevesFilho/IES_Project",
+        "MPetersonNevesFilho/CBD-P",
+        "MPetersonNevesFilho/IES_101082",
+        "MPetersonNevesFilho/IES_Pr-tico_lab1_3_101082",
+        "MPetersonNevesFilho/ITW_Projeto_Final"
+      ]
+    },
+    {
+      "conta": "MarcoASRamos",
+      "repositorios_listados": [
+        "MarcoASRamos/learn-jenkins-app",
+        "MarcoASRamos/ansible_repo",
+        "MarcoASRamos/labsec",
+        "MarcoASRamos/sd23_p3",
+        "MarcoASRamos/sd23_p2",
+        "MarcoASRamos/UA-ECT",
+        "MarcoASRamos/sd23_p1",
+        "MarcoASRamos/HammingCode",
+        "MarcoASRamos/BD_proj"
+      ]
+    },
+    {
+      "conta": "TiagoMostardinha",
+      "repositorios_listados": [
+        "TiagoMostardinha/hyprnixos",
+        "TiagoMostardinha/free5gc-helm",
+        "TiagoMostardinha/.dotfiles",
+        "TiagoMostardinha/homelab",
+        "TiagoMostardinha/ase_rtos_project",
+        "TiagoMostardinha/rsa-melhoria",
+        "TiagoMostardinha/rsa-project",
+        "TiagoMostardinha/ase",
+        "TiagoMostardinha/SRC_Assignments",
+        "TiagoMostardinha/UA",
+        "TiagoMostardinha/TiagoMostardinha",
+        "TiagoMostardinha/CS50_COURSE",
+        "TiagoMostardinha/ODIN_PROJECT"
+      ]
+    },
+    {
+      "conta": "afabreu",
+      "repositorios_listados": [
+        "afabreu/edc_tp1",
+        "afabreu/fr_mp_88811_89290",
+        "afabreu/sofs19-p4g3"
+      ]
+    },
+    {
+      "conta": "psagasalho",
+      "repositorios_listados": [
+        "psagasalho/psagasalho.github.io",
+        "psagasalho/meteo-api",
+        "psagasalho/EGS-Projeto",
+        "psagasalho/eventosua",
+        "psagasalho/Rent_at_bike_Android",
+        "psagasalho/Android_Homeworks",
+        "psagasalho/AMS-PROJect-PAGE",
+        "psagasalho/AMS_Server",
+        "psagasalho/BasketballScoreboard",
+        "psagasalho/WikipediaPageGuesser"
+      ]
+    },
+    {
+      "conta": "rafaeldsd",
+      "repositorios_listados": [
+        "rafaeldsd/rafaeldsd",
+        "rafaeldsd/AIA-Project1",
+        "rafaeldsd/RSA-Project",
+        "rafaeldsd/AC2-Guides_Practical_Lessons",
+        "rafaeldsd/AAD-ASS1-Hadamardcodes",
+        "rafaeldsd/SD-therestaurant",
+        "rafaeldsd/EGS-Project",
+        "rafaeldsd/IHC-Project2",
+        "rafaeldsd/ASE-Projects",
+        "rafaeldsd/IC-Project3",
+        "rafaeldsd/IC-Project2",
+        "rafaeldsd/aad-assigment1-hamming_codes",
+        "rafaeldsd/ciberRato-simulation-challenge",
+        "rafaeldsd/IC-Project1"
+      ]
+    },
+    {
+      "conta": "Almeida-a",
+      "repositorios_listados": [
+        "Almeida-a/dicom-rs",
+        "Almeida-a/rustlings",
+        "Almeida-a/papermc-lowhealth-plugin",
+        "Almeida-a/Vivace",
+        "Almeida-a/swapvec",
+        "Almeida-a/imodec-dicoogle-plugin",
+        "Almeida-a/ic-encoders-eval",
+        "Almeida-a/dicoogle",
+        "Almeida-a/libjxl",
+        "Almeida-a/orders",
+        "Almeida-a/moviefan-auth",
+        "Almeida-a/microrato-challenges",
+        "Almeida-a/surface-repo",
+        "Almeida-a/dicoogle-plugin-sample",
+        "Almeida-a/AutoMec-AD",
+        "Almeida-a/industrial_ci",
+        "Almeida-a/hello-world",
+        "Almeida-a/transportation_system_db",
+        "Almeida-a/Almeida-a",
+        "Almeida-a/ihc_wellet",
+        "Almeida-a/edc_tp1",
+        "Almeida-a/lane_detection",
+        "Almeida-a/nqueens3d",
+        "Almeida-a/crc-8-serial",
+        "Almeida-a/ams20_21",
+        "Almeida-a/DETI_Room_Displayer"
+      ]
+    },
+    {
+      "conta": "martaalmeida3",
+      "repositorios_listados": [
+        "martaalmeida3/martaalmeida3",
+        "martaalmeida3/IHC",
+        "martaalmeida3/MPEI",
+        "martaalmeida3/SIO",
+        "martaalmeida3/IA",
+        "martaalmeida3/AED",
+        "martaalmeida3/ICG"
+      ]
+    },
+    {
+      "conta": "yluquez-pareva",
+      "repositorios_listados": []
+    },
+    {
+      "conta": "Durval8",
+      "repositorios_listados": [
+        "Durval8/big4",
+        "Durval8/durval8.github.io",
+        "Durval8/leetclode",
+        "Durval8/nvideo",
+        "Durval8/worldbuilding",
+        "Durval8/RushHour"
+      ]
+    },
+    {
+      "conta": "andreaoliveira9",
+      "repositorios_listados": [
+        "andreaoliveira9/Projeto-MAS",
+        "andreaoliveira9/Projeto-AAS",
+        "andreaoliveira9/andreaoliveira9",
+        "andreaoliveira9/Projeto-PW-1",
+        "andreaoliveira9/Projeto-PW-2",
+        "andreaoliveira9/Projeto-SO-Sim",
+        "andreaoliveira9/Projeto-CAA-2",
+        "andreaoliveira9/Projeto-SO-Opt",
+        "andreaoliveira9/Projeto-TAI-3",
+        "andreaoliveira9/Projeto-AS-2",
+        "andreaoliveira9/Projeto-CAA-1",
+        "andreaoliveira9/Projeto-TAI-2",
+        "andreaoliveira9/Projeto-AS-1",
+        "andreaoliveira9/Projeto-TAI-1",
+        "andreaoliveira9/Projeto-VI",
+        "andreaoliveira9/Projeto-IM-3",
+        "andreaoliveira9/Projeto-IM-1",
+        "andreaoliveira9/Projeto-IM-2",
+        "andreaoliveira9/Projeto-ES",
+        "andreaoliveira9/Projeto-CV",
+        "andreaoliveira9/Projeto-AA-1",
+        "andreaoliveira9/Projeto-AA-2",
+        "andreaoliveira9/Projeto-AA-3",
+        "andreaoliveira9/Projeto-PI",
+        "andreaoliveira9/Projeto-TQS",
+        "andreaoliveira9/Projeto-TAA-2",
+        "andreaoliveira9/Projeto-TAA-1",
+        "andreaoliveira9/Projeto-SIO-2",
+        "andreaoliveira9/Projeto-IES",
+        "andreaoliveira9/Projeto-SIO-1",
+        "andreaoliveira9/Projeto-IA",
+        "andreaoliveira9/Projeto-CSLP",
+        "andreaoliveira9/Projeto-ITW",
+        "andreaoliveira9/Projeto-BD",
+        "andreaoliveira9/Projeto-C",
+        "andreaoliveira9/Projeto-CD",
+        "andreaoliveira9/Projeto-IHC",
+        "andreaoliveira9/Projeto-SO-1",
+        "andreaoliveira9/Projeto-SO-2",
+        "andreaoliveira9/Projeto-AED-1",
+        "andreaoliveira9/Projeto-AED-2"
+      ]
+    },
+    {
+      "conta": "Code-Bullet",
+      "repositorios_listados": [
+        "Code-Bullet/RickAndMortai",
+        "Code-Bullet/Jump-King",
+        "Code-Bullet/Google-Chrome-Dino-Game-AI",
+        "Code-Bullet/Flappy-Bird-AI",
+        "Code-Bullet/Hill-Climb-Racing-AI",
+        "Code-Bullet/Car-QLearning",
+        "Code-Bullet/RubiksCubeAI",
+        "Code-Bullet/SnakeFusion",
+        "Code-Bullet/Storm-The-House-Auto-Clicker",
+        "Code-Bullet/Enigma-Simulator",
+        "Code-Bullet/Tetris-AI-Javascript",
+        "Code-Bullet/2048-AI",
+        "Code-Bullet/NEAT-Template-JavaScript",
+        "Code-Bullet/WebsiteTest",
+        "Code-Bullet/MarbleCalculator",
+        "Code-Bullet/Pool_AI",
+        "Code-Bullet/WorldsHardestGameAI",
+        "Code-Bullet/Piano-Tiles",
+        "Code-Bullet/Smart-Dots-Genetic-Algorithm-Tutorial",
+        "Code-Bullet/Handy-Terminal-Position-Designer-Matrix-Thing",
+        "Code-Bullet/Chess-AI",
+        "Code-Bullet/NEAT_Template",
+        "Code-Bullet/PacmanGame",
+        "Code-Bullet/Asteroids-with-NEAT",
+        "Code-Bullet/AsteroidsAI"
+      ]
+    },
+    {
+      "conta": "renatovalente5",
+      "repositorios_listados": [
+        "renatovalente5/24Cork",
+        "renatovalente5/AA-Projs",
+        "renatovalente5/AMMA_Creative",
+        "renatovalente5/AR-Project",
+        "renatovalente5/ARA-project",
+        "renatovalente5/ArmazemDosPneus",
+        "renatovalente5/ArmyEye",
+        "renatovalente5/Art_Stamp_Creations",
+        "renatovalente5/Atoms3D",
+        "renatovalente5/Biblioteca_BaseDados",
+        "renatovalente5/calisthenics-spots",
+        "renatovalente5/CleanHouseApp",
+        "renatovalente5/Clinic-Interface",
+        "renatovalente5/CM-FITon",
+        "renatovalente5/CM21_89077",
+        "renatovalente5/CRC-8",
+        "renatovalente5/Cuidar",
+        "renatovalente5/EDC-labs",
+        "renatovalente5/FeiraNorteAuto",
+        "renatovalente5/FlightTrack",
+        "renatovalente5/FR-project",
+        "renatovalente5/GoldCleaning",
+        "renatovalente5/HN_Transportes",
+        "renatovalente5/HV_Limpezas",
+        "renatovalente5/IIA-Bomberman",
+        "renatovalente5/ithos-cathelier",
+        "renatovalente5/JogoDosDados",
+        "renatovalente5/LR_Motors",
+        "renatovalente5/Marmovar",
+        "renatovalente5/MentaConecta",
+        "renatovalente5/mimices",
+        "renatovalente5/my-app",
+        "renatovalente5/NewAuto",
+        "renatovalente5/nunos-lab",
+        "renatovalente5/PauFerroAtelier",
+        "renatovalente5/PerfectFinish",
+        "renatovalente5/picnic-club",
+        "renatovalente5/picnic-club-moments",
+        "renatovalente5/PlaylistOnTheWeb",
+        "renatovalente5/PokeAuto",
+        "renatovalente5/pokoto-wood",
+        "renatovalente5/Portfolio",
+        "renatovalente5/praiometro",
+        "renatovalente5/PrimesCoprocessor",
+        "renatovalente5/Project_LFA",
+        "renatovalente5/Project_MPEI",
+        "renatovalente5/RafMatos",
+        "renatovalente5/Real_Time_Image_Transformation",
+        "renatovalente5/renatovalente5.github.io",
+        "renatovalente5/security",
+        "renatovalente5/Sininhos_Oportunos",
+        "renatovalente5/sofs19-p4g3",
+        "renatovalente5/SpaDoAutomovelLUX",
+        "renatovalente5/SrFazQuaseTudo",
+        "renatovalente5/TudoPronto",
+        "renatovalente5/UA_CRIS",
+        "renatovalente5/UI_PPadel",
+        "renatovalente5/WebApplicationRabbitMQ",
+        "renatovalente5/WebsMusic",
+        "renatovalente5/WeldStaff"
+      ]
+    },
+    {
+      "conta": "danycamoes",
+      "repositorios_listados": []
+    },
+    {
+      "conta": "isneru",
+      "repositorios_listados": [
+        "isneru/isneru",
+        "isneru/flake",
+        "isneru/vesktop-custom-plugins",
+        "isneru/chibi-url",
+        "isneru/psoft_1231562_1241692_1242036_2db",
+        "isneru/website",
+        "isneru/gh-discord-widget",
+        "isneru/SISEM-ISEP",
+        "isneru/BDAMD_TP2_25_26",
+        "isneru/DSSMV_ProjectReact_1240567_1241692",
+        "isneru/svg-to-readme",
+        "isneru/DSSMV_ProjectDroid_1240567_1241692",
+        "isneru/c-html-templater",
+        "isneru/newtab",
+        "isneru/test-agenda",
+        "isneru/vsc-themes",
+        "isneru/si-encrypt",
+        "isneru/svelte-todo",
+        "isneru/lol-client",
+        "isneru/learning-go",
+        "isneru/tech-talk-astro",
+        "isneru/rseat-vault"
+      ]
+    },
+    {
+      "conta": "FranciscoCardita",
+      "repositorios_listados": [
+        "FranciscoCardita/franciscocardita.github.io",
+        "FranciscoCardita/mect-aad",
+        "FranciscoCardita/FranciscoCardita",
+        "FranciscoCardita/leci-bd",
+        "FranciscoCardita/leci-so",
+        "FranciscoCardita/leci-pds",
+        "FranciscoCardita/social-summit",
+        "FranciscoCardita/leci-mpei",
+        "FranciscoCardita/leci-sio",
+        "FranciscoCardita/leci-ac1",
+        "FranciscoCardita/leci-poo",
+        "FranciscoCardita/micsa-project"
+      ]
+    },
+    {
+      "conta": "FuryCode-bit",
+      "repositorios_listados": [
+        "FuryCode-bit/FuryCode-bit",
+        "FuryCode-bit/bio-jardas",
+        "FuryCode-bit/Nexus",
+        "FuryCode-bit/proxmux",
+        "FuryCode-bit/cf_ai_soc_assistant",
+        "FuryCode-bit/dockerscan",
+        "FuryCode-bit/Overleaf",
+        "FuryCode-bit/ua-thesis-template",
+        "FuryCode-bit/CryptoCat",
+        "FuryCode-bit/VenturesHUB",
+        "FuryCode-bit/AI-NFT-Generator",
+        "FuryCode-bit/NexusSIEM",
+        "FuryCode-bit/Privacy-Preserving-Authentication-with-Verifiable-Credentials",
+        "FuryCode-bit/Android-Reversing-Report",
+        "FuryCode-bit/Writeups",
+        "FuryCode-bit/SocialBook-Goat",
+        "FuryCode-bit/papermark",
+        "FuryCode-bit/Monitoring-System-Config-Files",
+        "FuryCode-bit/S-AES",
+        "FuryCode-bit/ML_IDS",
+        "FuryCode-bit/L4TER-G4TOR",
+        "FuryCode-bit/IoT-Outdoor-Station",
+        "FuryCode-bit/Quizzer",
+        "FuryCode-bit/resumos",
+        "FuryCode-bit/UBI-Social",
+        "FuryCode-bit/GammaWatch",
+        "FuryCode-bit/flappy-bird",
+        "FuryCode-bit/revbox",
+        "FuryCode-bit/ArduinoStuff",
+        "FuryCode-bit/WALL-E-Lost-a-Screw",
+        "FuryCode-bit/FooDecider",
+        "FuryCode-bit/SQL_Query",
+        "FuryCode-bit/Ocaml",
+        "FuryCode-bit/ddosify",
+        "FuryCode-bit/sql-translator",
+        "FuryCode-bit/puffer",
+        "FuryCode-bit/Template-Relatorios-UBI",
+        "FuryCode-bit/TrabalhoLP",
+        "FuryCode-bit/Who-Wants-To-Be-a-Millionaire-C-Version-",
+        "FuryCode-bit/Complete-Python-3-Bootcamp",
+        "FuryCode-bit/docusaurus",
+        "FuryCode-bit/Pokeships",
+        "FuryCode-bit/SocketsServer",
+        "FuryCode-bit/WSILF",
+        "FuryCode-bit/ShellderV3",
+        "FuryCode-bit/Exercicios-de-PWeb",
+        "FuryCode-bit/Exercicios-IHC",
+        "FuryCode-bit/app-ideas",
+        "FuryCode-bit/FXGL",
+        "FuryCode-bit/malware_showcase",
+        "FuryCode-bit/awesome-ghidra",
+        "FuryCode-bit/WebDumper",
+        "FuryCode-bit/Xmas-Musicplayer",
+        "FuryCode-bit/futoshiki-solver",
+        "FuryCode-bit/node-steam-guide"
+      ]
+    },
+    {
+      "conta": "AlexandreFPGoncalves",
+      "repositorios_listados": [
+        "AlexandreFPGoncalves/Portfolio",
+        "AlexandreFPGoncalves/violetalex-twitch-chat",
+        "AlexandreFPGoncalves/AlexandreFPGoncalves",
+        "AlexandreFPGoncalves/ShinyDexTracker",
+        "AlexandreFPGoncalves/lol-client",
+        "AlexandreFPGoncalves/Zustand-Todo-List",
+        "AlexandreFPGoncalves/t3-techtalk-2023",
+        "AlexandreFPGoncalves/JS-Studies",
+        "AlexandreFPGoncalves/QRCode_Generator",
+        "AlexandreFPGoncalves/snippet_vault",
+        "AlexandreFPGoncalves/Random-numGen",
+        "AlexandreFPGoncalves/violet-dream",
+        "AlexandreFPGoncalves/Best-README-Template",
+        "AlexandreFPGoncalves/react-component-library-itsector-workshop",
+        "AlexandreFPGoncalves/nlw-setup-habits",
+        "AlexandreFPGoncalves/Storybook-Design-System",
+        "AlexandreFPGoncalves/One-Week-Python",
+        "AlexandreFPGoncalves/JavaScript30",
+        "AlexandreFPGoncalves/Advice-Generator-App",
+        "AlexandreFPGoncalves/Nextui-Library",
+        "AlexandreFPGoncalves/Mern-Course-Jobify",
+        "AlexandreFPGoncalves/PAP-ShinyDexTracker",
+        "AlexandreFPGoncalves/Unity_CodelessGame",
+        "AlexandreFPGoncalves/HTML_CSS_StarterCode",
+        "AlexandreFPGoncalves/GML-Game-Projects"
+      ]
+    },
+    {
+      "conta": "vitordiasua",
+      "repositorios_listados": [
+        "vitordiasua/SmallApps",
+        "vitordiasua/ICG_98396",
+        "vitordiasua/EmpCent"
+      ]
+    },
+    {
+      "conta": "GuilhermeCasal",
+      "repositorios_listados": [
+        "GuilhermeCasal/ai-news-radar",
+        "GuilhermeCasal/MDLE",
+        "GuilhermeCasal/CAA",
+        "GuilhermeCasal/FAA",
+        "GuilhermeCasal/DataManagementFCD",
+        "GuilhermeCasal/Graphic-Computation-1",
+        "GuilhermeCasal/VI_Prio",
+        "GuilhermeCasal/monitoring-dist",
+        "GuilhermeCasal/GuilhermeCasal.github.io",
+        "GuilhermeCasal/GuilhermeCasal",
+        "GuilhermeCasal/SecurApp",
+        "GuilhermeCasal/CryptoBingo",
+        "GuilhermeCasal/RushHour-AI",
+        "GuilhermeCasal/MPEI",
+        "GuilhermeCasal/SO",
+        "GuilhermeCasal/SIO",
+        "GuilhermeCasal/ProjetoAS2022",
+        "GuilhermeCasal/ASProjectWEB",
+        "GuilhermeCasal/POO",
+        "GuilhermeCasal/AC-2"
+      ]
+    },
+    {
+      "conta": "beegee-tokyo",
+      "repositorios_listados": [
+        "beegee-tokyo/WisBlockLoRaWAN",
+        "beegee-tokyo/SX126x-Arduino",
+        "beegee-tokyo/library-registry",
+        "beegee-tokyo/BambuHelper-WisBlock",
+        "beegee-tokyo/WisBlock-HW-Tester",
+        "beegee-tokyo/RAK4631-Kit-1-RAK1901-RAK1902-RAK1903",
+        "beegee-tokyo/test",
+        "beegee-tokyo/LPWAN-Tracker-V2",
+        "beegee-tokyo/RAK4631-RAK12007-UltraSonic-Sensor",
+        "beegee-tokyo/WisBlock-API-V2",
+        "beegee-tokyo/RAK3312-Sensor-For-LoRaWAN",
+        "beegee-tokyo/WisBlock-API-Mesh",
+        "beegee-tokyo/WisBlock-API-ToolBox",
+        "beegee-tokyo/PixelClock-Radar-BLE-RAK3312",
+        "beegee-tokyo/RUI3-Sensor-VOC-EPD-2.13",
+        "beegee-tokyo/meshtastic-firmware",
+        "beegee-tokyo/RAK_LPP",
+        "beegee-tokyo/RUI3-Env-IAQ",
+        "beegee-tokyo/MeshCore",
+        "beegee-tokyo/RAK12022-PT100-Sensor",
+        "beegee-tokyo/WisBlock-Sensor-For-LoRaWAN",
+        "beegee-tokyo/RAK4631-Kit-4-RAK1906",
+        "beegee-tokyo/RAK4631-BLE-LORA-Setup",
+        "beegee-tokyo/portainer-templates",
+        "beegee-tokyo/RUI3-RS485-Soil-Sensor",
+        "beegee-tokyo/RUI3-Sensor-Node",
+        "beegee-tokyo/RAK13011-Alarm-Msg-Queue",
+        "beegee-tokyo/Low-Power-PIO",
+        "beegee-tokyo/Meshtastic-Sensor-Network",
+        "beegee-tokyo/RUI3-RS485-Wind-Sensor",
+        "beegee-tokyo/RAK-OneWireSerial",
+        "beegee-tokyo/RUI3-Signal-Meter-P2P-LPWAN",
+        "beegee-tokyo/RUI3-Signal-Meter-P2P-LPWAN-UI",
+        "beegee-tokyo/RUI3-Signal-Meter-P2P-LPWAN-SD",
+        "beegee-tokyo/LoRa-P2P-Gateway",
+        "beegee-tokyo/WisBlock-Seismic-Sensor",
+        "beegee-tokyo/nRF52_OLED",
+        "beegee-tokyo/RUI3-Arduino-Library",
+        "beegee-tokyo/RAK11200-SMA-Sunnyboy",
+        "beegee-tokyo/RAK4631-RAK14014-Demo",
+        "beegee-tokyo/WisBlock-Toolbox",
+        "beegee-tokyo/RAK4631-Kit-2-RAK1910-RAK1904-RAK1906",
+        "beegee-tokyo/RAK13015",
+        "beegee-tokyo/Hydroponic-Control-System",
+        "beegee-tokyo/RUI3-LowPower-Example",
+        "beegee-tokyo/ClusterDuck-Protocol",
+        "beegee-tokyo/RAKwireless_RAK14000_EPD_2_13",
+        "beegee-tokyo/Blues-Minimal-I2C",
+        "beegee-tokyo/SX1262-SC-GW",
+        "beegee-tokyo/PicoSoftwareSerial",
+        "beegee-tokyo/Blues-WisBlock-Tracker",
+        "beegee-tokyo/Hummingbird-Blues-Gateway",
+        "beegee-tokyo/RUI3-RAK13011",
+        "beegee-tokyo/platform-rak4631",
+        "beegee-tokyo/RAK4631_nRF52_Arduino",
+        "beegee-tokyo/MilesightSensorDecoders",
+        "beegee-tokyo/MHC-Sunnyboy-RAK13300",
+        "beegee-tokyo/SX126x-Mesh-Network",
+        "beegee-tokyo/RUI3-Sensor-Node-Air-Quality",
+        "beegee-tokyo/WisBlock-Vibration-Detector",
+        "beegee-tokyo/RUI3-Vibration-Detector",
+        "beegee-tokyo/RAK4631-RAK12014-Waterlevel",
+        "beegee-tokyo/WisBlock-API",
+        "beegee-tokyo/WisBlock-IAQ-PM-CO2-VOC-EPD",
+        "beegee-tokyo/DHTesp",
+        "beegee-tokyo/WisBlock-RAK4631-Helium-Mapper-Fork",
+        "beegee-tokyo/RUI3-Field-Tester",
+        "beegee-tokyo/RUI3-my-IDEa",
+        "beegee-tokyo/RAK-nRF52-Arduino",
+        "beegee-tokyo/RUI3-Modular",
+        "beegee-tokyo/RUI3-RAK12010",
+        "beegee-tokyo/RUI3-RAK12047-Air-Quality",
+        "beegee-tokyo/RUI3-GNSS-Tracker",
+        "beegee-tokyo/RAK4631-Kit-2-RAK12500-RAK1906",
+        "beegee-tokyo/RUI3-Sensor-Node-Environment",
+        "beegee-tokyo/uf2",
+        "beegee-tokyo/ClosedCube_OPT3001_Arduino",
+        "beegee-tokyo/RAK11310-RAK1906",
+        "beegee-tokyo/RAK4631-RAK12023-Soil-Sensor",
+        "beegee-tokyo/SHT1x-ESP",
+        "beegee-tokyo/my_ci_test",
+        "beegee-tokyo/RAK4631-Quick-Start-Examples",
+        "beegee-tokyo/RAK4631-Soil-Sensor",
+        "beegee-tokyo/My-nRF52-Toolbox",
+        "beegee-tokyo/WisBlock-RAK12003-IR",
+        "beegee-tokyo/RAK4631-LPWAN-Tracker",
+        "beegee-tokyo/RAK4631-DeepSleep",
+        "beegee-tokyo/Crumbuino-Chip45",
+        "beegee-tokyo/RAK4631-LoRa-BLE-Config",
+        "beegee-tokyo/RAK11200-WiFi-setup-over-BLE"
+      ]
+    },
+    {
+      "conta": "danielvcorreia",
+      "repositorios_listados": [
+        "danielvcorreia/omlox-client-go",
+        "danielvcorreia/ua-thesis-template",
+        "danielvcorreia/gambler-investing",
+        "danielvcorreia/danielvcorreia.github.io",
+        "danielvcorreia/university-repositories"
+      ]
+    },
+    {
+      "conta": "fbarbosa2002",
+      "repositorios_listados": [
+        "fbarbosa2002/UA-LECI",
+        "fbarbosa2002/COMPILADORES"
+      ]
+    },
+    {
+      "conta": "martaaoliveira",
+      "repositorios_listados": [
+        "martaaoliveira/martaaoliveira",
+        "martaaoliveira/UA-Course-MIECT",
+        "martaaoliveira/Demo-Cover-Expat25",
+        "martaaoliveira/RAT_EOS_PC",
+        "martaaoliveira/TPR_PROJETO",
+        "martaaoliveira/Udemy-Data-Science-Course",
+        "martaaoliveira/LECI",
+        "martaaoliveira/ia-tetris",
+        "martaaoliveira/ia-2022-tpi-1"
+      ]
+    },
+    {
+      "conta": "trvds",
+      "repositorios_listados": [
+        "trvds/pacote-laboral",
+        "trvds/feedback-briefing-room",
+        "trvds/trvds-website",
+        "trvds/irobo-turtlebot",
+        "trvds/letter-assigner",
+        "trvds/mml-comp",
+        "trvds/apre-hw",
+        "trvds/resumos-leic",
+        "trvds/ivm-manager",
+        "trvds/takuzu-solver",
+        "trvds/tecnico-fs",
+        "trvds/economic-ghg-output",
+        "trvds/ggc-warehouse",
+        "trvds/kakuro-solver",
+        "trvds/file-system",
+        "trvds/kanban-tool",
+        "trvds/dino-game",
+        "trvds/mill-game",
+        "trvds/tic-tac-toe"
+      ]
+    },
+    {
+      "conta": "NunoVidal",
+      "repositorios_listados": [
+        "NunoVidal/NunoVidal",
+        "NunoVidal/MySmartHome",
+        "NunoVidal/fitlink",
+        "NunoVidal/AC2",
+        "NunoVidal/vim_conf",
+        "NunoVidal/dotfiles"
+      ]
+    },
+    {
+      "conta": "ElSebasdg",
+      "repositorios_listados": [
+        "ElSebasdg/LECI",
+        "ElSebasdg/MECT",
+        "ElSebasdg/Android_Project_CM",
+        "ElSebasdg/ElSebasdg",
+        "ElSebasdg/IC_Projects",
+        "ElSebasdg/RSA_Project2024",
+        "ElSebasdg/ICG_Project103690.github.io"
+      ]
+    },
+    {
+      "conta": "yeusef0202",
+      "repositorios_listados": [
+        "yeusef0202/tarot-app",
+        "yeusef0202/RV_Rato-Veloz",
+        "yeusef0202/ASE-C.O.R.T.I.N.A",
+        "yeusef0202/IHC_Unity",
+        "yeusef0202/AS-ResolvRapid"
+      ]
+    },
+    {
+      "conta": "nicolaslieb",
+      "repositorios_listados": [
+        "nicolaslieb/masterthesis_nicolas_liebau",
+        "nicolaslieb/tmbd"
+      ]
+    }
+  ],
+  "ligacoes_consultadas": [
+    {
+      "user": "aokiLourenco",
+      "following": [
+        "AnaSantos05",
+        "ElSebasdg",
+        "FranciscoRibeiro03",
+        "LaranjoTomas",
+        "Prince-Mendiratta",
+        "SardinhaAlmeida",
+        "TymeRod",
+        "amadeuszsz",
+        "andreaoliveira9",
+        "g0ncalocunha",
+        "joanassantiago",
+        "joaoafonso02",
+        "miguelovila",
+        "yeusef0202"
+      ],
+      "http_status": [
+        200
+      ]
+    },
+    {
+      "user": "joaoafonso02",
+      "following": [
+        "BennyMarcal",
+        "Dariod9",
+        "Durval8",
+        "EduardoFernandesUA",
+        "GabrielHall02",
+        "GuilhermeCasal",
+        "Koi725",
+        "Lararodrigues1",
+        "MPetersonNevesFilho",
+        "PauloMaced0",
+        "Raf4morim",
+        "RafaelCurado",
+        "Rupesa",
+        "TheGoncaloSilva",
+        "TiagoMostardinha",
+        "andreclerigo",
+        "babuskyy",
+        "coutooo",
+        "dgomes",
+        "digas99",
+        "diogoftm",
+        "lecl16",
+        "marco-almeida",
+        "mariolpantunes",
+        "mauromarques",
+        "miguelovila",
+        "nicolaslieb",
+        "pedralmeida22",
+        "pedrovt",
+        "renatovalente5",
+        "ruimigueloliveira",
+        "tbsauce",
+        "yluquez-pareva"
+      ],
+      "http_status": [
+        200
+      ]
+    },
+    {
+      "user": "pedralmeida22",
+      "following": [
+        "Almeida-a",
+        "Bruno-SLopes",
+        "Dariod9",
+        "FilipeMiguelVale",
+        "J19cunha",
+        "JoaoRes",
+        "Jpfonseca",
+        "RodrigoRosmaninho",
+        "Rupesa",
+        "SamuelRDuarte",
+        "afabreu",
+        "andralves717",
+        "astronada",
+        "danielvcorreia",
+        "digas99",
+        "jtsimoes",
+        "marciapires10",
+        "o2valente",
+        "pedrorito",
+        "renatovalente5",
+        "ruimigueloliveira"
+      ],
+      "http_status": [
+        200
+      ]
+    },
+    {
+      "user": "BrunoGomes22",
+      "following": [
+        "AleexMaartins",
+        "Clamatir",
+        "FuryCode-bit",
+        "LiFe1007",
+        "MMarQs",
+        "TomasX59",
+        "diogobranco-as",
+        "jgalego25",
+        "jrpfaria",
+        "marco-almeida",
+        "trvds",
+        "vitordiasua"
+      ],
+      "http_status": [
+        200
+      ]
+    },
+    {
+      "user": "rafamsantos",
+      "following": [
+        "andreclerigo",
+        "eduardoalves001"
+      ],
+      "http_status": [
+        200
+      ]
+    },
+    {
+      "user": "laramatos22",
+      "following": [
+        "AlexandreFPGoncalves",
+        "Bruno-SLopes",
+        "Code-Bullet",
+        "DVicas",
+        "DanielCapitao",
+        "Dariod9",
+        "EduardoFernandesUA",
+        "FJ-RATO",
+        "GilFernandes2000",
+        "Joao-Felisberto",
+        "MarcoASRamos",
+        "MarianaPinto17",
+        "Migueljfc",
+        "NCF-AAUAv",
+        "OscarPimentelOP",
+        "RaquelPinto2000",
+        "RodrigoRosmaninho",
+        "Rui-FMF",
+        "Rupesa",
+        "SamuelRDuarte",
+        "TomsFreitas",
+        "afabreu",
+        "andreclerigo",
+        "benny2000t",
+        "danycamoes",
+        "dfdias",
+        "dgomes",
+        "digas99",
+        "isneru",
+        "jgabrantes",
+        "jmuachifi",
+        "jrpfaria",
+        "jtsimoes",
+        "marco-almeida",
+        "o2valente",
+        "paulogil93",
+        "pedralmeida22",
+        "psagasalho",
+        "rafaeldsd",
+        "rochadc00",
+        "ruimigueloliveira",
+        "saracarolina80",
+        "tiagooliveira95",
+        "tomasfilipe7",
+        "tuxPT",
+        "webdevcody"
+      ],
+      "http_status": [
+        200
+      ]
+    },
+    {
+      "user": "joaogasparp",
+      "following": [
+        "AlexioPsh",
+        "InsNSantos4",
+        "RicardoNuno",
+        "aettua",
+        "antoniorebelop",
+        "joaomonteir0",
+        "jsousa11",
+        "luisbfsousa",
+        "martaalmeida3",
+        "miguelovila",
+        "sonic28g"
+      ],
+      "http_status": [
+        200
+      ]
+    },
+    {
+      "user": "TheGoncaloSilva",
+      "following": [
+        "ElSebasdg",
+        "FranciscoCardita",
+        "JuliaAbrantes",
+        "NunoVidal",
+        "PedroDSFerreira",
+        "SamuTheCoder",
+        "Tiagura",
+        "andreclerigo",
+        "beegee-tokyo",
+        "fbarbosa2002",
+        "freePixel",
+        "joaoafonso02",
+        "jrpfaria",
+        "marco-almeida",
+        "martaaoliveira",
+        "mauromarques",
+        "tbsauce"
+      ],
+      "http_status": [
+        200
+      ]
+    }
+  ],
+  "historicos": [
+    {
+      "repositorio": "pedralmeida22/MIECT",
+      "commits_consultados": 140,
+      "ramificacoes_publicas": [
+        "b67d2a5165cbbfb1792f063cd1b05f9b4c6a565b\trefs/heads/master"
+      ],
+      "ficheiros_teoricos_removidos_ou_renomeados": [
+        {
+          "commit": "COMMIT:cc7c4bbbb697c154d21a657ccd6eeb6aa17e731f 2019-07-16 final study LFA",
+          "change": "R100\tAC1/AC1/TesteTeorico/AC1-87Perguntas-EscolhaMultipla.pdf\t\"2\\302\\272 ano/AC1/AC1/TesteTeorico/AC1-87Perguntas-EscolhaMultipla.pdf\""
+        },
+        {
+          "commit": "COMMIT:cc7c4bbbb697c154d21a657ccd6eeb6aa17e731f 2019-07-16 final study LFA",
+          "change": "R100\tAC1/AC1/TesteTeorico/AC1-87Perguntas-semRespostas.pdf\t\"2\\302\\272 ano/AC1/AC1/TesteTeorico/AC1-87Perguntas-semRespostas.pdf\""
+        },
+        {
+          "commit": "COMMIT:cc7c4bbbb697c154d21a657ccd6eeb6aa17e731f 2019-07-16 final study LFA",
+          "change": "R100\tAC1/AC1/TesteTeorico/AC1-ExerciciosTP.pdf\t\"2\\302\\272 ano/AC1/AC1/TesteTeorico/AC1-ExerciciosTP.pdf\""
+        },
+        {
+          "commit": "COMMIT:cc7c4bbbb697c154d21a657ccd6eeb6aa17e731f 2019-07-16 final study LFA",
+          "change": "R100\tAC1/AC1/TesteTeorico/Testes-Anos-Anteriores.pdf\t\"2\\302\\272 ano/AC1/AC1/TesteTeorico/Testes-Anos-Anteriores.pdf\""
+        },
+        {
+          "commit": "COMMIT:cc7c4bbbb697c154d21a657ccd6eeb6aa17e731f 2019-07-16 final study LFA",
+          "change": "R100\tAC1/AC1/TesteTeorico/mips_mc.pdf\t\"2\\302\\272 ano/AC1/AC1/TesteTeorico/mips_mc.pdf\""
+        }
+      ]
+    },
+    {
+      "repositorio": "aokiLourenco/AC1",
+      "commits_consultados": 28,
+      "ramificacoes_publicas": [
+        "cf075ba324f84fb74001c1c395ef9df879ad7c4f\trefs/heads/main"
+      ],
+      "ficheiros_teoricos_removidos_ou_renomeados": []
+    },
+    {
+      "repositorio": "Joaoleite25/LECI",
+      "commits_consultados": 2,
+      "ramificacoes_publicas": [
+        "3fd1d9a69c7ea34374205c78999f1c46015ee1b2\trefs/heads/main",
+        "c3fe9dc83af74f6584b8ab751fd2f2c5ae0654ea\trefs/heads/master"
+      ],
+      "ficheiros_teoricos_removidos_ou_renomeados": []
+    },
+    {
+      "repositorio": "rafamsantos/MIECT-LECI",
+      "commits_consultados": 86,
+      "ramificacoes_publicas": [
+        "033b675a70eb3e940094295f5fa83bc76aa7e64a\trefs/heads/ano1",
+        "dcdae4d0da15453b373a3dc1f73ff35b74b796f3\trefs/heads/main"
+      ],
+      "ficheiros_teoricos_removidos_ou_renomeados": []
+    },
+    {
+      "repositorio": "luisbfsousa/leci",
+      "commits_consultados": 176,
+      "ramificacoes_publicas": [
+        "b73920bef16489f4da9d384824d4e581893cdd87\trefs/heads/main",
+        "241f59050e30be052ba8e3dd6981b2c71ab49f39\trefs/heads/patch-1"
+      ],
+      "ficheiros_teoricos_removidos_ou_renomeados": [
+        {
+          "commit": "COMMIT:4f8b4a3445d986968d913d69fa947887b5d8cd16 2024-01-26 xau",
+          "change": "D\t2o1s/AC1/Teorica/Exame 2023/thumbnail_AC1_RECURSO_03-02-2023_108583.jpg"
+        }
+      ]
+    }
+  ],
+  "ramificacoes_alternativas": [
+    {
+      "repo": "Joaoleite25/LECI",
+      "branch": "master",
+      "ficheiros": 2556,
+      "extras_ac1": []
+    },
+    {
+      "repo": "rafamsantos/MIECT-LECI",
+      "branch": "ano1",
+      "ficheiros": 254,
+      "extras_ac1": []
+    },
+    {
+      "repo": "luisbfsousa/leci",
+      "branch": "patch-1",
+      "ficheiros": 3662,
+      "extras_ac1": []
+    }
+  ]
+}
