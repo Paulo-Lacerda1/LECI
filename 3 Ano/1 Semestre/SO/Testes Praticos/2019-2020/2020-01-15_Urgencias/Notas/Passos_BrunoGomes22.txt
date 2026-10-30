@@ -1,0 +1,12 @@
+SO : Training Exam
+
+(1) Partilha de memória
+	qualquer variável partilhada tem de ter algum tipo de mecanismo de sincronização
+
+(2) Identificar entidades ativas (EA)
+	patient, nurse, doctor (tornar módulos seguros)
+
+(3) Comunicação direta entre EA
+	pfifo (exemplo: o paciente coloca na fila e o enfermeiro retira)
+	não terminar o fio de execução da fifo(partilhada) quando esta estiver vazia (implementar race-conditions)
+	doctor --> patient (semaforo/variavel de condição(precisamos de um mutex numa variável partilhada))
